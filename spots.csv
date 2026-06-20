@@ -1,0 +1,896 @@
+spot_id,spot_name,spot_description,is_restaurant,spot_rating,location_x,location_y,meal_type
+1,Setia Alam Central Park,Category: Park,FALSE,4.2,101.4567115,3.0993775,
+2,i-City Theme Park,"Digitally integrated development with shops, hotels, a mall, ice sculptures & an amusement park.",FALSE,4.2,101.4822713,3.0647235,
+3,Taman Haiwan @TBNSA,Category: Zoo,FALSE,4,101.513953,3.100236,
+4,Bulatan Penchala,"Category: Historical Landmark, Historical Place",FALSE,0,101.6407567,3.0953881,
+5,Gem Restaurant PJ,"Category: North Indian Restaurant, South Indian Restaurant, Indian Restaurant",TRUE,4.3,101.6513484,3.0946519,lunch
+6,Kanna Curry House Restaurant,"Category: South Indian Restaurant, Malaysian Restaurant, Asian Restaurant",TRUE,4,101.6298809,3.1197956,lunch
+7,SS 18 Recreation Park,Category: Park,FALSE,4.4,101.584985,3.072899,
+8,River walk Desaria,"Category: Hiking Area, Sports Activity Location",FALSE,3,101.6217719,3.0769599,
+9,Botanic Garden Canal,Category: Park,FALSE,4.3,101.4359069,2.9880156,
+10,Taman Rekreasi Paya Bakau Kampung Sijangkang,Category: Sports Activity Location,FALSE,4.4,101.4232462,2.9399497,
+11,Taman Bandar Bukit Raja,Category: Park,FALSE,4.2,101.4336525,3.0898765,
+12,"Sembunyi Spa, Cyberview Resort & Spa",Category: Spa,FALSE,4.9,101.6672381,2.9245369,
+13,Woodfire Cyberjaya,"Category: Hamburger Restaurant, American Restaurant, Restaurant",TRUE,4.6,101.6568452,2.9239047,lunch
+14,Kak Long Cafe,"Category: Restaurant, Food",TRUE,4.7,101.7075443,2.8251488,breakfast
+15,Royal Selangor Visitor Centre,Visitor centre taking guests through the history of Royal Selangor's pewter manufacturing.,FALSE,4.5,101.724434,3.1966646,
+16,Mustawa Family Cafe,"Category: Restaurant, Meal Delivery, Food Delivery",TRUE,4.3,101.2551835,3.3495078,breakfast
+17,美味家乡饭店 Restoran New Brilliant Hometown,"Category: Seafood Restaurant, Chinese Noodle Restaurant, Restaurant",TRUE,4.3,101.5801191,3.325911,dinner
+18,Kim Wah Restaurant | 万挠蕉赖蒸鱼头,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.2,101.5801286,3.3281222,lunch
+19,Makam Daeng Mamat,"Category: Historical Landmark, Historical Place",FALSE,0,101.4416218,2.7943918,
+20,Selera 7,"Category: Malaysian Restaurant, Asian Restaurant, Restaurant",TRUE,4.2,101.4971044,2.8035098,lunch
+21,Bukit Lagong Trail Head,"Category: Hiking Area, Sports Activity Location",FALSE,4.4,101.6390149,3.2575952,
+22,FRIM-MNS,Category: Park,FALSE,4.4,101.626322,3.232698,
+23,PJ Animales - Sri Gombak Fark Runsite,"Category: Hiking Area, Sports Activity Location",FALSE,0,101.7019249,3.2453555,
+24,Jibby East Grill,"Category: Western Restaurant, Restaurant, Food",TRUE,4.7,101.7285656,3.2261982,dinner
+25,Kampung Baru Batu 14 Hulu Langat,"Category: Historical Landmark, Historical Place",FALSE,0,101.8160862,3.1126797,
+26,Rumah Kebun Camping Ground (RKCG),"Category: Campground, Lodging",FALSE,4.6,101.8263759,3.1667315,
+27,Daddy’s Cafe Pangkor Island,"Category: Restaurant, Food",TRUE,4.2,100.5455922,4.2364234,breakfast
+28,Selangor Golden Triangle,"Category: Historical Landmark, Historical Place",FALSE,4.5,101.4824825,3.064895,
+29,巴生仙境山庄 ~ 仙境古城 Fairy Park Heritage City - Albert Tew,"Category: Cemetery, Service",FALSE,5,101.4630014,3.1432839,
+30,Kuala Renggam,"Category: Historical Landmark, Historical Place",FALSE,0,101.5103087,3.0441755,
+31,Shah Alam Royal Mausoleum,Category: Monument,FALSE,4.8,101.5184756,3.0827375,
+32,SHAM Lake Bukit Jelutong,Category: Park,FALSE,4.5,101.5210586,3.1168751,
+33,Bangunan Sultan Abdul Samad,Grand 1800s government building featuring copper domes & a large clocktower with a 1-ton bell.,FALSE,4.7,101.6944582,3.1487179,
+34,Rumah Penghulu Abu Seman (The Penghulu Abu Seman House),"Restored, traditional wooden Malay house, built in a Kedah village in the early 20th century.",FALSE,4.5,101.7164636,3.1502709,
+35,99 Wonderland Park,"Category: Amusement Park, Tourist Attraction, Zoo",FALSE,4.1,101.6644931,3.2364583,
+36,Rainforest @ 1 Utama,Category: Garden,FALSE,4.5,101.616177,3.150177,
+37,IOI Mall Damansara,Category: Shopping Mall,FALSE,4.2,101.5931032,3.149194,
+38,KL Bird Park,"Thousands of colourful birds in free-roaming areas, walk-through aviaries & traditional enclosures.",FALSE,4.4,101.6884845,3.143164,
+39,Hot Bird Subang Jaya SS15,"Category: Chicken Restaurant, Restaurant, Food",TRUE,4.9,101.5892343,3.0755669,lunch
+40,Lao Jia Xiao Guan Restaurant,"Category: Western Restaurant, Restaurant, Food",TRUE,4.7,101.589225,3.072686,dinner
+41,Kebaabish Restaurant - Subang Jaya,"Category: Pakistani Restaurant, Restaurant, Food",TRUE,4.5,101.5867604,3.0461094,lunch
+42,Istana Kenangan,No official description.,FALSE,4.4,101.4702447,3.0301743,
+43,Tiang Palang kasi buka gilerr,"Category: Historical Landmark, Historical Place",FALSE,5,101.4850078,3.0105903,
+44,Lakepark @ Gravit8 Klang South,Category: Park,FALSE,4.6,101.442251,2.9815449,
+45,Laguna Park,Category: Park,FALSE,4.1,101.3568074,2.9473022,
+46,Farmer Village 农德村庄,"Category: Chinese Restaurant, Halal Restaurant, Restaurant",TRUE,4.3,101.8282517,2.9756633,lunch
+47,Saudagar Nanas Agrofarm,"Category: Restaurant, Food",TRUE,4,101.7445277,2.9357349,lunch
+48,Metro Point Complex,Category: Shopping Mall,FALSE,4,101.793722,2.9916367,
+49,Monkeys Splash Zone,"Category: Water Park, Amusement Park",FALSE,3.5,101.8487353,3.048026,
+50,Taman Cabaran,"Category: Sports Activity Location, Tourist Attraction",FALSE,4.4,101.665446,2.88911,
+51,Wetlands Arboretum Centre,Category: Park,FALSE,4.5,101.6136814,2.8795399,
+52,Namo Garden,"Category: Restaurant, Food",TRUE,4.7,101.6608382,2.9231975,lunch
+53,Giggles & Geeks,"Category: Restaurant, Western Restaurant, Food",TRUE,4.6,101.6285078,2.9162665,dinner
+54,10gram Cyberjaya,"Category: Restaurant, Food",TRUE,4.5,101.6362512,2.9209597,lunch
+55,Texas BBQ Barn Restaurant Cyberjaya,"Category: Barbecue Restaurant, Malaysian Restaurant, Asian Restaurant",TRUE,4.6,101.6505812,2.9261919,dinner
+56,Kaysha Dine & Beauty,"Category: Restaurant, Food",TRUE,4.3,101.6370384,2.9212154,lunch
+57,Kocha Lala,"Category: Restaurant, Food",TRUE,4.6,101.6367963,2.9200779,lunch
+58,Padi House Prima Cyberjaya,"Category: Asian Fusion Restaurant, Asian Restaurant, Fusion Restaurant",TRUE,3.9,101.6570463,2.9211817,lunch
+59,Canton Boy @ Dpulze Cyberjaya,"Category: Restaurant, Food",TRUE,4.8,101.6507462,2.922436,lunch
+60,Sana’a Restaurant Cyberjaya,"Category: Restaurant, Food",TRUE,4.8,101.6497556,2.9172974,lunch
+61,After Seven Lounge,"Category: Restaurant, Food",TRUE,4.4,101.6358392,2.9210284,dinner
+62,Glaze Eatery - Tamarind Square,"Category: Restaurant, Cake Shop, Asian Restaurant",TRUE,4.3,101.6361151,2.9210386,lunch
+63,SABA Restaurant Cyberjaya,"Category: Mediterranean Restaurant, Restaurant, Food",TRUE,4.2,101.6513864,2.9228584,lunch
+64,SukhoThai Cuisine Cyberjaya,"Category: Restaurant, Food",TRUE,4.5,101.6364864,2.9210367,lunch
+65,RESTORAN ZAM IKAN BAKAR,"Category: Restaurant, Food",TRUE,4.4,101.651021,2.9254088,lunch
+66,Aldar Lounge,"Category: Middle Eastern Restaurant, Fine Dining Restaurant, Halal Restaurant",TRUE,4.8,101.6372892,2.9232702,dinner
+67,The Botanist,"Category: Cafe, Food",TRUE,4.4,101.6364782,2.9204675,breakfast
+68,Strawberry Fields Cafe Cyberjaya,"Category: Family Restaurant, Restaurant, Food",TRUE,4.7,101.6571395,2.9245342,breakfast
+69,Kars Fine Meat And Steak (Streetmall Cyberjaya),"Category: Steak House, Restaurant, Food",TRUE,4.8,101.6509067,2.9209342,dinner
+70,Noir Restaurant,"Category: Restaurant, Food",TRUE,4.8,101.6361682,2.9196342,lunch
+71,Verandah Restaurant,"Category: Restaurant, Food",TRUE,4.1,101.6672488,2.9234976,lunch
+72,Mustang terbakar,Category: Tourist Attraction,FALSE,5,101.6943026,2.8351456,
+73,XMUM Furong Lake,Category: Tourist Attraction,FALSE,3.9,101.7048902,2.8325152,
+74,Tasik Taman Dahlia,Category: Tourist Attraction,FALSE,4.6,101.7201659,2.8348189,
+75,KLIA T1 Observation Deck,"Category: Observation Deck, Tourist Attraction",FALSE,4.5,101.705711,2.7522362,
+76,Sepang Bay 13 Off-Road Ranch by MSF,"Category: Tourist Attraction, Event Venue",FALSE,5,101.7451473,2.7584607,
+77,PARIT D,Category: Tourist Attraction,FALSE,0,101.706975,2.792181,
+78,Damai D’ Dusun,Category: Tourist Attraction,FALSE,5,101.7456789,2.8416741,
+79,Kampung Angkat MADANI Kementerian Komunikasi,Category: Tourist Attraction,FALSE,0,101.6952896,2.8124856,
+80,Pantai Bagan Lalang Sepang,Category: Tourist Attraction,FALSE,4.3,101.6909813,2.5984905,
+81,BALAIRAYA KAMPUNG ORANG ASLI SUNGAI MELUT,Category: Tourist Attraction,FALSE,0,101.6825563,2.8315075,
+82,ADMAL Aviation College Planes,Category: Tourist Attraction,FALSE,0,101.7239564,2.8062979,
+83,Taman Rekreasi Sunsuria City,Category: Garden,FALSE,3.7,101.6954984,2.8348261,
+84,Sambal Bakar On Fire Kota Warisan,"Category: Asian Restaurant, Restaurant, Food",TRUE,4.8,101.6925054,2.8244185,lunch
+85,Bebeks by Top Global Kota Warisan,"Category: Restaurant, Food",TRUE,4.7,101.6945814,2.8196115,lunch
+86,Mohd Chan Chinese Muslim Restaurant @ Kota Warisan Sepang,"Category: Restaurant, Food",TRUE,4.9,101.6942263,2.8200897,lunch
+87,Soi 55 Thai Kitchen,"Category: Thai Restaurant, Restaurant, Food",TRUE,4.8,101.7074519,2.8288604,lunch
+88,PappaGrill Sepang,"Category: Restaurant, Food",TRUE,4,101.6947479,2.8212177,lunch
+89,"Bumbu Babah @ Kota Warisan, Sepang","Category: Asian Restaurant, Restaurant, Food",TRUE,4.3,101.6830195,2.7985305,lunch
+90,Mengrai Thai Restaurant,"Category: Thai Restaurant, Restaurant, Food",TRUE,4.7,101.6945359,2.8204923,lunch
+91,Hilltop Cuisine Kota Warisan,"Category: Western Restaurant, Restaurant, Food",TRUE,3.9,101.6970294,2.8282902,dinner
+92,Samurai Yakiniku Kota Warisan,"Category: Restaurant, Food",TRUE,4.8,101.6951235,2.8069006,lunch
+93,麻辣誘惑 Spicy Temptation @ Sepang (第六分行),"Category: Restaurant, Food",TRUE,4.9,101.7065626,2.8286976,lunch
+94,El Boney Quattro Formaggi,"Category: Restaurant, Food",TRUE,4.3,101.6941757,2.8220188,lunch
+95,Pak Punjab Kota Warisan,"Category: Pakistani Restaurant, North Indian Restaurant, Indian Restaurant",TRUE,4.3,101.6927769,2.8272807,lunch
+96,Lakeside Thai Pot,"Category: Restaurant, Food",TRUE,4.7,101.7054002,2.8400325,lunch
+97,Restoran Ummi Aishah,"Category: Restaurant, Food",TRUE,4.4,101.6945809,2.8194416,lunch
+98,Farich Food House,"Category: Restaurant, Cafe, Food",TRUE,4,101.7073972,2.82466,breakfast
+99,LakeSide@SIC,"Category: Restaurant, Food",TRUE,3.7,101.7312403,2.7569766,lunch
+100,Salam Noodles Warisan Megah,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.6,101.7062142,2.8250684,lunch
+101,LèTen Chinese Muslim Restaurant @ Mitsui Outlet Park,"Category: Dim Sum Restaurant, Cantonese Restaurant, Chinese Restaurant",TRUE,4.8,101.676944,2.7806395,lunch
+102,AL-Sultan Restaurant - Kota Warisan,"Category: Restaurant, Food",TRUE,4.9,101.6945721,2.8201812,lunch
+103,PPG Signature @ Sepang,"Category: Restaurant, Food",TRUE,5,101.694587,2.8215606,lunch
+104,Kuala Selangor Fireflies,Park offering evening boat trips to marvel at large colonies of fireflies living in the mangroves.,FALSE,4.7,101.3015682,3.3606559,
+105,NYC Tour Sky Mirror Kuala Selangor,"Category: Tourist Attraction, Scenic Spot",FALSE,4.2,101.246333,3.354841,
+106,(Official Jetty) Sky Mirror Kuala Selangor,"Boat tours taking in a sandbar visible at low tide, known for its reflective waters & marine life.",FALSE,4.3,101.2507617,3.3424349,
+107,Jetty D’Tours Kuala Selangor Sdn Bhd,Category: Tourist Attraction,FALSE,4.2,101.2492754,3.3512291,
+108,Malawati Hill بوكيت ملاوتي,"This historic museum, a one-time sultan's palace, has tombs, cannons, ladders & treasure caves.",FALSE,4.2,101.2463485,3.3416401,
+109,Bukit Belimbing Fireflies Park,Category: Tourist Attraction,FALSE,4.3,101.279179,3.386517,
+110,Kampung Kuantan Fireflies Park (Selangor),Tourist park offering sampan-boat river trips to see fireflies plus food & gift kiosks & playground.,FALSE,4.4,101.3015477,3.3606857,
+111,Pekan Lama Kuala Selangor,Category: Tourist Attraction,FALSE,4.7,101.2487578,3.3413065,
+112,Altingsburg Lighthouse,Category: Tourist Attraction,FALSE,4.4,101.2449326,3.3412187,
+113,1188 天空之境,Category: Tourist Attraction,FALSE,4.5,101.2492999,3.3515129,
+114,Perigi Beracun,Category: Tourist Attraction,FALSE,3.9,101.245779,3.340643,
+115,Sky Mirror Fun Life Jetty,"Category: Tourist Attraction, Tour Agency, Travel Agency",FALSE,4.8,101.2511835,3.3491039,
+116,萤火虫,Category: Tourist Attraction,FALSE,5,101.2514514,3.3490729,
+117,Dataran Malawati داتارن ملاواتي,Category: Tourist Attraction,FALSE,4.3,101.2505589,3.3413144,
+118,0 km Kuala Selangor,Category: Tourist Attraction,FALSE,4.5,101.2500519,3.341249,
+119,Sky Mirror Rainbow Jetty,Category: Tourist Attraction,FALSE,4.5,101.3029495,3.2559436,
+120,Fishermen Village,Category: Tourist Attraction,FALSE,4.3,101.2517497,3.3479104,
+121,Gerbang Malam Kuala Selangor (OFFICIAL),Category: Tourist Attraction,FALSE,5,101.2503812,3.3413475,
+122,瓜雪彩虹河堤 Rainbow Bund,Category: Tourist Attraction,FALSE,3.4,101.2441149,3.3565776,
+123,Kota Tanjung Keramat کوتا تنجوڠ کرامت,"Category: Historical Landmark, Tourist Attraction, Historical Place",FALSE,3.6,101.241432,3.346143,
+124,Old Kuala Selangor Fire Station,"Category: Historical Landmark, Historical Place",FALSE,5,101.2482981,3.3432751,
+125,Batu Hampar باتو همڤر,"Category: Historical Landmark, Historical Place",FALSE,4.2,101.2464923,3.3423791,
+126,Stesen Keretapi Lama Kuala Selangor,"Category: Historical Landmark, Historical Place",FALSE,5,101.2515634,3.3392985,
+127,Kuala Selangor Cenotaph War Memorial,"Category: Historical Landmark, Historical Place",FALSE,4,101.2490897,3.3432293,
+128,Makam lama kuala selangor,"Category: Historical Landmark, Historical Place",FALSE,3,101.2520355,3.3498163,
+129,Sri Shakti Dhevasthanam Bukit Rotan,"Category: Hindu Temple, Tourist Attraction, Place Of Worship",FALSE,4.5,101.316562,3.308791,
+130,Sasaran Art Park Kuala Selangor,Category: Tourist Attraction,FALSE,4.6,101.3065975,3.259268,
+131,Kuala Selangor Town,"Category: Historical Landmark, Historical Place",FALSE,0,101.2497808,3.3392354,
+132,Kuala Selangor Nature Park- Community Mangrove Nursery,"Category: Farm, Wholesaler, Service",FALSE,5,101.2361803,3.3353369,
+133,Sky Mirror World ＆ Boat Cafe,"Category: Travel Agency, Service",FALSE,4.6,101.2535629,3.3437666,
+134,Blue Tears Kuala Selangor,Category: Tourist Attraction,FALSE,4.3,101.2299599,3.3364635,
+135,Sky Mirror - Kuala Selangor,Category: Tourist Attraction,FALSE,4.5,101.194434,3.2159162,
+136,Hussin Fauzi Farm,"Category: Tourist Attraction, Zoo, Tour Agency",FALSE,4.5,101.2737714,3.359855,
+137,Sekinchan Paddy Field,Category: Tourist Attraction,FALSE,4.4,101.1239613,3.5293999,
+138,Selangor Fruit Valley (SFV),"Category: Tourist Attraction, Park",FALSE,4.3,101.4488546,3.3897047,
+139,港景海鲜楼 River View Seafood Restaurant,"Category: Seafood Restaurant, Restaurant, Food",TRUE,4.3,101.2514873,3.348129,dinner
+140,Restoran Makanan Laut Jeti,"Category: Seafood Restaurant, Restaurant, Food",TRUE,4,101.2517381,3.3478716,dinner
+141,Kelip-Kelip Ikan Bakar Kuala Selangor,"Category: Malaysian Restaurant, Seafood Restaurant, Indonesian Restaurant",TRUE,4.4,101.271912,3.3206826,dinner
+142,红绿灯海鲜餐馆 • Traffic Light KS Seafood Restaurant,"Category: Seafood Restaurant, Restaurant, Food",TRUE,4.7,101.2528726,3.3537246,dinner
+143,Qun Hua Kuala Selangor Seafood Restaurant,"Category: Seafood Restaurant, Restaurant, Food",TRUE,3.6,101.2491455,3.3517708,dinner
+144,Yu Jia Ren Seafood Restaurant (YUJIAREN),"Category: Seafood Restaurant, Restaurant, Food",TRUE,4.7,101.2515724,3.3480741,dinner
+145,Restoran Seafood Hai Ung • 海运海鲜楼,"Category: Seafood Restaurant, Restaurant, Food",TRUE,4,101.2489164,3.3521508,dinner
+146,Bagan Seafood Restaurant (Restoran Seafood View Port),"Category: Seafood Restaurant, Restaurant, Food",TRUE,3.6,101.2538218,3.3438963,dinner
+147,夏日风车海鲜馆 Summer Windmill Seafood Restaurant,"Category: Restaurant, Food",TRUE,4,101.2488232,3.3535803,dinner
+148,Want To Eat Restaurant,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.4,101.2561775,3.3468099,lunch
+149,Sin Hai Ping Seafood Restaurant新海滨海鲜楼,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.2,101.2518389,3.3480947,dinner
+150,Warung Soto Pasir Penambang,"Category: Restaurant, Food",TRUE,4.2,101.2411071,3.3714767,lunch
+151,Mee Udang Banjir Kuala Selangor,"Category: Restaurant, Noodle Shop, Malaysian Restaurant",TRUE,3.8,101.2417314,3.3705827,lunch
+152,Restoran Tian Wai Tian 天外天海鲜餐室,"Category: Seafood Restaurant, Restaurant, Food",TRUE,4.1,101.2525018,3.3535134,dinner
+153,D'Kuala Restaurant,"Category: Seafood Restaurant, Restaurant, Food",TRUE,4.1,101.25477,3.35066,dinner
+154,Yang Ming Seafood Restaurant 扬名海鲜餐馆,"Category: Seafood Restaurant, Restaurant, Food",TRUE,4.1,101.249596,3.351199,dinner
+155,Hai Shang Ren Seafood Restaurant (Pork Free),"Category: Seafood Restaurant, Restaurant, Food",TRUE,4.7,101.1695262,3.3969888,dinner
+156,Lai Pin Seafood Restaurant | 莱賓海鲜饭店 | Kuala Selangor,"Category: Seafood Restaurant, Restaurant, Food",TRUE,4.4,101.2755387,3.3162705,dinner
+157,川记海鲜饭店芭尾 Kedai Makan Boon Chuan,"Category: Restaurant, Food",TRUE,4.2,101.252468,3.3468933,lunch
+158,Thyme Taste & Grill Restaurant,"Category: Halal Restaurant, Restaurant, Food",TRUE,4.4,101.2562193,3.3465917,dinner
+159,Teratak Tokwan,Category: Tourist Attraction,FALSE,4.1,101.5971087,3.3129808,
+160,Hidden Waterfall,Category: Tourist Attraction,FALSE,4.5,101.617191,3.316239,
+161,Templer’s Park Falls,Category: Tourist Attraction,FALSE,4.3,101.6196976,3.2989882,
+162,Commonwealth Forest Park Falls,"Nature area popular for its woodsy campsites & mild river, with a hike to a waterfall in the forest.",FALSE,4.1,101.613584,3.295739,
+163,"Rawang Bypass, Malaysia",Category: Tourist Attraction,FALSE,5,101.5982805,3.3187198,
+164,Taman Eko Rimba Kanching by Tourism Selangor,Multi-tiered waterfall with a swimming pond in an expansive forest reserve filled with wildlife.,FALSE,4.3,101.6193205,3.2987806,
+165,Jing Loong Shan Wan Fo Shih,"Category: Buddhist Temple, Tourist Attraction, Place Of Worship",FALSE,4.5,101.586263,3.355305,
+166,Taman Eko Rimba Kanching Waterfalls,Category: Tourist Attraction,FALSE,4.3,101.6195011,3.2994592,
+167,Taman Rimba Templer,Lush rainforest reserve on a river with a waterfall popular for hiking & camping.,FALSE,4.1,101.6423531,3.2863498,
+168,Bukit Takun,"Category: Historical Landmark, Historical Place",FALSE,4.3,101.6337777,3.3024836,
+169,Batu Arang Heritage Town Column,No official description.,FALSE,4.6,101.4721352,3.3187403,
+170,广西冯门陈式之墓,"Category: Historical Landmark, Historical Place",FALSE,0,101.5885598,3.3157415,
+171,Tugu Lebuh Raya Utara Selatan,"Category: Historical Landmark, Historical Place",FALSE,3.5,101.5585077,3.3303624,
+172,广西冯成公之墓,"Category: Historical Landmark, Historical Place",FALSE,0,101.5877622,3.3155029,
+173,Ummu Nova Huny,"Category: Historical Landmark, Historical Place",FALSE,0,101.5969402,3.3065671,
+174,Coal mining tunnel ( Terowong Batu Arang ),"Category: Historical Landmark, Historical Place",FALSE,4.3,101.4705765,3.3127522,
+175,"煤炭山 Batu Arang, Selangor","Category: Historical Landmark, Historical Place",FALSE,4.5,101.4717221,3.3186425,
+176,0 km Sungai Buaya,"Category: Historical Landmark, Historical Place",FALSE,4.6,101.5234757,3.3919193,
+177,Taman Rekreasi Perigi Tujuh,Category: Tourist Attraction,FALSE,3.8,101.6126676,3.3633644,
+178,Batu Arang Stele,"Category: Historical Landmark, Historical Place",FALSE,4.3,101.4721365,3.3187398,
+179,Gm,"Category: Historical Landmark, Historical Place",FALSE,0,101.5312471,3.328037,
+180,Emerald Hiking Spot,"Category: Hiking Area, Sports Activity Location",FALSE,4.1,101.5435152,3.3289105,
+181,Saujana Rawang Park,Category: Park,FALSE,3.8,101.5150033,3.3372768,
+182,Emerald Central Park,Category: Park,FALSE,4.5,101.5439909,3.3265082,
+183,Gamuda Gardens Central Park,Category: Park,FALSE,4.3,101.5383393,3.2831667,
+184,Rawang Bypass Trailhead,"Category: Hiking Area, Sports Activity Location",FALSE,4.7,101.594862,3.3194498,
+185,Puteri Central Park (PCP),"Category: Park, Tourist Attraction",FALSE,3.9,101.4773601,3.2882517,
+186,Hutan Lipur Bukit Lagong,Tropical forest laced with trails leading to waterfalls & natural pools popular for swimming.,FALSE,4,101.6081733,3.2644875,
+187,Gamuda Gardens,Category: Park,FALSE,4.5,101.5414358,3.2834886,
+188,Tasik Widuri Recreational Park,"Category: Water Park, Adventure Sports Center, Amusement Park",TRUE,4.3,101.588549,3.4301118,lunch
+189,Taman Negeri Selangor,"Large area of tropical rainforest, with trails to waterfalls, plus camping & picnic facilities.",FALSE,4.1,101.698036,3.311927,
+190,Kanching Waterfall Top,"Category: Hiking Area, Sports Activity Location",FALSE,4.6,101.619835,3.307083,
+191,ManJa Garden,Category: Park,FALSE,4.9,101.6023544,3.3327837,
+192,"Villa Takun , Templer Park - Tropical Forest Retreat & Glamping","Category: Private Guest Room, Lodging, Service",FALSE,4.6,101.639432,3.2997921,
+193,Rawang Bypass Hiking Trailhead,"Category: Hiking Area, Sports Activity Location",FALSE,4.4,101.5963838,3.3260075,
+194,Kanching Waterfalls,Category: Tourist Attraction,FALSE,4.5,101.6192662,3.2998875,
+195,Ramayana Cave - Suyambu Lingam,"Category: Hindu Temple, Tourist Attraction, Place Of Worship",FALSE,3.6,101.6816297,3.2386421,
+196,Rawang Bypass Peak Viewpoint,"Category: Hiking Area, Sports Activity Location",FALSE,4.8,101.5990942,3.3188095,
+197,Templer Park Rainforest Retreat,"Modern quarters in a tranquil hotel offering views of the rainforest, plus an outdoor infinity pool.",FALSE,4.8,101.6377242,3.3007337,
+198,Air Terjun Semangkuk,Category: Tourist Attraction,FALSE,3.7,101.7412222,3.6441111,
+199,Nesan Curry House Sdn Bhd (BEST INDIAN RESTAURANT IN RAWANG​)​,"Category: South Indian Restaurant, Meal Takeaway, Indian Restaurant",TRUE,4.1,101.5748901,3.3209958,lunch
+200,Appam Palace Rawang (HQ),"Category: Indian Restaurant, Restaurant, Food",TRUE,4.8,101.5762119,3.3204758,lunch
+201,Restoran Sambal,"Category: Restaurant, Indian Restaurant, Food",TRUE,4.5,101.5786008,3.3141819,lunch
+202,Restoran Lan Je • 蘭姐清蒸非洲鱼 • 万绕 • Rawang,"Category: Restaurant, Food",TRUE,4,101.5980472,3.3039972,lunch
+203,Taste of Chennai Restaurant,"Category: South Indian Restaurant, Indian Restaurant, Restaurant",TRUE,4,101.5750366,3.3206149,lunch
+204,Real Me Restaurant,"Category: Western Restaurant, Restaurant, Food",TRUE,4.8,101.5797221,3.3241663,dinner
+205,Tokyo Food Restaurant • Restoran Tokyo Food,"Category: Seafood Restaurant, Chinese Restaurant, Restaurant",TRUE,3.9,101.5783853,3.3289322,dinner
+206,Restoran South Masalaa • Rawang,"Category: South Indian Restaurant, Indian Restaurant, Restaurant",TRUE,4.4,101.5745924,3.3217898,lunch
+207,Mohd Chan Chinese Muslim Restaurant @ Rawang,"Category: Halal Restaurant, Restaurant, Food",TRUE,4.6,101.5773417,3.3182851,lunch
+208,TKS V River Forest Seafood Restaurant,"Category: Seafood Restaurant, Chinese Restaurant, Restaurant",TRUE,4.1,101.6346821,3.2853077,dinner
+209,Madam Daun Pisang,"Category: Indian Restaurant, Restaurant, Food",TRUE,4.2,101.6383791,3.2884358,lunch
+210,Village Restaurant,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.1,101.6002566,3.3024108,lunch
+211,Restoran Teratak Nogori,"Category: Restaurant, Food",TRUE,4,101.594159,3.3049438,lunch
+212,Punjabi Kitchen Restaurant,"Category: Pakistani Restaurant, North Indian Restaurant, Indian Restaurant",TRUE,4.8,101.5797628,3.3108205,lunch
+213,Eden Dim Sum Restaurant Rawang,"Category: Dim Sum Restaurant, Cantonese Restaurant, Chinese Restaurant",TRUE,4.5,101.537388,3.3184524,lunch
+214,Kinnaree Thai Cuisine Restaurant,"Category: Thai Restaurant, Restaurant, Food",TRUE,4.1,101.5793703,3.3247865,lunch
+215,Ayam Gepuk Pak Gembus Bandar Baru Rawang,"Category: Restaurant, Food",TRUE,4.1,101.5773804,3.3184524,lunch
+216,Fu Wah Restaurant,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.3,101.5901041,3.3064588,lunch
+217,Uncle Mano Banana Leaf Restaurant,"Category: South Indian Restaurant, Indian Restaurant, Restaurant",TRUE,3.8,101.595888,3.3032639,lunch
+218,Restoran Annapoorani,"Category: Vegetarian Restaurant, Restaurant, Food",TRUE,4.5,101.57403,3.3228984,lunch
+219,Morib Beach,Category: Tourist Attraction,FALSE,4.1,101.4408645,2.7540706,
+220,Tadom Leisure Camp,"Category: Amusement Center, Tourist Attraction, Event Venue",FALSE,4.1,101.6264641,2.8104925,
+221,Dataran Banting,"Category: Park, Tourist Attraction",FALSE,4.3,101.4946436,2.8030492,
+222,Bukit Jugra Paragliding Park,"Category: Tourist Attraction, Sports Complex, Sports Activity Location",FALSE,4.5,101.4180136,2.8359244,
+223,Paya Indah Lake Jetty,Category: Tourist Attraction,FALSE,4.2,101.613789,2.8586971,
+224,Jugra Insitu Museum,"Category: Tourist Attraction, Museum",FALSE,4.1,101.412795,2.8358746,
+225,Taman Rekreasi Banting,"Category: Park, Tourist Attraction",FALSE,3.9,101.4974693,2.8120262,
+226,Kolam Hippo,Category: Tourist Attraction,FALSE,4.8,101.6302424,2.8601571,
+227,Bukit Jugra Viewing Point,Category: Tourist Attraction,FALSE,4.5,101.4175738,2.8354249,
+228,Crocodile Lake,Category: Tourist Attraction,FALSE,4.2,101.6266807,2.8601015,
+229,Kolam Pancing Paktam Udang Galah,Category: Tourist Attraction,FALSE,4.7,101.6302226,2.8316551,
+230,Banting Waterfront,Category: Park,FALSE,3.8,101.5090625,2.8130181,
+231,Pantai Batu Laut,Category: Tourist Attraction,FALSE,4.2,101.515435,2.6752301,
+232,Sultan Ala'eddin Royal Mosque,"Category: Mosque, Tourist Attraction, Place Of Worship",FALSE,4.6,101.4398303,2.8632142,
+233,Log Boom,Category: Service,FALSE,0,101.6552174,2.8203491,
+234,Paya Indah Discovery Wetlands (Gate 2),Category: Park,FALSE,4,101.6329483,2.8601217,
+235,Start of WCE Highway,"Category: Historical Landmark, Historical Place",FALSE,4.3,101.5575682,2.8348666,
+236,Makam Raja Berayun (Raja Ibrahim),"Category: Historical Landmark, Historical Place",FALSE,5,101.4129077,2.8372043,
+237,Tanah gambut,"Category: Historical Landmark, Historical Place",FALSE,5,101.51562,2.759056,
+238,Pejabat Lama Daerah Jugra,"Category: Historical Landmark, Historical Place",FALSE,3.9,101.413955,2.83549,
+239,Setor Peluru ستور ڤلورو,"Category: Historical Landmark, Historical Place",FALSE,5,101.4146337,2.8369262,
+240,Tugu Haji Sidek Kamar Malaysian Badminton Legenda,"Category: Historical Landmark, Historical Place",FALSE,4.7,101.4914639,2.7987022,
+241,Makam Panglima Jagus Putra,"Category: Historical Landmark, Historical Place",FALSE,5,101.4129553,2.8372931,
+242,Menara Banting,"Category: Historical Landmark, Historical Place",FALSE,0,101.4977732,2.812252,
+243,Kyra,"Category: Historical Landmark, Historical Place",FALSE,0,101.4907689,2.8069905,
+244,Jugra Lama,Category: Tourist Attraction,FALSE,4.1,101.4178966,2.8330218,
+245,Pusaka idaman,Category: Tourist Attraction,FALSE,5,101.4552912,2.7483358,
+246,Lorong Muhammad,"Category: Hiking Area, Sports Activity Location",FALSE,5,101.4373999,2.7908845,
+247,Kuan Wellness Eco Park,"5-acre attraction aimed at educating about environmental issues, with an on-site visitor center.",FALSE,3.6,101.4970422,2.6934259,
+248,Jugra Hill Trail,"Category: Hiking Area, Sports Activity Location",FALSE,4.5,101.4244482,2.8421335,
+249,Abu Bakr Sanctuary,Category: Park,FALSE,4.6,101.516837,2.9321313,
+250,Bukit Jugra Peak,"Category: Hiking Area, Sports Activity Location",FALSE,4.5,101.4244916,2.8422752,
+251,Jugra Forest Reserve,"Category: Woods, Natural Feature",FALSE,0,101.4166667,2.8333333,
+252,Cove Aerobar @ Discovery Park,Category: Tourist Attraction,FALSE,4.1,101.6178013,2.8861536,
+253,Tadom Hill Resorts,"Airy tents & huts in a tranquil, forested property featuring outdoor activities & free breakfast.",FALSE,4,101.6285268,2.8105988,
+254,Amverton Riverine Splash,"Category: Amusement Park, Amusement Center",FALSE,4,101.4119794,2.8447669,
+255,Morib Beach,"Seaside area with a coastal promenade, shade trees & picnic pavilions, plus toilet facilities.",FALSE,3.9,101.4426016,2.7495127,
+256,Kampung Hills Eatery,"Category: Restaurant, Food",TRUE,4.3,101.4324889,2.8496778,lunch
+257,Ayam Gepuk Top Global Banting,"Category: Restaurant, Food",TRUE,4.8,101.5033859,2.812495,lunch
+258,Ole Lado,"Category: Restaurant, Food",TRUE,4.8,101.5009447,2.8123003,lunch
+259,The Chaiwalla Restaurant,"Category: Restaurant, Food",TRUE,4,101.5080566,2.8133141,lunch
+260,"Teratak Bunga Seribu, Banting","Category: Restaurant, Food",TRUE,4.6,101.4884127,2.7959571,lunch
+261,Nasi Arab Alshams Banting,"Category: Family Restaurant, Restaurant, Food",TRUE,4.5,101.4973501,2.8122958,lunch
+262,Restoran Sin Loong Foong,"Category: Restaurant, Food",TRUE,3.8,101.4998883,2.8117416,lunch
+263,Ahmad Cafe,"Category: Restaurant, Food",TRUE,4.1,101.4544291,2.7309634,breakfast
+264,Restoran Sayang Manis,"Category: Western Restaurant, Restaurant, Food",TRUE,4.1,101.5046961,2.8131134,dinner
+265,AllAce Banting,"Category: Fast Food Restaurant, Family Restaurant, Restaurant",TRUE,4.8,101.5009323,2.8128535,lunch
+266,Ohsem Delight,"Category: Family Restaurant, Restaurant, Food",TRUE,4.8,101.5084825,2.8133581,lunch
+267,Long Time No C Restaurant.,"Category: Seafood Restaurant, Beer Garden, Family Restaurant",TRUE,3.9,101.5003373,2.8224708,dinner
+268,Indah Desa Cafe,"Category: Restaurant, Food",TRUE,4.2,101.4922469,2.7865483,breakfast
+269,Restoran Istana Bunian,"Category: Western Restaurant, Restaurant, Food",TRUE,4.3,101.6279943,2.8107409,dinner
+270,Hailam Kopitiam Banting,"Category: Restaurant, Food",TRUE,3.9,101.508571,2.8128091,breakfast
+271,Shamna nasi arab (western),"Category: Restaurant, Food",TRUE,4.7,101.4978401,2.81024,dinner
+272,Seni SattiSorru Banting,"Category: Restaurant, Food",TRUE,3.9,101.5058629,2.8134208,lunch
+273,Saha Coffee & Fruit Bar S/B (HQ),"Category: Restaurant, Food",TRUE,4.1,101.5075853,2.8152972,breakfast
+274,Chuan Xiang Yi Pin,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.9,101.4986956,2.8111285,lunch
+275,"Juvita Seafood @ Kanchong Darat, Banting","Category: Restaurant, Food",TRUE,3.9,101.4888248,2.7952126,dinner
+276,"Taman Eko Rimba, Sungai Tua","Category: Tourist Attraction, National Park, Park",FALSE,4.3,101.6978055,3.3125463,
+277,Lord Murugan Statue,This Murugan sculpture at the foot of Batu Caves is the tallest statue of a Hindu deity in Malaysia.,FALSE,4.6,101.683972,3.2374497,
+278,Ulu Yam Waterfall,Category: Tourist Attraction,FALSE,4.2,101.7016689,3.3320002,
+279,Muzium Orang Asli Gombak (MOAG),Compact museum featuring exhibits about the history & culture of Malaysia's original inhabitants.,FALSE,4.2,101.7321237,3.2942924,
+280,Jungle School Gombak Malaysia (JSGM),Category: Tourist Attraction,FALSE,3.7,101.7270127,3.2763275,
+281,Sungai Tua Waterfall,"Category: Nature Preserve, Tourist Attraction, Park",FALSE,4.2,101.7020786,3.3314563,
+282,SUNGAI BUKIT LAGONG SELAYANG,Category: Tourist Attraction,FALSE,3.8,101.6387217,3.258395,
+283,Sri Subramaniar Swamy Temple,"Category: Hindu Temple, Tourist Attraction, Place Of Worship",FALSE,4.5,101.6836039,3.2373027,
+284,Gua Damai Extreme Park,"Outdoor venue offering a range of activities including base jumping, rock climbing & skateboarding.",FALSE,4.5,101.6879575,3.2478366,
+285,Bukit Permata Peak (Sea Of Cloud),Category: Park,FALSE,4.8,101.7060141,3.2669938,
+286,FRIM Museum,"Category: Museum, Tourist Attraction",FALSE,4.4,101.6341621,3.2352821,
+287,Batu Caves Immersive Experience Centre,Category: Museum,FALSE,4.8,101.674495,3.247724,
+288,Cave Villa Indian Food,"Category: Indian Restaurant, Restaurant, Food",TRUE,2.7,101.6828325,3.2376597,lunch
+289,Balai Polis Lama Gombak,"Category: Historical Landmark, Historical Place",FALSE,4.6,101.7502802,3.3240577,
+290,Dataran Ilmu KUIZM,"Category: Historical Landmark, Historical Place",FALSE,5,101.701856,3.223052,
+291,Kelatan,"Category: Historical Landmark, Historical Place",FALSE,5,101.6735624,3.2627397,
+292,Dunia dinosaur,"Category: Historical Landmark, Historical Place",FALSE,0,101.6647406,3.236894,
+293,Sungai Pisang Waterfall Trailhead,"A mellow wooded hike along a river leads to this small cascade, with nearby camping spots.",FALSE,4.5,101.7351596,3.3062369,
+294,Batu Caves Railway Line End,"Category: Historical Landmark, Historical Place",FALSE,5,101.6809442,3.2435597,
+295,Gua Damai XPark,Category: Tourist Attraction,FALSE,4.8,101.6877204,3.2479508,
+296,Taman Tasik Sri Gombak,Category: Park,FALSE,4.3,101.703183,3.2474584,
+297,Taman Rimba Bukit Lagong MPS,Category: Park,FALSE,4.4,101.6319811,3.2629745,
+298,KL East Park,"Category: Hiking Area, Park, Sports Activity Location",FALSE,4,101.7325187,3.2281093,
+299,Kepong Botanic Gardens | FRIM - Forest Research Institute Malaysia,"Category: Botanical Garden, Tourist Attraction, Park",FALSE,4.4,101.6233648,3.2248751,
+300,River & Glamp.,Category: Health,FALSE,4.7,101.6957626,3.2993183,
+301,Forest Skywalk Kepong,Category: Park,FALSE,4.1,101.6185882,3.226834,
+302,Forest Skywalk - FRIM,Category: Tourist Attraction,FALSE,4.5,101.6191147,3.2275783,
+303,Polperro Steak House Gombak,"Category: Steak House, Restaurant, Food",TRUE,4.5,101.7058377,3.240951,dinner
+304,KOPIHUT (SRI GOMBAK),"Category: Restaurant, Food",TRUE,4.8,101.700255,3.238533,lunch
+305,"Seha Kitchen, Lontong Kacau Bilau","Category: Family Restaurant, Restaurant, Food",TRUE,4.5,101.7030496,3.2415941,lunch
+306,Wira Seafood Ikan Bakar (Taman Sri Gombak),"Category: Thai Restaurant, Family Restaurant, Restaurant",TRUE,4.2,101.6973811,3.2391886,dinner
+307,Medan Selera Taman Sri Gombak,"Category: Malaysian Restaurant, Restaurant, Food",TRUE,4.2,101.7044379,3.2404673,lunch
+308,Restoran Golek Golek Suasana Kampung,"Category: Restaurant, Food",TRUE,3.9,101.7254748,3.2355061,lunch
+309,Restoran MaiiShellOud Port Seafood,"Category: Seafood Restaurant, Malaysian Restaurant, Halal Restaurant",TRUE,4.5,101.7050073,3.242132,dinner
+310,Mohammad Chow • Gombak,"Category: Halal Restaurant, Restaurant, Food",TRUE,3.9,101.7171778,3.2408576,lunch
+311,Bowlcrafted @ 168 Park Mall,"Category: Restaurant, Food",TRUE,4.8,101.6490108,3.2489359,lunch
+312,Sudu & Knife,"Category: Restaurant, Western Restaurant, Cafe",TRUE,4.3,101.7054139,3.242775,breakfast
+313,Restoran Jom Sama Sama,"Category: Food Court, Food",TRUE,3.8,101.7061254,3.2428402,lunch
+314,Warung Puteri Taman Sri Gombak,"Category: Restaurant, Food",TRUE,4.1,101.7055444,3.2428286,lunch
+315,Kari Kepala Ikan SG（HQ）,"Category: Halal Restaurant, Restaurant, Food",TRUE,4.3,101.698979,3.238037,lunch
+316,Pak Tam Sri Corner,"Category: Restaurant, Food",TRUE,4.2,101.6895123,3.2330343,lunch
+317,Kantin@SetorGombak,"Category: Food Court, Bistro, Restaurant",TRUE,4.2,101.7052513,3.2088435,lunch
+318,Restoran Bidayah Bistro (Taman Gombak Permai),"Category: Restaurant, Food",TRUE,4.4,101.6870086,3.2518896,lunch
+319,Restoran Nasi Vanggey Sri Gombak,"Category: Indian Restaurant, Restaurant, Food",TRUE,3.9,101.6998781,3.2385284,lunch
+320,Pan Heong Restaurant • Batu Caves,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4,101.673734,3.233522,lunch
+321,Pak Uda Kitchen & Grill,"Category: Restaurant, Food",TRUE,4,101.6982705,3.2291975,dinner
+322,Restoran Sajian Teringin,"Category: Restaurant, Food",TRUE,4.1,101.6989642,3.2372258,lunch
+323,Chongkak Park & Resort by Tourism Selangor,Category: Tourist Attraction,FALSE,4,101.8432558,3.2100407,
+324,Sungai Congkak Recreational Forest,"Natural pools surrounded by rainforest, with BBQ stations, picnic spots & rental chalets.",FALSE,4.2,101.843517,3.209053,
+325,Lepoh Waterfall,"Category: Tourist Attraction, Hiking Area, Sports Activity Location",FALSE,4.6,101.8658741,3.251107,
+326,Air Terjun Sungai Gabai,Popular picnic spot with steps leading to the top of the waterfall & a shallow pool at the bottom.,FALSE,4.1,101.9090289,3.1660921,
+327,Serai Bamboo Hot Spring,"Category: Tourist Attraction, Cafe, Spa",TRUE,4,101.7946145,3.0907242,breakfast
+328,Kolam Air Panas Surau Kg Dusun Tua,Category: Tourist Attraction,FALSE,4.6,101.8362815,3.1392215,
+329,Kolam Air Panas Batu 16,Category: Tourist Attraction,FALSE,4.2,101.8345202,3.136917,
+330,Dusun tua,Category: Tourist Attraction,FALSE,5,101.8335811,3.1339098,
+331,SKYTREX Adventure Sg Congkak,"Treetop ropeway circuits for varied levels in a rainforest, plus cooling swims at a nearby river.",FALSE,4.7,101.8422029,3.2089852,
+332,Tekali Valley,Category: Tourist Attraction,FALSE,4.8,101.852947,3.126325,
+333,Damai D'Hulu campsite,Category: Tourist Attraction,FALSE,4.9,101.8261707,3.1731573,
+334,Gunung Nuang Recreational Forest,"Category: Nature Preserve, Tourist Attraction, Park",FALSE,4.5,101.882736,3.217332,
+335,Hot spring foot bath,Category: Tourist Attraction,FALSE,4.5,101.8346126,3.1368677,
+336,Wealthy Farmland,Category: Tourist Attraction,FALSE,0,101.8321343,3.1204409,
+337,Deen Paradise,Category: Tourist Attraction,FALSE,0,101.8541713,3.1417199,
+338,Batu Penanda Kampung Sg Tekali,Category: Tourist Attraction,FALSE,4,101.8521251,3.1090537,
+339,Langat@18 Riverview,Category: Tourist Attraction,FALSE,0,101.8487656,3.1663997,
+340,Jamsari Agro Farm,Category: Tourist Attraction,FALSE,0,101.8214133,3.1313448,
+341,Sungai Semungkis,Category: Tourist Attraction,FALSE,0,101.8228947,3.1339562,
+342,Ulu Langat Forest Reserve,"Category: Nature Preserve, Tourist Attraction, Park",FALSE,4.5,101.855249,3.139659,
+343,Stor Hulu Langat,"Category: Historical Landmark, Historical Place",FALSE,5,101.8660122,3.1233063,
+344,Dataran Rekreasi Batu 18,"Category: Historical Landmark, Historical Place",FALSE,5,101.8505335,3.1675265,
+345,0km Batu 14 Hulu Langat (Route B116),"Category: Historical Landmark, Historical Place",FALSE,4.5,101.8160487,3.1126128,
+346,Tempat Warisan Pembakaran Zaman British,Category: Tourist Attraction,FALSE,4,101.8495525,3.1669082,
+347,Abandoned Mansion,"Category: Historical Landmark, Historical Place",FALSE,0,101.7730935,3.1633986,
+348,Hulu langat,"Category: Historical Landmark, Historical Place",FALSE,0,101.8572689,3.2000708,
+349,Bukit Saga Waterfall,Category: Picnic Ground,FALSE,4.4,101.7817852,3.1044293,
+350,The Nyaman Place Glamping,Category: Tourist Attraction,FALSE,2,101.8251179,3.14702,
+351,Jeram Perlus Waterfall,"Category: Hiking Area, Sports Activity Location",FALSE,4.9,101.9234893,3.2001809,
+352,Abandoned twin mansions and guardhouse,"Category: Historical Landmark, Historical Place",FALSE,0,101.7729617,3.0831429,
+353,Corner Wong,"Category: Historical Landmark, Historical Place",FALSE,4,101.8322117,3.1315314,
+354,Hutan Rizab Hulu Langat,"Category: National Park, Tourist Attraction, Park",FALSE,4.3,101.835,3.1033333,
+355,Moonkissed By The River,Category: Park,FALSE,4.2,101.8262186,3.1709174,
+356,"Laman Riadah Jeram Tinggi, Kg Sg Semungkis","Category: Nature Preserve, Park",FALSE,4.4,101.8263478,3.168771,
+357,Sungai Semungkis waterfall @ jeram tinggi,"Category: Nature Preserve, Park",FALSE,4.4,101.8264174,3.1684609,
+358,Bukit Puteh Waterfall,Category: Park,FALSE,4.3,101.7752744,3.0892414,
+359,Lata Beringin,Category: Sports Activity Location,FALSE,4.4,101.8254012,3.1742198,
+360,Rinching ATV Adventure Park,"Category: Adventure Sports Center, Park, Sports Complex",FALSE,4.5,101.866096,3.0129241,
+361,"LiLLA Rainforest Retreat @ Hulu Langat, Selangor","Category: Resort Hotel, Hotel, Lodging",FALSE,4.4,101.8390855,3.2035972,
+362,Hammocks By The River,"Category: Campground, Lodging",FALSE,4.2,101.8262741,3.1212504,
+363,Taman Eko Langat,Category: Park,FALSE,4.2,101.7739501,3.0079814,
+364,Tepian Rimba Villa (garden wedding & event space),Category: Event Venue,FALSE,4.6,101.7867051,3.095168,
+365,Rakit buluh river side,Category: Tourist Attraction,FALSE,4.8,101.8772906,3.2100327,
+366,Sangkot Garden,"Category: Wedding Venue, Garden, Botanical Garden",FALSE,4,101.833936,3.136986,
+367,KL-View in Ampang,Category: Tourist Attraction,FALSE,4.5,101.7870081,3.125868,
+368,Restoran Terra Pong Batu 18,"Category: Restaurant, Food",TRUE,4.2,101.8502997,3.1676063,lunch
+369,Langat Forest Seafood and Beer Garden 呀吃盛林啤酒园 （山水鱼）,"Category: Korean Restaurant, Chinese Restaurant, Restaurant",TRUE,3.6,101.8176445,3.1066132,dinner
+370,Veg Fish Farm Thai Restaurant,"Category: Thai Restaurant, Restaurant, Food",TRUE,3.8,101.8034537,3.130182,lunch
+371,Sempurna Garden Hulu Langat,"Category: Asian Restaurant, Restaurant, Food",TRUE,4.7,101.8157197,3.1065609,lunch
+372,Purnama Klasik,"Category: Restaurant, Food",TRUE,4,101.7910049,3.0867807,lunch
+373,Water View Thai Restaurant,"Category: Thai Restaurant, Restaurant, Food",TRUE,3.8,101.8270187,3.11188,lunch
+374,JIBRIL Bangi,"Category: Restaurant, Food",TRUE,4.9,101.77447,2.9374857,lunch
+375,Wooden House • Chef Mary Kitchen • Reservation Only,"Category: Chinese Restaurant, Restaurant, Food",TRUE,3.9,101.8446958,3.110587,lunch
+376,Chalee Seafood,"Category: Restaurant, Food",TRUE,4.2,101.7982865,3.0963795,dinner
+377,Bahulu Classiq,"Category: Cafe, Breakfast Restaurant, Restaurant",TRUE,4.2,101.8525415,3.1667235,breakfast
+378,The Hub Cafe @ Tanah Tara,"Category: Restaurant, Food",TRUE,4.8,101.8889412,3.1615578,breakfast
+379,Daging Salai House Hulu Langat,"Category: Restaurant, Food",TRUE,4.1,101.8078966,3.1055789,lunch
+380,Hing Restaurant | 兴呀吃飯店,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.3,101.830184,3.1125152,lunch
+381,Arina Seafood,"Category: Restaurant, Food",TRUE,4.1,101.810984,3.108959,dinner
+382,Restoran Rimba Ikan Bakar,"Category: Malaysian Restaurant, Restaurant, Food",TRUE,4.1,101.7887312,3.0852241,lunch
+383,"Langek Cafe - Steak, Coffee & Western Hulu Langat","Category: Coffee Shop, Dessert Shop, Steak House",TRUE,4.8,101.8026363,3.1008224,breakfast
+384,Lontong King,"Category: Restaurant, Food",TRUE,4.2,101.8030514,3.0986613,lunch
+385,Restaurant Chong Kee,"Category: Restaurant, Food",TRUE,4.3,101.819252,3.110641,lunch
+386,Pantai Bagan Nakhoda Omar,Category: Tourist Attraction,FALSE,3.9,100.8733739,3.7673174,
+387,Sabak Bernam Waterfront,Category: Tourist Attraction,FALSE,3.7,100.9833671,3.770061,
+388,Pantai Siput Jalan Bumi Hijau,Category: Tourist Attraction,FALSE,4.2,100.8958368,3.7504829,
+389,Mokz Betta Sabak Bernam,Category: Tourist Attraction,FALSE,3.8,100.9886995,3.7622318,
+390,Port Camping Pantai Bumi Hijau,Category: Tourist Attraction,FALSE,4.5,100.8973975,3.7481581,
+391,Pantai Bumi Hijau (KIRI),Category: Tourist Attraction,FALSE,4.3,100.897957,3.747513,
+392,MURAL NELAYAN SABAK BERNAM,Category: Tourist Attraction,FALSE,4.8,100.982401,3.7682575,
+393,Jeti Pengkalan Sabak,Category: Tourist Attraction,FALSE,3,100.9815367,3.7698161,
+394,"Old Shophouse Row, Jalan Tebedu, Sabak",Category: Tourist Attraction,FALSE,5,100.9806346,3.7679658,
+395,MURAL KUDA KEPANG,Category: Tourist Attraction,FALSE,4,100.9813878,3.7684599,
+396,Bagan Sungai Burong Blue Tear,Category: Tourist Attraction,FALSE,4,100.9332962,3.6896635,
+397,D Laman Chilli BNO,Category: Tourist Attraction,FALSE,0,100.8833923,3.7734192,
+398,Jeti BNO,Category: Tourist Attraction,FALSE,5,100.8727255,3.7659246,
+399,Teratak Wak Kopat,Category: Tourist Attraction,FALSE,5,101.0352454,3.7456464,
+400,Sabak Bernam Mural Art,Category: Tourist Attraction,FALSE,4.5,100.9863617,3.6760861,
+401,0 km Sabak,"Category: Historical Landmark, Historical Place",FALSE,4.2,100.9821047,3.7679654,
+402,Agriculture and Fisheries Museum of Sabak Bernam,Category: Museum,FALSE,3.8,100.984171,3.7709677,
+403,Kubur Lama Bagan Nakhoda Omar,"Category: Historical Landmark, Historical Place",FALSE,5,100.8744227,3.7648122,
+404,Sabak Bernam Border,"Category: Historical Landmark, Historical Place",FALSE,0,100.995401,3.7980247,
+405,Sawah Padi Sekinchan,"Category: Historical Landmark, Historical Place",FALSE,4.5,101.1085885,3.5077192,
+406,Paddy Gallery,Sprawling rice-processing facility & museum featuring exhibits on traditional harvesting & more.,FALSE,4.1,101.1287333,3.5208461,
+407,KAWASAN LEMBU,"Category: Historical Landmark, Historical Place",FALSE,5,101.0213977,3.7806221,
+408,PASAR KARAT PAK MA'ON,"Category: Historical Landmark, Historical Place",FALSE,4.5,100.9816668,3.7689978,
+409,福德祠,"Category: Historical Landmark, Historical Place",FALSE,0,100.979911,3.761522,
+410,Taman Permainan Jalan Pegawai,Category: Park,FALSE,5,100.9904638,3.6791442,
+411,"Taman Pertama, Sabak Bernam","Category: Garden, Association Or Organization",FALSE,4,100.9834687,3.7555868,
+412,Lata Medang,"Category: Nature Preserve, Park",FALSE,4.6,101.7559781,3.540237,
+413,Sungai Tua Recreational Forest,"Category: Nature Preserve, Park",FALSE,2.3,101.7239106,3.333558,
+414,MSekin Wonderland,"Category: Water Park, Amusement Park",FALSE,3.8,101.0935128,3.5067938,
+415,Sekinchan Wishing Tree,Category: Tourist Attraction,FALSE,4.2,101.0948436,3.5031263,
+416,TERMINAL SEKINCHAN,Category: Tourist Attraction,FALSE,3.9,101.1442462,3.5217641,
+417,JERAMI BAN KENAL,"Category: Restaurant, Food",TRUE,4.3,101.0781328,3.6446284,lunch
+418,Istana Raja Sehari,"Category: Wedding Venue, Event Venue, Service",FALSE,4.2,100.9830377,3.7701212,
+419,Dulang RTok,"Category: Restaurant, Food",TRUE,4.4,100.9669525,3.7617481,lunch
+420,SHAH WESTERN HOUSE (PROTTT),"Category: Restaurant, Food",TRUE,3.6,100.9937835,3.7919003,dinner
+421,Dapur Kak Mala,"Category: Restaurant, Food",TRUE,4.1,100.9830102,3.7695191,lunch
+422,Restoran Selera Rimba,"Category: Restaurant, Food",TRUE,4.2,101.1743013,3.7089352,lunch
+423,"Restoran Lembah Bernam, Sekinchan","Category: Restaurant, Food",TRUE,4.3,101.1164294,3.5731153,lunch
+424,Big Tas Tea Plus Lite Sabak Bernam,"Category: Western Restaurant, Restaurant, Food",TRUE,4.5,100.9830451,3.7687487,breakfast
+425,Benteng Sabak Bernam,"Category: Food Court, Food",TRUE,3.9,100.9815277,3.7680449,lunch
+426,Warung Dani & Homestay,"Category: Breakfast Restaurant, Restaurant, Food",TRUE,4.9,100.9960703,3.771241,breakfast
+427,NK NASI KERABU KAMBING BAKAR,"Category: Restaurant, Food",TRUE,4.5,100.9686232,3.7625028,lunch
+428,Faridah Mentarang Bakar Sekinchan,"Category: Restaurant, Food",TRUE,3.2,101.0859132,3.5343027,lunch
+429,Suang Le Restaurant,"Category: Restaurant, Food",TRUE,3.7,101.1708214,3.3998319,lunch
+430,Nawavi Seafood Sabak Bernam,"Category: Asian Restaurant, Restaurant, Food",TRUE,4.3,100.9949018,3.7944217,dinner
+431,Aloha Cafe,"Category: Family Restaurant, Restaurant, Food",TRUE,4.1,100.9806964,3.7673108,breakfast
+432,Restoran Haziq,"Category: Restaurant, Food",TRUE,3.9,100.9828239,3.7681871,lunch
+433,Warong Lalapan,"Category: Indonesian Restaurant, Restaurant, Food",TRUE,4.3,100.9662431,3.6971427,lunch
+434,Sabaks Cafe & Resto,"Category: Asian Restaurant, Restaurant, Food",TRUE,3.5,101.0053212,3.6977476,breakfast
+435,Restoran Ruza,"Category: Malaysian Restaurant, Restaurant, Food",TRUE,4.2,100.9829284,3.7650119,lunch
+436,Ley-Park Station | Sabak,"Category: Malaysian Restaurant, Restaurant, Food",TRUE,4.4,100.980097,3.7686646,lunch
+437,National Botanic Gardens Shah Alam,"Botanical garden featuring activities such as cycling, fishing, swimming & an adventure park.",FALSE,4.2,101.5104943,3.0944963,
+438,Zipline Adventure Shah Alam,Category: Tourist Attraction,FALSE,4.4,101.513803,3.0748628,
+439,Taman Tasik Shah Alam (Tasik Tengah),"Category: Park, Tourist Attraction",FALSE,4.4,101.51612,3.076518,
+440,Shah Alam Independence Square,"Category: Picnic Ground, Tourist Attraction",FALSE,4.4,101.5223924,3.075446,
+441,Laman Budaya Musical Fountain,Category: Tourist Attraction,FALSE,4.5,101.5143375,3.0731666,
+442,Sultan Alam Shah Museum,"Modern museum complex featuring galleries devoted to local history, culture & Islamic heritage.",FALSE,4.3,101.5209497,3.0745162,
+443,Bukit Kayangan Palace,Category: Tourist Attraction,FALSE,4.6,101.5339968,3.0720028,
+444,Taman Rekreasi Alam Megah,"Category: Park, Tourist Attraction",FALSE,4,101.5635298,3.0076363,
+445,Sri Maha Mariamman Devasthanam • I-City,"Category: Hindu Temple, Tourist Attraction, Place Of Worship",FALSE,4.7,101.4872877,3.0633663,
+446,Wet World Water Park Shah Alam,"Family-friendly water park featuring slides, tube rides & pirate-themed splash pools.",FALSE,4.2,101.5125154,3.0722273,
+447,SnoWalk i-City,Spot at iCity theme park featuring a climate-controlled snow space with ice sculptures & sledding.,FALSE,4.1,101.4848116,3.065163,
+448,Laman Seni 7,A section of public alleyways featuring a curated selection of unique wall murals.,FALSE,3.9,101.4887034,3.0680525,
+449,Mestika Palace,Category: Tourist Attraction,FALSE,4.4,101.5018243,3.0833773,
+450,I-City Park - Immersive Winterland,"Category: Amusement Center, Tourist Attraction",FALSE,4.3,101.4812318,3.063992,
+451,Kolam C,Category: Tourist Attraction,FALSE,5,101.5122979,3.0986145,
+452,I-City Park - AI World Experience Centre,Category: Tourist Attraction,FALSE,4.4,101.4847758,3.0639381,
+453,Taman Lembah Bukit SUK Shah Alam,"Category: Park, Tourist Attraction",FALSE,4.3,101.5133711,3.0808928,
+454,sunset port,Category: Tourist Attraction,FALSE,0,101.5019245,3.0704613,
+455,Klang,Category: Tourist Attraction,FALSE,0,101.518461,3.073281,
+456,Recreation Park Raja Lumu,"Big, lush park offering a jogging track, playground & lake with freshwater birds, plus mosque views.",FALSE,4.6,101.519171,3.075472,
+457,Seri Hijauan Roundabout,"Category: Historical Landmark, Historical Place",FALSE,5,101.5019219,3.1355875,
+458,Terowong lori tinggi tak lepas!,"Category: Historical Landmark, Historical Place",FALSE,5,101.485152,3.079594,
+459,Kompleks Seni Islam Antarabangsa Selangor,"Gallery & cultural center displaying contemporary Islamic art, design objects & Quran manuscripts.",FALSE,4.6,101.5221837,3.0813263,
+460,Shah Alam Art Gallery,Diverse exhibitions & events are showcased at this lakefront art space with wooden architecture.,FALSE,4.2,101.5149603,3.0728145,
+461,Taman Persahabatan Selangor - Jepun,Category: Park,FALSE,4.5,101.5223331,3.0764434,
+462,Selangor Memorial Monument,Category: Tourist Attraction,FALSE,3.8,101.5157148,3.0805539,
+463,Sultan Salahuddin Abdul Aziz Shah Mosque,"Large, iconic mosque with a blue stained glass dome, soaring minarets & Malay-style interior.",FALSE,4.8,101.5207975,3.0789952,
+464,Istana Bandar,"Category: Historical Landmark, Tourist Attraction, Historical Place",FALSE,4.2,101.4412593,2.8596709,
+465,Yayasan Restu,"Category: Museum, Tourist Attraction",FALSE,4.6,101.5227281,3.0813109,
+466,Selangor - Japan Friendship Garden,Category: Park,FALSE,4.3,101.5219921,3.0767186,
+467,仙境古城太和殿 Fairy Park Heritage City The Grand Ballroom,Category: Tourist Attraction,FALSE,4.5,101.4641774,3.1393534,
+468,"Ukiran, Alam Impian","Category: Castle, Historical Place",FALSE,4.8,101.5194023,3.0211468,
+469,Trio Border Shah Alam-Petaling Jaya-Subang Jaya,"Category: Historical Landmark, Historical Place",FALSE,0,101.5901018,3.0858905,
+470,Bukit Jelutong Eco Community Park,Category: Park,FALSE,4.8,101.5215321,3.1170443,
+471,Shah Alam Wetland Park,Category: Park,FALSE,4.2,101.5175919,3.092751,
+472,Shah Alam Community Forest Trail,"Departure point for rugged, challenging trails leading through dense rainforest to lakes & peaks.",FALSE,4.4,101.4765601,3.1214682,
+473,Setia Alam Wetland,Category: Park,FALSE,4.1,101.4564878,3.1274107,
+474,Permai Recreational Park,"Category: Park, Tourist Attraction",FALSE,4.4,101.5152463,3.0716411,
+475,Shah Alam Lake Garden (West),"Sizable, popular park featuring a jogging track, scenic lake & kayak rentals, plus a playground.",FALSE,4.5,101.513182,3.0721667,
+476,Shah Alam Backyard Trail,Category: Sports Activity Location,FALSE,4.5,101.4869367,3.1003244,
+477,Peak Garden Setia Alam Trail,"Category: Hiking Area, Sports Activity Location",FALSE,4.5,101.4770856,3.1214768,
+478,Taman Tasik Alam Impian,Category: Garden,FALSE,4.4,101.5131361,3.0223552,
+479,"Maya Park, Eco Ardence",Category: Park,FALSE,4.5,101.4800712,3.0961621,
+480,Forest Park Hillpark,Category: Park,FALSE,4.4,101.4621295,3.2094827,
+481,Denai Alam Recreational Park,Category: Park,FALSE,3.9,101.5159929,3.1607122,
+482,Kuala Selangor Nature Park,Mangrove forest & wetland park with hiking trails & observation platforms for wildlife viewing.,FALSE,4.1,101.244805,3.3390018,
+483,FunPark Gamuda Luge Gardens,"Category: Amusement Park, Amusement Center",FALSE,4.2,101.5525158,3.2747256,
+484,WaterWorld i-City,"Category: Water Park, Amusement Park",FALSE,3.8,101.4853066,3.0648486,
+485,SplashMania WaterPark,"Category: Water Park, Amusement Park",FALSE,4.1,101.6164166,2.8888213,
+486,Sunway Lagoon,"Sprawling amusement park with a water zone, rides, a zoo & outdoor activities, plus dining & events.",FALSE,4.5,101.6067533,3.0693932,
+487,Arabesq Restaurant Shah Alam,"Category: Restaurant, Food",TRUE,4.9,101.485165,3.0747813,lunch
+488,Al-Sultan Restaurant - Glenmarie,"Category: Middle Eastern Restaurant, Restaurant, Food",TRUE,4.8,101.5780818,3.088632,lunch
+489,Platform19 Shah Alam,"Category: Restaurant, Food",TRUE,4.8,101.5260576,3.055383,lunch
+490,Murni Discovery • Shah Alam,"Category: Malaysian Restaurant, Restaurant, Food",TRUE,4,101.4878933,3.063546,lunch
+491,South Sea Seafood,"Spacious, upmarket seafood restaurant featuring diverse dishes sourced from on-site aquarium tanks.",TRUE,4.3,101.5468694,3.1406407,dinner
+492,Makan Kitchen,"Category: Malaysian Restaurant, Restaurant, Food",TRUE,4.5,101.483312,3.0633152,lunch
+493,Homst Shah Alam (Chinese Muslim Restaurant),"Category: Halal Restaurant, Chinese Restaurant, Restaurant",TRUE,4.2,101.5496749,3.0761442,lunch
+494,Smoked Kingdom by Don Daniyal,"Category: Restaurant, Food",TRUE,4.7,101.5242526,3.0705524,lunch
+495,Craveat,"Category: Western Restaurant, Asian Fusion Restaurant, Asian Restaurant",TRUE,4.5,101.5140626,3.016151,dinner
+496,The Humble Food Company Shah Alam,"Category: Restaurant, Food",TRUE,4.6,101.5458784,3.0894101,lunch
+497,Dapor Che Lah,"Category: Malaysian Restaurant, Restaurant, Food",TRUE,4.4,101.5443666,3.0908062,lunch
+498,Tanah Aina Cafe,"Category: Cafe, Restaurant, Food",TRUE,4.2,101.5589097,3.0770527,breakfast
+499,Mohd Chan Chinese Muslim Restaurant @ Shah Alam Seksyen 15,"Category: Halal Restaurant, Restaurant, Food",TRUE,4.7,101.5389543,3.0643841,lunch
+500,Moon’s Kitchen (Shah Alam),"Category: Steak House, Restaurant, Food",TRUE,4.6,101.5265676,3.0839367,dinner
+501,Dapur Darling,"Category: Restaurant, Food",TRUE,4.4,101.5261333,3.0842582,lunch
+502,"TheFOODtree Restaurant, Glenmarie","Category: Restaurant, Breakfast Restaurant, Banquet Hall",TRUE,4.4,101.5734483,3.0865581,breakfast
+503,Ombak Kitchen Bukit Jelutong,"Category: Seafood Restaurant, Restaurant, Food",TRUE,4.7,101.5364946,3.0976188,dinner
+504,One Serambi Cafe,"Category: Cafe, Breakfast Restaurant, Family Restaurant",TRUE,4.4,101.5282087,3.1033785,breakfast
+505,Al-Rawsha Restaurant Seksyen 7,"Category: Middle Eastern Restaurant, Restaurant, Food",TRUE,4.4,101.492609,3.08092,lunch
+506,Mohd Chan Chinese Muslim Restaurant @ Glenmarie,"Category: Restaurant, Food",TRUE,4.7,101.5784864,3.0874174,lunch
+507,Petaling Jaya Museum,"Category: Museum, Tourist Attraction",FALSE,4.1,101.6502808,3.1049123,
+508,Central Park Bandar Utama,"Category: Park, Tourist Attraction",FALSE,4.1,101.6142757,3.1494069,
+509,Taman Aman Park,"Category: Park, Tourist Attraction",FALSE,4.4,101.6264329,3.102034,
+510,Sembang PJ Art Lane,Category: Tourist Attraction,FALSE,4,101.6445865,3.09928,
+511,Art Lane @ PJ State,Category: Tourist Attraction,FALSE,0,101.6449519,3.0985174,
+512,PJ Street Art Lane,Category: Tourist Attraction,FALSE,3.9,101.6454701,3.0985126,
+513,Laman MBPJ,Category: Tourist Attraction,FALSE,4.5,101.6444188,3.0978525,
+514,KidZania Kuala Lumpur,"Sprawling children's theme park offering immersive career role-play, from firefighter to surgeon.",FALSE,4.6,101.6138072,3.1580958,
+515,Taman Bandaran Kelana Jaya,"Category: Park, Tourist Attraction",FALSE,4.2,101.5952469,3.0986741,
+516,Secret Garden • 1 Utama,"Category: Garden, Tourist Attraction",FALSE,4.6,101.6158842,3.1503631,
+517,malaysiakliatour,Category: Tourist Attraction,FALSE,4.8,101.6167606,3.1268353,
+518,Creative PJ Section 52 Mural Art Street,Category: Tourist Attraction,FALSE,2.5,101.6457559,3.1006272,
+519,KMI KELANA JAYA,Category: Tourist Attraction,FALSE,0,101.6025329,3.0992856,
+520,Jump Street Asia (Kuala Lumpur),"Category: Tourist Attraction, Amusement Park, Amusement Center",FALSE,4.6,101.634037,3.1171708,
+521,The Curve Water Fountain,Category: Tourist Attraction,FALSE,4.3,101.6100743,3.1571922,
+522,Forgiveness Mural,Category: Tourist Attraction,FALSE,5,101.6204343,3.1187306,
+523,Taman Aman Park,"Category: Park, Tourist Attraction",FALSE,4.4,101.624596,3.103576,
+524,Thai Buddhist Chetawan Pagoda,"Large, ornate Buddhist temple complex with traditional Thai architecture & popular festivals.",FALSE,4.7,101.6518796,3.1025515,
+525,Oasis Piazza,Category: Tourist Attraction,FALSE,3.7,101.5746673,3.1142632,
+526,Malaysia’s Smallest Roundabout 🤏,"Category: Historical Landmark, Historical Place",FALSE,5,101.6273687,3.0947047,
+527,Koridor Sejarah 新村历史文物馆,Category: Museum,FALSE,4.7,101.6207996,3.0866023,
+528,The Abandoned House,Category: Event Venue,FALSE,4.4,101.659846,3.099052,
+529,Monumen Kampung Tunku,Category: Tourist Attraction,FALSE,4,101.6199665,3.0991729,
+530,Istana Negara,"An iconic landmark, this grand royal palace with golden domes is a popular place to take photos.",FALSE,4.3,101.6634404,3.1614817,
+531,Istana Sate,"Category: Historical Landmark, Historical Place",FALSE,5,101.6277177,3.0976607,
+532,Petronas Twin Towers,"Once the world's tallest, these 88-story towers bear a modern Islamic design & a visitor skybridge.",FALSE,4.7,101.7115639,3.1574693,
+533,Menara Kuala Lumpur,"One of the world's tallest, this landmark tower offers scenic city views & a revolving restaurant.",TRUE,4.5,101.7038516,3.1528762,lunch
+534,Seksyen 52@PJ,"Category: Historical Landmark, Historical Place",FALSE,0,101.6445871,3.1001461,
+535,Merdeka Square,This landmark square has a 95m flagpole to mark the site of the first Malayan flag-raising.,FALSE,4.5,101.6936592,3.1490605,
+536,Tangga APV,"Category: Historical Landmark, Historical Place",FALSE,0,101.6337435,3.1162198,
+537,joy raj,"Category: Historical Landmark, Historical Place",FALSE,5,101.6135734,3.0895169,
+538,Taman Jaya Park,Category: Park,FALSE,4.2,101.6502329,3.1044946,
+539,Hutan Pendidikan Bukit Gasing,"Nature reserve with a popular network of forest trails & a suspension bridge, plus wild monkeys.",FALSE,4.5,101.6588889,3.0955556,
+540,Kota Damansara Community Forest Reserve,"Lowland forest area on 800 acres, community-managed to conserve the urban-adjacent natural space.",FALSE,4.3,101.580949,3.169146,
+541,Subang Ria Recreational Park,"Scenic green space with trees, benches & 3 lakes, plus pathways for walking & running.",FALSE,4.2,101.5976307,3.0813678,
+542,Bukit Gasing Hiking Trail,"Category: Hiking Area, Park, Sports Activity Location",FALSE,4.7,101.6561508,3.0951521,
+543,Kerinchi Hill Forest Park,"Category: Park, Hiking Area, Tourist Attraction",FALSE,4.5,101.6615608,3.0968742,
+544,Ara Damansara Park,Category: Park,FALSE,4.9,101.5848521,3.1204258,
+545,Hutan Simpan Kota Damansara,"Category: Nature Preserve, Park",FALSE,4.7,101.5998472,3.1776447,
+546,Tropicana Park,Category: Park,FALSE,4.1,101.5947849,3.1325033,
+547,Taman Rimba Riang,"Category: Park, Tourist Attraction",FALSE,4.2,101.5836411,3.1814325,
+548,TTDI Park,"Category: Park, Tourist Attraction",FALSE,4.5,101.6319335,3.1472949,
+549,Taman Rimba Kiara,"Photography, picnics & walks are popular in this serene jungle park, home to 40+ bird species.",FALSE,4.3,101.6330463,3.139492,
+550,Tasik Kelana Jaya,Category: Park,FALSE,4.2,101.5961682,3.0992625,
+551,Bukit Jalil Recreational Park,"Low-key, 80-acre park with jogging trails, picnic & playground areas & an international garden.",FALSE,4.4,101.6755556,3.0522222,
+552,Section 17 Neighbourhood Park,Category: Park,FALSE,4.1,101.63831,3.127616,
+553,Farm In The City,Visitors can pet & feed many animals at this popular zoo with various habitats & a souvenir shop.,FALSE,4.3,101.6616563,2.9801264,
+554,Perdana Botanical Garden,"Botanical gardens featuring tropical plants & rare fruit trees, plus a fish pond, waterfall & cafe.",FALSE,4.5,101.6837917,3.1435203,
+555,Starship Galatica,"Category: Indoor Playground, Playground",FALSE,4.3,101.6155514,3.1511544,
+556,VroomTown™ Malaysia,Category: Playground,FALSE,4.7,101.6170779,3.1278949,
+557,Secret Garden Putrajaya,Category: Park,FALSE,4.5,101.6990085,2.9422417,
+558,The Paddock PJ,"Category: Food Court, Community Center, Go Karting Venue",TRUE,4.1,101.6085928,3.0902858,lunch
+559,Village Park Restaurant,"Category: Malaysian Restaurant, Restaurant, Food",TRUE,4.3,101.6233261,3.1376947,lunch
+560,Little Heritage House,"Category: Restaurant, Food",TRUE,4.5,101.6379966,3.126507,lunch
+561,Bayleaf Kitchen Restaurant | Petaling Jaya,"Category: South Indian Restaurant, Indian Restaurant, Restaurant",TRUE,4.6,101.6457576,3.100056,lunch
+562,Secret Of Louisiana At The Lake Restaurant,"Category: Restaurant, Food",TRUE,4.2,101.5981454,3.0943807,lunch
+563,Restoran Green View Sdn Bhd,"Category: Chinese Restaurant, Seafood Restaurant, Restaurant",TRUE,4.2,101.6290053,3.1178279,dinner
+564,Strangers at 47,"Category: Cafe, Coffee Shop, Food Store",TRUE,4.5,101.6299577,3.1202499,breakfast
+565,Table & Apron,"Category: Western Restaurant, Restaurant, Food",TRUE,4.5,101.6264229,3.134601,dinner
+566,Tasty Chapathi Restaurant | PJ | Restoran Tasty Chapathi,"Category: North Indian Restaurant, Indian Restaurant, Restaurant",TRUE,4.4,101.632146,3.1113074,lunch
+567,Authentic Chan Meng Kee,"Category: Chinese Restaurant, Chinese Noodle Restaurant, Restaurant",TRUE,4,101.6227223,3.1198161,lunch
+568,India Gate Restaurant • Petaling Jaya,"Category: South Indian Restaurant, Indian Restaurant, Restaurant",TRUE,4.9,101.6415374,3.1006503,lunch
+569,Out of Africa Restaurant & Kudu Bar,"Category: Restaurant, Food",TRUE,4.4,101.6464315,3.1014267,dinner
+570,Kompassion,"Category: Thai Restaurant, Restaurant, Food",TRUE,4.3,101.6258492,3.134608,lunch
+571,Piccadilly Restaurant,"Southern cafeteria chain dishing up American comfort classics in a simple, family-friendly setting.",TRUE,4.1,101.6347922,3.1051752,lunch
+572,Farm To Plate,"Category: Restaurant, Salad Shop, Pizza Restaurant",TRUE,4.3,101.628998,3.136375,lunch
+573,Malgudi Restaurant,"Category: Indian Restaurant, Fine Dining Restaurant, Diner",TRUE,4.5,101.6430319,3.1192849,dinner
+574,B.LAND PJ,"Category: Restaurant, Food Court, Food",TRUE,4.2,101.6320768,3.094744,lunch
+575,Serai Imago Jaya,"Category: Malaysian Restaurant, Restaurant, Food",TRUE,4.6,101.6371808,3.109189,lunch
+576,Kam Heong Braised Duck @ Kam Heong Coffee Shop,"Category: Chinese Restaurant, Consultant, Restaurant",TRUE,4,101.644433,3.0992783,breakfast
+577,Hee Lai Ton Restaurant,"Category: Restaurant, Food",TRUE,4,101.6390138,3.1112596,lunch
+578,Fatty Crab Restaurant,"Category: Restaurant, Food",TRUE,4.2,101.6124566,3.1148277,lunch
+579,Subang,Category: Tourist Attraction,FALSE,5,101.6024829,3.0683743,
+580,Big Bonsai Tree USJ,Category: Tourist Attraction,FALSE,5,101.5750063,3.0382608,
+581,Sunway Lagoon Main Entrance Parking,Category: Tourist Attraction,FALSE,3,101.6055019,3.0717157,
+582,Bungy Jump @ Sunway Lagoon,Category: Tourist Attraction,FALSE,4.6,101.608098,3.0687853,
+583,Sunway South Quay Lake Yacht,Category: Tourist Attraction,FALSE,0,101.6024156,3.0623557,
+584,Taman Rekreasi,"Category: Park, Tourist Attraction",FALSE,4.3,101.5871406,3.0535651,
+585,"Millennium Park, SS13","Category: Park, Tourist Attraction",FALSE,3.5,101.5937224,3.0727335,
+586,Nickelodeon Lost Lagoon at Sunway Lagoon,"Family-friendly water park with thrill rides, water slides & splash playgrounds in a cartoon theme.",FALSE,4.5,101.6064673,3.0673108,
+587,Taman Rekreasi USJ 2,"Category: City Park, Park",FALSE,4.1,101.5898225,3.0610077,
+588,USJ 11/1 Park,Category: Park,FALSE,4.3,101.5790977,3.0431507,
+589,USJ Urban Forest Park,Category: Park,FALSE,4.3,101.5709034,3.0547304,
+590,USJ 3D Park,Category: Park,FALSE,3.9,101.5717916,3.0622597,
+591,god ♥️ stairs,"Category: Historical Landmark, Historical Place",FALSE,0,101.5911209,3.057089,
+592,Aluba Corner,"Category: Historical Landmark, Historical Place",FALSE,5,101.6024726,3.0715122,
+593,tempat letupan gas putra heights,"Category: Historical Landmark, Historical Place",FALSE,0,101.5825959,3.0058751,
+594,Taman Rekreasi Hutan Bandar MPSJ,Category: Park,FALSE,4.3,101.571021,3.0551847,
+595,PARC,"Category: Community Center, Event Venue, Service",FALSE,4.4,101.6007702,3.081928,
+596,Putra Heights Linear Park South Recreational Park,Category: Park,FALSE,4,101.5776553,2.9990887,
+597,Tropicana Metropark Urban Park,Category: Park,FALSE,3.5,101.5649886,3.0720612,
+598,"Promenade, Central Park at Tropicana Metropark","Category: City Park, Park",FALSE,4.3,101.5648464,3.0707324,
+599,Putra Heights Section 2 Jogging Park,Category: Park,FALSE,4.1,101.5748768,3.0204315,
+600,USJ17 Park,Category: Park,FALSE,5,101.5785719,3.033092,
+601,Taman Saujana Hijau Putrajaya,This expansive park with themed gardens & sweeping views is a popular place for running & cycling.,FALSE,4.7,101.6756394,2.9612403,
+602,SS19/1G Park,Category: Park,FALSE,4.1,101.5775175,3.0771545,
+603,USJ 9/3D Park,Category: Garden,FALSE,4.6,101.5847839,3.0433211,
+604,Fun X World,"Category: Indoor Playground, Amusement Park, Amusement Center",FALSE,4.7,101.59356,3.0599489,
+605,Sky Park @ One City USJ,"Category: Shopping Mall, Movie Theater, Gym",FALSE,3.8,101.580368,3.0221586,
+606,Subang Parade,"Sprawling, enduring complex of over 200 shops, plus casual eateries, cafes & a cinema.",FALSE,4,101.5845738,3.0812316,
+607,Gamuda Cove,Category: Tourist Attraction,FALSE,4.3,101.6220905,2.8843818,
+608,NU Empire,"Vibrant shopping mall offering global brands, beauty & health services & international eateries.",FALSE,4,101.5828038,3.0817783,
+609,Bangi Wonderland,"Water park with slides, a swimming pool & thrill rides, plus a play area for kids & snack kiosks.",FALSE,4.1,101.7909278,2.9046671,
+610,Our Small Kingdom (OSK),Category: Park,FALSE,4.6,101.590842,3.0646355,
+611,Game On Sport Hub (Subang Parade),"Category: Amusement Park, Amusement Center",FALSE,4.9,101.5851028,3.0814893,
+612,Skyline Luge Kuala Lumpur,Category: Tourist Attraction,FALSE,4.6,101.5515406,3.2732579,
+613,JIBRIL SS15,"Funky cafe showcasing meat & seafood offerings with salted egg sauce, plus steak, pasta & mocktails.",TRUE,4.7,101.5872806,3.075776,breakfast
+614,RATA Restaurant,"Category: Asian Fusion Restaurant, Asian Restaurant, Fusion Restaurant",TRUE,4.6,101.5926655,3.0795907,lunch
+615,Jibby & Co,"Category: Asian Fusion Restaurant, Breakfast Restaurant, Asian Restaurant",TRUE,4.4,101.5822828,3.0814053,breakfast
+616,Three Plates Full,"Category: Restaurant, Wine Bar, Bar",TRUE,4.5,101.5878349,3.0777383,dinner
+617,La Cocina Sky View,"Category: Spanish Restaurant, Restaurant, Food",TRUE,4.3,101.5859503,3.0480127,lunch
+618,Rinjin Shokudo @ Subang Jaya,"Category: Japanese Restaurant, Restaurant, Food",TRUE,4.8,101.5952875,3.0696196,lunch
+619,Ole-Ole Bali,"Category: Asian Restaurant, Indonesian Restaurant, Restaurant",TRUE,4.3,101.5828038,3.0817783,lunch
+620,Boleros Restaurant,"Category: Fusion Restaurant, Restaurant, Food",TRUE,4.8,101.5926752,3.0794514,lunch
+621,"The Bear Hug Restaurant & Cafe, Subang Jaya","Category: Cafe, Coffee Shop, Dessert Shop",TRUE,4.8,101.5801667,3.0475723,breakfast
+622,Hakshan USJ Taipan,"Category: Restaurant, Food",TRUE,4.7,101.5849923,3.0472378,lunch
+623,Padi House Subang Parade,"Category: Restaurant, Food",TRUE,4.8,101.5865773,3.0823963,lunch
+624,Mu'sier Fine Meat & Steak,"Category: Steak House, Family Restaurant, Restaurant",TRUE,4.3,101.5948707,3.0575378,dinner
+625,Lalezar Restaurant @ USJ Heights,"Category: Turkish Restaurant, Middle Eastern Restaurant, Mediterranean Restaurant",TRUE,4.7,101.5681179,3.0619175,lunch
+626,Serai @ NU Empire,"Category: Restaurant, Asian Fusion Restaurant, Asian Restaurant",TRUE,4.6,101.5825902,3.0819266,lunch
+627,FOWLBOYS SS15,"Category: American Restaurant, Malaysian Restaurant, Fast Food Restaurant",TRUE,4.8,101.5876956,3.0759617,lunch
+628,Masala Grill Cuisine • Subang Jaya,"Category: North Indian Restaurant, Indian Restaurant, Restaurant",TRUE,4.8,101.5864008,3.0683176,dinner
+629,Mad Bebek SS15,"Category: Indonesian Restaurant, Restaurant, Food",TRUE,4.8,101.5888604,3.0763986,lunch
+630,Pasta Ohsem & Purple Monkey Subang Jaya SS15,"Category: Restaurant, Cake Shop, Bakery",TRUE,4.7,101.5878226,3.0815784,breakfast
+631,Rich Kopitiam Sunway Pyramid,"Category: Restaurant, Food",TRUE,4.7,101.6083223,3.0717727,breakfast
+632,Murni Discovery USJ 9,"Category: Malaysian Restaurant, Asian Fusion Restaurant, Asian Restaurant",TRUE,4,101.5874987,3.0469426,lunch
+633,Taman Awam Pangkalan Batu,"Small riverfront park with landscaped gardens, a pond & a pavilion for community events.",FALSE,4.2,101.4429051,3.047312,
+634,Kota Bridge,"Category: Bridge, Tourist Attraction, Transportation Service",FALSE,4.2,101.4466719,3.0458375,
+635,Tapak POSITIF@GM KLANG (Food Truck),Category: Tourist Attraction,FALSE,4.4,101.4486647,2.9898462,
+636,Sultan Abdul Aziz Royal Gallery,"Royal gallery of art housed in the elegant Sultan Suleiman Building, which was built in 1909.",FALSE,4.5,101.4491882,3.041323,
+637,Rumah Papan Pandamaran,"Category: Tourist Attraction, Community Center, Coworking Space",TRUE,4.8,101.4181209,3.0114117,lunch
+638,巴生壁画,Category: Tourist Attraction,FALSE,4.1,101.4482255,3.0415656,
+639,Klang Art Street (Safari Jejak Warisan),Category: Tourist Attraction,FALSE,4.2,101.4483412,3.041548,
+640,Tanjung Harapan,Category: Tourist Attraction,FALSE,4.3,101.3602884,3.0103529,
+641,Jalan-jalan Klang (巴生历史户外学堂),"Category: Tour Agency, Tourist Attraction, Tourist Information Center",FALSE,4.9,101.4496135,3.0427378,
+642,PERSATUAN PENYOKONG RUMAH BERHALA KWAN IMM KLANG,Colorful pagoda-style place of worship with traditional stone carvings & Buddhist services.,FALSE,4.6,101.4424898,3.0375624,
+643,Pondok Misteri,Category: Tourist Attraction,FALSE,5,101.449442,3.0224978,
+644,Sri Nagara Thandayuthapani Temple,"Category: Hindu Temple, Tourist Attraction, Place Of Worship",FALSE,4.5,101.4455304,3.04245,
+645,Jempol,Category: Tourist Attraction,FALSE,0,101.4487104,3.0180591,
+646,Flying Crow Street Art,Category: Tourist Attraction,FALSE,5,101.4483866,3.0427529,
+647,Port Klang Mural Wall Art (The Workman with a Hard Hat) by Judith de Leeuw,Category: Tourist Attraction,FALSE,4.6,101.3967831,3.0017376,
+648,Landmark Kg. Sungai Udang,Category: Tourist Attraction,FALSE,5,101.4260679,3.0423867,
+649,Klang Heritage Art deco,Category: Tourist Attraction,FALSE,4.3,101.4484216,3.0427702,
+650,Jetty Bagan Hailam,Category: Tourist Attraction,FALSE,3.9,101.3863606,3.0039653,
+651,Cultural Village Projek SMG,Category: Tourist Attraction,FALSE,0,101.4347394,3.0551028,
+652,Klang Little India (கிள்ளான் லிட்டில் இந்தியா),Category: Tourist Attraction,FALSE,4.5,101.4471122,3.0408419,
+653,Tugu Keris توݢو کريس,"Category: Historical Landmark, Historical Place",FALSE,4,101.4443877,3.0364516,
+654,The Crown Of Klang,"Category: Historical Landmark, Historical Place",FALSE,4.3,101.4257179,3.0977775,
+655,Gedung Raja Abdullah ݢدوڠ راج عبدالله,"Hulking, 19th-century heritage structure known for its advanced age & traditional architecture.",FALSE,3.8,101.4475321,3.0435164,
+656,Waguri kaoruko,"Category: Historical Landmark, Historical Place",FALSE,4.9,101.4604096,3.065506,
+657,Klang The Seine river of Malaysia,"Category: Historical Landmark, Historical Place",FALSE,5,101.444959,3.0470522,
+658,DATARAN NOSTALGIA DEPOH,"Category: History Museum, Museum",FALSE,4.9,101.3965824,2.9991361,
+659,"Jalan Kastam,Perlabuhan Klang,Selangor","Category: Historical Landmark, Historical Place",FALSE,5,101.4037858,3.0072284,
+660,Kota Raja Mahadi کوتا راج مهادي,Category: Park,FALSE,4,101.4448923,3.0449356,
+661,Kampung Baru Pandamaran,"Category: Historical Landmark, Historical Place",FALSE,4.3,101.4164634,3.0092043,
+662,Padang Laman Seni Safari Jejak Warisan Klang,Category: Park,FALSE,4.6,101.4487336,3.0414157,
+663,Sultan Suleiman Royal Mosque,"Category: Mosque, Tourist Attraction, Place Of Worship",FALSE,4.7,101.4504646,3.0346219,
+664,"Sri Sundararaja Perumal Temple, Klang - Malaysia","Category: Hindu Temple, Tourist Attraction, Place Of Worship",FALSE,4.7,101.4376565,3.0337185,
+665,0 km Klang,No official description.,FALSE,4.7,101.449181,3.041877,
+666,Canary Garden Central Park,Category: Park,FALSE,4.6,101.4668532,2.9593636,
+667,Taman Rakyat,Category: Park,FALSE,4.4,101.4497445,3.020342,
+668,Bandar Botanic Lake Park,Category: Park,FALSE,3.6,101.4633922,2.9962534,
+669,Bandar Bukit Raja Town Park,Category: Park,FALSE,4.5,101.4255898,3.0961672,
+670,Butterfly Park,Category: Park,FALSE,3.8,101.437115,2.997926,
+671,Parklands City People's Park,"Category: Park, Tourist Attraction",FALSE,4,101.4554002,2.9690977,
+672,Ijan's Corner,"Green space with trails, exercise stations & fitness classes such as tai chi & Zumba on weekends.",TRUE,4.2,101.4493709,3.0195637,lunch
+673,Tasik Bandar Bukit Raja,Category: Sports Activity Location,FALSE,4.1,101.4344388,3.08945,
+674,Sungai Lima.Pulau Ketam Eco Tour,"Category: Tourist Attraction, Scenic Spot, Travel Agency",FALSE,4.5,101.279284,3.0391096,
+675,Bukit Jugra Lighthouse,Category: Tourist Attraction,FALSE,4.4,101.4175198,2.8357026,
+676,Setia Bayuemas Lake Park,Category: Park,FALSE,4.7,101.4399142,2.9783644,
+677,Batu Caves,"Limestone caves at the top of steep steps housing Hindu temples & shrines, plus a huge deity statue.",FALSE,4.4,101.6840385,3.2378844,
+678,G Glasshouse at Klang,Category: Event Venue,FALSE,4.4,101.4487323,3.0514619,
+679,Chola Kitchen Restaurant,"Category: Indian Restaurant, Meal Takeaway, Restaurant",TRUE,4.6,101.4460502,2.9958852,lunch
+680,Teluk Pulai Bak Kut Teh,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.2,101.474239,3.0563519,lunch
+681,SORA,"Category: Restaurant, Food",TRUE,4.7,101.4672324,2.9575602,lunch
+682,Teochew Nang Cafeteria (CL),"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.7,101.4521313,3.0410277,lunch
+683,Restoran Windmill • Bandar Baru Klang,"Category: Western Restaurant, Restaurant, Food",TRUE,4.4,101.4696182,3.0639979,dinner
+684,"Gem Restaurant, Klang","Category: Indian Restaurant, Restaurant, Food",TRUE,4.3,101.4462358,2.994505,lunch
+685,Restoran Moden Cuisine,"Category: Restaurant, Food",TRUE,4.6,101.4547229,2.9883121,lunch
+686,Kee Heong Bak Kut Teh,"Category: Cantonese Restaurant, Chinese Restaurant, Restaurant",TRUE,4.1,101.4597679,3.0569686,lunch
+687,Uncle Don's (Klang),"Category: Restaurant, Food",TRUE,4.6,101.4316026,3.0137402,lunch
+688,Seni Sattisorru Klang Branch,"Category: Restaurant, Food",TRUE,4.7,101.4488531,3.0401542,lunch
+689,Bayleaf Kitchen Restaurant - Klang,"Category: Indian Restaurant, Restaurant, Food",TRUE,4.2,101.4482471,3.0405322,lunch
+690,India Gate Restaurant @Klang,"Category: Indian Restaurant, Restaurant, Food",TRUE,4.9,101.451804,2.9884435,lunch
+691,Nyonya Kitchen & Caterers Sdn Bhd,"Category: Malaysian Restaurant, Restaurant, Food",TRUE,4.2,101.4305717,3.0157805,lunch
+692,Garam Masala North Indian Restaurant,"Category: North Indian Restaurant, Indian Restaurant, Restaurant",TRUE,4.3,101.438774,3.0078115,lunch
+693,Hao Xiang Chi Seafood Restaurant | Meru Klang 好想吃海鲜大酒楼,"Category: Seafood Restaurant, Banquet Hall, Wedding Venue",TRUE,4.7,101.4496074,3.0519763,dinner
+694,Restoran Ghuhan • Yap Kee Banana Leaf,"Category: South Indian Restaurant, Indian Restaurant, Restaurant",TRUE,3.9,101.4487569,3.043063,lunch
+695,Restoran Port Village,"Category: Seafood Restaurant, Restaurant, Food",TRUE,3.9,101.3758157,3.0021689,dinner
+696,Kaara Saaram Claypot Klang,"Category: Restaurant, Food",TRUE,4.1,101.4489245,3.0399405,lunch
+697,MOONLIGHT RESTAURANT & LOUNGE,"Category: Western Restaurant, Restaurant, Food",TRUE,4.7,101.4628554,3.0528328,dinner
+698,Restoran Peng Heong Hakka Paikut,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.1,101.444899,3.0483894,lunch
+699,Kajang Heritage Centre,"Category: Museum, Tourist Attraction",FALSE,4.1,101.7866747,2.9919606,
+700,Kajang Once Upon A Time Walk,Category: Tourist Attraction,FALSE,4.8,101.7879834,2.9915054,
+701,Kajang Dulu Dulu Mural Art,Category: Tourist Attraction,FALSE,4.1,101.7879213,2.9914827,
+702,TTDI Grove,"Category: Park, Tourist Attraction",FALSE,3.9,101.8084679,2.9965549,
+703,Jalan Mehmed,Category: Tourist Attraction,FALSE,0,101.787853,2.9704504,
+704,CP 1,Category: Tourist Attraction,FALSE,0,101.8117197,2.9962027,
+705,SimpangWhy,Category: Tourist Attraction,FALSE,0,101.7337914,2.8957868,
+706,Low’s Dusun,Category: Tourist Attraction,FALSE,5,101.8073409,2.8960771,
+707,Hall Sri Jenaris,Category: Tourist Attraction,FALSE,0,101.8014444,3.0123001,
+708,Traffic Light Merah Lama,Category: Tourist Attraction,FALSE,0,101.78654,2.9932145,
+709,MRT Stadium Kajang (KG34) GATE B,Category: Tourist Attraction,FALSE,3.5,101.7860696,2.9929103,
+710,Bomboclat Avenue,Category: Tourist Attraction,FALSE,5,101.7930447,3.0397752,
+711,Canal Park,Category: Park,FALSE,4.5,101.8011608,2.9269828,
+712,Amos Development Sdn Bhd,Category: Tourist Attraction,FALSE,0,101.799171,3.011229,
+713,Taman Rekreasi Sungai Chua,Category: Park,FALSE,4.3,101.7750488,2.993299,
+714,Sunset View Point Eco Majestic,Category: Tourist Attraction,FALSE,3.9,101.8403636,2.902685,
+715,Lovely Oyen,Category: Tourist Attraction,FALSE,0,101.7918662,2.9904939,
+716,Origami Park,Category: Park,FALSE,3.5,101.7580504,2.9924129,
+717,Energy Bagua,Category: Park,FALSE,4.7,101.7834042,2.9904721,
+718,Sungai Tangkas,"Category: Historical Landmark, Historical Place",FALSE,5,101.7654375,2.9059375,
+719,PINTU⛩️GERBANG KAMPUNG SEMENYIH,"Category: Historical Landmark, Historical Place",FALSE,5,101.8461981,2.9505378,
+720,Rumah Biru,"Category: Historical Landmark, Historical Place",FALSE,5,101.7512513,2.9416501,
+721,Replika Gong Universiti Kebangsaan Malaysia,"Category: Historical Landmark, Historical Place",FALSE,4.8,101.7780066,2.9298578,
+722,POKOK LA APA LAGI,"Category: Historical Landmark, Historical Place",FALSE,0,101.7968018,2.9855406,
+723,Gambang paha,"Category: Historical Landmark, Historical Place",FALSE,0,101.8068548,2.877404,
+724,Port patin,"Category: Historical Landmark, Historical Place",FALSE,5,101.7036957,2.89074,
+725,Bangi Landmark,"Category: Historical Landmark, Historical Place",FALSE,2.6,101.762993,2.9335301,
+726,Bulatan Desa Pinggiran Putra,"Category: Historical Landmark, Historical Place",FALSE,4.2,101.70157,2.8957567,
+727,Ancestral Home of Lembang,"Category: Historical Landmark, Historical Place",FALSE,4,101.8365292,2.9383565,
+728,Tin Hong Si,"Category: Place Of Worship, Association Or Organization",FALSE,4.8,101.7867554,2.9913554,
+729,Pangkin ManJa's,"Category: Historical Landmark, Historical Place",FALSE,5,101.7476964,3.0491348,
+730,"Mercu Tanda Putrajaya, Laman Perdana","Category: Historical Landmark, Historical Place",FALSE,4.6,101.6975546,2.940869,
+731,Start Of South Klang Valley Expy,"Category: Historical Landmark, Historical Place",FALSE,0,101.751784,2.9817929,
+732,Jambatan pail,"Category: Historical Landmark, Historical Place",FALSE,4.7,101.6966874,2.8930029,
+733,Galeri Warisan KAJANG 加影人文館,Category: Museum,FALSE,5,101.7867295,2.9918733,
+734,Welcome to Bandar Baru Bangi Signage,"Category: Historical Landmark, Historical Place",FALSE,4.3,101.7520113,2.9629115,
+735,Sungai Long Hill,"Category: Hiking Area, Sports Activity Location",FALSE,4.4,101.8175515,3.0553697,
+736,Kajang Hill,"Category: Hiking Area, Sports Activity Location",FALSE,4.1,101.809461,2.977592,
+737,Bukit Kajang Perdana,"Category: Hiking Area, Sports Activity Location",FALSE,4.4,101.8286193,2.9975321,
+738,Tropicana Heights Central Park,Category: Park,FALSE,4.5,101.8112304,2.9642368,
+739,Setia Ecohill Park,"Hilltop park with a kids' playground & 20km of jogging tracks, plus panoramic views of the city.",FALSE,4.4,101.8427819,2.9235735,
+740,Taman Botani Bangi UKM,"Category: Park, Tourist Attraction",FALSE,4.5,101.7827528,2.9227424,
+741,Taman Awam Jalan Timur,Category: Park,FALSE,4.4,101.7925324,2.9962524,
+742,Oasis Park @ Bandar Puteri Bangi,Category: Park,FALSE,4.3,101.791648,2.875173,
+743,Sungai Long Hiking,"Category: Hiking Area, Sports Activity Location",FALSE,4.5,101.8107269,3.055767,
+744,Taman Kajang Utama,Category: Park,FALSE,4.1,101.7984252,2.9749258,
+745,Oasis Park,Category: Park,FALSE,3.8,101.8214614,2.9890525,
+746,Taman Puncak @Sepang,Category: Park,FALSE,4.3,101.7625539,2.9073738,
+747,Sungai Long Waterfall,Category: Tourist Attraction,FALSE,4.2,101.8253507,3.049312,
+748,Putrajaya Wetland Adventure Park,Category: Park,FALSE,4.4,101.6949672,2.9691649,
+749,Taman Rekreasi Sg Merab,Category: Park,FALSE,4.8,101.7521255,2.9400414,
+750,Safari Escape Playland,"Category: Playground, Amusement Center",FALSE,3.3,101.8499713,3.0520434,
+751,Avenue Kingdom @ Bangi Avenue,Category: Park,FALSE,4.6,101.7909783,2.9014466,
+752,WindMill Fun Park,"Category: Amusement Center, Amusement Park",FALSE,4.8,101.8549113,2.9238272,
+753,Conquer Indoor Extreme Park,"Category: Indoor Playground, Playground, Amusement Center",FALSE,3.5,101.8499525,3.0520082,
+754,Monkeys Canopy Resort,"Category: Thai Restaurant, Resort Hotel, Indoor Playground",TRUE,3.9,101.8496511,3.0516694,lunch
+755,Dino Desert,"Category: Amusement Center, Amusement Park",FALSE,4.7,101.8549762,3.0475195,
+756,Paya Indah Wetlands,"This 450-hectare wetland sanctuary features wildlife, boating, fishing, cycling trails & more.",FALSE,3.9,101.6287688,2.8603798,
+757,Moroccan Pavilion Putrajaya,"Moorish-style building in a botanical garden, with ornate carvings, colorful tiles & fountains.",FALSE,4.2,101.6933547,2.9430771,
+758,Three Sons Park @ Sungai Long Hill,Category: Botanical Garden,FALSE,3.7,101.8153281,3.0555695,
+759,Mingmom Chinese Cuisine,"Category: Restaurant, Food",TRUE,4.6,101.7912417,2.9904913,lunch
+760,Rumah Makan Cibiuk,"Category: Halal Restaurant, Indonesian Restaurant, Restaurant",TRUE,4.2,101.7728155,2.9792841,lunch
+761,Bhai Biryani • Kajang,"Category: Indian Restaurant, Restaurant, Food",TRUE,4.6,101.7899794,2.9928289,lunch
+762,Restoran Satay Putera Kajang,"Category: Indonesian Restaurant, Restaurant, Food",TRUE,3.9,101.7866201,2.9926224,lunch
+763,Meet & Dine,"Category: Western Restaurant, Restaurant, Food",TRUE,4.5,101.7758296,3.0341167,dinner
+764,"SETALAM™ Masakan Kampung - Kajang Utama, Selangor","Category: Restaurant, Halal Restaurant, Malaysian Restaurant",TRUE,4.8,101.799344,2.975059,lunch
+765,Restoran Sate Kajang Hj Samuri,"Category: Malaysian Restaurant, Indonesian Restaurant, Restaurant",TRUE,4,101.7870178,2.9936121,lunch
+766,House of Grill Putra Kajang,"Category: Steak House, Restaurant, Food",TRUE,5,101.7741322,2.9789186,dinner
+767,Songkhla Prima Saujana Kajang,"Category: Restaurant, Asian Restaurant, Food",TRUE,4.5,101.8044217,3.0080885,lunch
+768,Arabian House Restaurant - مطعم البيت العربي,"Category: Barbecue Restaurant, Shawarma Restaurant, Family Restaurant",TRUE,4.5,101.7726659,2.9789517,lunch
+769,"The Brew House @ MKH Boulevard, Kajang","Category: Restaurant, Family Restaurant, Bar",TRUE,4.5,101.7931137,2.9901528,dinner
+770,Basil Leaves Restaurant - Kajang,"Category: Indian Restaurant, South Indian Restaurant, Restaurant",TRUE,4,101.795904,2.9773354,lunch
+771,House of Grill Putrajaya,"Category: Steak House, Restaurant, Food",TRUE,4.9,101.7246347,2.9462694,dinner
+772,Nasi Dulang Daun Pisang Bangi • Al Mubarakah,"Category: Malaysian Restaurant, Restaurant, Food",TRUE,4.1,101.757769,2.9740916,lunch
+773,Al Diafah Restaurant - Kajang,"Category: Middle Eastern Restaurant, Halal Restaurant, Restaurant",TRUE,4.4,101.7737891,2.9790804,lunch
+774,Warung Bunian,"Category: Restaurant, Food",TRUE,4,101.7273163,2.9087828,lunch
+775,Restoran Paandi Kajang பாண்டி உணவகம்,"Category: South Indian Restaurant, Indian Restaurant, Restaurant",TRUE,3.4,101.7901349,2.9927636,lunch
+776,Soi 55,"Category: Thai Restaurant, Restaurant, Food",TRUE,4.8,101.8156068,2.9833753,lunch
+777,AllAce Abdul Aziz Kajang,"Category: Fast Food Restaurant, Hamburger Restaurant, Family Restaurant",TRUE,4.9,101.7900745,2.9916169,lunch
+778,Restoran Kee V Sdn Bhd,"Category: Chinese Restaurant, Restaurant, Food",TRUE,3.9,101.7839971,2.9834921,lunch
+779,Tasik Puchong,Category: Tourist Attraction,FALSE,5,101.6030206,2.9963,
+780,Kichu port,Category: Tourist Attraction,FALSE,0,101.6175562,2.9909128,
+781,Swiftlet Eco Culture Museum 金丝燕窝生态文化馆,"Category: Museum, Tourist Attraction, History Museum",FALSE,4.9,101.6205353,3.0090431,
+782,Mural by The One Academy,Category: Tourist Attraction,FALSE,0,101.620461,3.0447882,
+783,Taman Rekreasi Jalan Tempua 2,"Category: Park, Tourist Attraction",FALSE,4,101.624999,3.0455388,
+784,Puchong Puteri Town Park,Category: Park,FALSE,4,101.6148151,3.0194711,
+785,Taman Wawasan Recreational Park,"Category: Gym, Tourist Attraction, Park",FALSE,4.3,101.6237203,3.0341342,
+786,0 KM Puchong,"Category: Historical Landmark, Historical Place",FALSE,4,101.620694,3.009569,
+787,The Biggest Toiletbowl in Malaysia,"Category: Cultural Landmark, Historical Landmark, Historical Place",FALSE,3.7,101.621466,3.0422866,
+788,Wah Kong Temple,"Category: Buddhist Temple, Tourist Attraction, Place Of Worship",FALSE,4.5,101.6127705,2.9626725,
+789,Sungai Besi Heritage Walk,"Category: Historical Landmark, Historical Place",FALSE,4.5,101.7098315,3.063849,
+790,Sau Seng Lum Puchong Exhibition Centre,"Category: Buddhist Temple, Place Of Worship, Association Or Organization",FALSE,4.3,101.601863,2.9307575,
+791,Nanyang Old Street Kopitiam • 南洋老街茶铺 • Puchong,"Category: Malaysian Restaurant, Breakfast Restaurant, Brunch Restaurant",TRUE,4.1,101.6149105,3.0331397,breakfast
+792,Istana Darul Ehsan,"Tudor-style lakefront palace of the Sultan of Selangor, completed in 2000 (not open to the public).",FALSE,4.4,101.6862962,2.9332121,
+793,Malawati Fort,"Category: Historical Landmark, Historical Place",FALSE,5,101.2461812,3.3421994,
+794,Puchong,"Category: Place Of Worship, Association Or Organization",FALSE,5,101.6255897,3.0252017,
+795,Bandar Puteri 12 Park,Category: Park,FALSE,4.1,101.6303872,3.0101024,
+796,Dataran Pahlawan Negara,Category: Tourist Attraction,FALSE,4.4,101.7055044,2.9402413,
+797,Kinrara Residence Du 5,"Category: Wildlife Refuge, Park",FALSE,4.1,101.5943066,3.0147894,
+798,Bukit Wawasan Puchong Hiking,"Category: Hiking Area, Sports Activity Location",FALSE,4.5,101.6297815,3.0247495,
+799,Hutan Simpan Air Hitam Puchong,"Category: Nature Preserve, Park",FALSE,5,101.6465301,3.0221644,
+800,SetiaWalk,Category: Shopping Mall,FALSE,3.8,101.6168062,3.0309621,
+801,Taman Botani Putrajaya,"Large lakeside public garden with 700+ species of plants & flowers, plus trails & bicycle rentals.",FALSE,4.5,101.6955157,2.9448069,
+802,A-Park,"Category: Wedding Venue, Event Venue, Service",FALSE,4.5,101.6317197,2.9644627,
+803,Putrajaya Wetlands Park,"Large wetlands area suited for activities like picnics, walking, biking & wildlife viewing.",FALSE,4.3,101.6956668,2.9616867,
+804,Teddyman Gallery,Category: Museum,FALSE,5,101.645112,3.047666,
+805,Uptown Puchong Night Bazaar,"Large warehouse with small shops selling diverse wares, plus informal eateries & hair salons.",FALSE,3.9,101.6136529,2.9793825,
+806,iSHIN Fine Dine @Puchong,"Category: Japanese Restaurant, Restaurant, Food",TRUE,4.8,101.6230399,3.0198677,lunch
+807,Bumbu Bali,"Category: Asian Restaurant, Indonesian Restaurant, Restaurant",TRUE,4.3,101.6154584,3.023139,lunch
+808,Ryoshi Izakaya (Puchong),"Category: Japanese Restaurant, Restaurant, Food",TRUE,4.7,101.6195209,3.0249075,lunch
+809,Naughty Root | Puchong,"Category: Western Restaurant, Vegetarian Restaurant, Restaurant",TRUE,4.8,101.6185081,3.0083229,dinner
+810,老湖南 Lao Hu Nan @ IOI Puchong Mall,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.9,101.6185819,3.0457989,lunch
+811,Rasputin Restaurant & Bar,"Category: Western Restaurant, Asian Fusion Restaurant, Asian Restaurant",TRUE,4.7,101.6039704,3.0314855,dinner
+812,7BBQ,"Category: Barbecue Restaurant, Restaurant, Food",TRUE,4.9,101.621185,2.9931529,lunch
+813,Ground Eatery,"Category: Restaurant, Food",TRUE,4.3,101.6157455,3.0275869,lunch
+814,Meat One Cuisine | Puchong,"Category: Steak House, Restaurant, Food",TRUE,4.6,101.6231181,3.04489,dinner
+815,Hakshan Bandar Puteri Puchong,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.7,101.6167495,3.0276613,lunch
+816,Old Fatt Kee Restaurant • 猪肉粉,"Category: Chinese Noodle Restaurant, Restaurant, Food",TRUE,4.3,101.6149942,3.0323157,lunch
+817,Empat Sekawan (Puchong Jaya),"Category: Cafe, Food",TRUE,4.7,101.6229023,3.0404318,breakfast
+818,幸湘菜馆蒲种 | Restaurant Luckypot Puchong lucky pot,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.8,101.6147354,3.0218067,lunch
+819,Siong Tong Gai,"Category: Chinese Restaurant, Restaurant, Food",TRUE,4.6,101.6205049,2.9927405,lunch
+820,LUCK BROS KOPI @ Puchong,"Category: Restaurant, Food",TRUE,4.4,101.6136332,3.0086387,lunch
+821,Shin Zushi Puchong,"Category: Sushi Restaurant, Japanese Restaurant, Restaurant",TRUE,4.7,101.6155332,3.0235912,lunch
+822,Bayou Cafe • SetiaWalk,"Category: Western Restaurant, Asian Fusion Restaurant, Asian Restaurant",TRUE,4.7,101.6161061,3.0302651,breakfast
+823,India Gate Restaurant,"Category: South Indian Restaurant, Fine Dining Restaurant, Indian Restaurant",TRUE,4.9,101.6189755,3.0249663,dinner
+824,Restoran Soon Lok Roast Duck | Puchong Jaya,"Category: Restaurant, Food",TRUE,4.1,101.6218738,3.0440769,lunch
+825,Nam Heong Ipoh @Puchong Jaya,"Category: Restaurant, Food",TRUE,4.4,101.6220053,3.0404298,lunch
+826,Cyberjaya Lake Park,"Category: Park, Tourist Attraction",FALSE,4.5,101.6414138,2.9358715,
+827,Cyberjaya Park (Taman Mini Cyberjaya),"Category: Park, Tourist Attraction",FALSE,4.3,101.649432,2.9226738,
+828,Fun Malaysia,Category: Tourist Attraction,FALSE,0,101.6619327,2.9225067,
+829,Cyberjaya Sunset spot,Category: Tourist Attraction,FALSE,5,101.6283879,2.9004003,
+830,Cyberjaya Sign,Category: Tourist Attraction,FALSE,4.3,101.6607412,2.9131824,
+831,Putrajaya Lake,Category: Tourist Attraction,FALSE,4.6,101.6711809,2.9079226,
+832,Kembara DIY,Category: Tourist Attraction,FALSE,0,101.6442225,2.9114867,
+833,Pantai Floria,Category: Tourist Attraction,FALSE,4.2,101.6794076,2.9140586,
+834,China-Malaysia Friendship Garden 中马友谊花园,"Category: Monument, Tourist Attraction",FALSE,4.4,101.6776299,2.9125073,
+835,Raja Haji Fi Sabilillah Mosque,"Category: Mosque, Tourist Attraction, Community Center",FALSE,4.8,101.6484702,2.9321891,
+836,"Perdana Lake, Jogging Track, Sunrise Point",Category: Park,FALSE,4.6,101.6691381,2.9149631,
+837,Seri Perdana Bridge,Category: Tourist Attraction,FALSE,4.7,101.689736,2.9415471,
+838,Selangor Cyber Valley Lake Park,Category: Park,FALSE,4,101.6270478,2.9166801,
+839,Cyberjaya LakeFront Park,Category: Park,FALSE,4.3,101.6331938,2.929245,
+840,Cyberjaya Lakeside,Category: Park,FALSE,4.6,101.6694311,2.9146995,
+841,MMU Cyber Park,"Category: Garden, Park",FALSE,4.6,101.6447451,2.9296157,
+842,Tangga Putrajaya,Category: Tourist Attraction,FALSE,4.7,101.6986933,2.9419423,
+843,04 Headquarters,"Category: Historical Landmark, Historical Place",FALSE,5,101.6498221,2.9156908,
+844,Ahmed’s Hideout,"Category: Historical Landmark, Historical Place",FALSE,5,101.6544104,2.9478863,
+845,ROYALE PALACE CYBERJAYA,"Category: Event Venue, Wedding Venue, Service",FALSE,4.4,101.6535676,2.9370068,
+846,Tamarind Square,No official description.,FALSE,4.4,101.6370508,2.9197048,
+847,Tangga Putrajaya Steps,"Category: Hiking Area, Sports Activity Location",FALSE,4.7,101.6957146,2.9391237,
+848,Lorong Belakang Cyberjaya,Category: Market,FALSE,4.4,101.66085,2.92325,
+849,Lookout Tower,Category: Observation Deck,FALSE,4,101.6404844,2.936737,
+850,Perbadanan Putrajaya (PPj) Giant Vase,Category: Tourist Attraction,FALSE,5,101.6832554,2.9231304,
+851,0 km Putrajaya Cycling Route,"Category: Historical Landmark, Cycling Park, Historical Place",FALSE,4.6,101.6779052,2.9124815,
+852,Taman Tasik Cyberjaya BBQ Station,Category: Park,FALSE,4.7,101.6437973,2.9366317,
+853,Taman Awam Cyber 3,Category: Park,FALSE,4.2,101.6663282,2.9505496,
+854,Perdana Lakeview sunrise lookout,Category: Park,FALSE,4.6,101.6700339,2.9153287,
+855,Taman Saujana Hijau (European Garden),Category: Garden,FALSE,4.5,101.6731295,2.9592558,
+856,Cyberjaya Mini Forest,"Category: Wildlife Park, Zoo, Park",FALSE,4,101.6368275,2.9287702,
+857,The Bund at Setia Eco Glades,Category: Park,FALSE,5,101.6372033,2.939506,
+858,Cyber Farm-Ur,"Category: Garden, Association Or Organization",FALSE,5,101.6553951,2.9147468,
+859,Swan Lake,"Category: Wildlife Park, Zoo, Park",FALSE,4.4,101.6972996,2.9576734,
+860,Wetland Studios Putrajaya,"Category: Amusement Park, Amusement Center",FALSE,4.1,101.6947396,2.9600505,
+861,The Lookout Tower,Category: Tourist Attraction,FALSE,4.2,101.6954498,2.9629016,
+862,Tugu Peringatan Kampung Giching,"Category: Historical Landmark, Historical Place",FALSE,4.7,101.7371732,2.7959134,
+863,0 Km Sepang,"Category: Historical Landmark, Historical Place",FALSE,5,101.7523647,2.6916937,
+864,BBST WALK,Category: Tourist Attraction,FALSE,4.3,101.7382412,2.8108689,
+865,"Statue of Tan Kah Kee, XMU Founder",Category: Tourist Attraction,FALSE,4.8,101.703978,2.8298135,
+866,MD SHAMIM,"Category: Historical Landmark, Historical Place",FALSE,5,101.692808,2.852374,
+867,0 km Kg Giching,"Category: Historical Landmark, Historical Place",FALSE,4.8,101.7373235,2.7961046,
+868,HL Dragon Fruit Eco Farm X HL Restaurant & Cafe (HALAL),"Category: Farm, Juice Shop, Tourist Attraction",TRUE,4.2,101.7426632,2.680926,breakfast
+869,National Automobile Museum,"Category: Museum, Tourist Attraction",FALSE,4.2,101.7317438,2.7594142,
+870,Rumah Warisan Embah,"Category: Historical Landmark, Historical Place",FALSE,0,101.6748934,2.6556556,
+871,KAWASAN LEMBU,"Category: Historical Landmark, Historical Place",FALSE,0,101.7560859,2.7455016,
+872,Sri Banting Old Tin Dredge,Category: Tourist Attraction,FALSE,4.2,101.6499314,2.8614972,
+873,Umobile tower ECAR,"Category: Historical Landmark, Historical Place",FALSE,0,101.6649638,2.8115721,
+874,Pusat Kebudayaan Kampung Orang Asli Kelingsing,Category: Tourist Attraction,FALSE,5,101.6992274,2.8149851,
+875,Red Tower Hill Country Park - XMUM,Category: Park,FALSE,3.8,101.7006104,2.8327124,
+876,"Lim Passion Garden, Sungai Pelek, Sepang",Category: Tourist Attraction,FALSE,4.7,101.7110365,2.6470014,
+877,KLIA Jungle Boardwalk,"Category: Botanical Garden, Tourist Attraction",FALSE,4.3,101.7136399,2.7479295,
+878,Taman Rekreasi Kota Warisan,Category: Park,FALSE,4.2,101.6983339,2.8254753,
+879,SAUJANA KLIA,"Category: Association Or Organization, Service",FALSE,5,101.6875854,2.8180805,
+880,Stadium Bandar Baru Salak Tinggi,"Category: Stadium, Sports Complex, Event Venue",FALSE,4.2,101.7234676,2.821282,
+881,Giverny Park Sunsuria City,Category: Sports Activity Location,FALSE,4.6,101.7069609,2.8394104,
+882,Leisure Garden Sepang,Category: Zoo,FALSE,4.8,101.6862955,2.6652943,
+883,Bukit 527,"Category: Hiking Area, Sports Activity Location",FALSE,4.7,101.7321133,2.8385799,
+884,蔡徐坤公园,"Category: Hiking Area, Sports Activity Location",FALSE,5,101.7024149,2.8329781,
+885,Serenity Park,Category: Park,FALSE,4.5,101.7053908,2.8462776,
+886,Kota Seriemas Lake Park (Laman Ilmu),Category: Park,FALSE,4.2,101.7858787,2.7871178,
+887,Bukit 527 trailhead,"Category: Hiking Area, Sports Activity Location",FALSE,4.9,101.7318257,2.8345147,
+888,Rimba KLIA,Category: Park,FALSE,5,101.7134887,2.7480049,
+889,Giverny Walk,Category: Park,FALSE,4.8,101.7052446,2.8389288,
+890,Sepang South Africa Hiking Trail,"Category: Hiking Area, Sports Activity Location",FALSE,4,101.73,2.69025,
+891,Bukit Melati Nilai Negeri Sembilan,"Category: Nature Preserve, Tourist Attraction, Hiking Area",FALSE,4.5,101.7641996,2.8162399,
+892,Serenia City Central Park,"Category: Park, General Contractor, Service",FALSE,4.6,101.6998217,2.8439056,
+893,Paya Indah Discovery Wetlands (Gate 1),Category: Park,FALSE,4.3,101.6170833,2.8859373,
+894,"The Parc, Nilai Impian",Category: Park,FALSE,4.4,101.8040358,2.8355287,
+895,My Nature Leisure Farm,"Category: Resort Hotel, Hotel, Lodging",FALSE,4.4,101.6940752,2.6482168,

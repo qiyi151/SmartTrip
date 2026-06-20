@@ -1,0 +1,1269 @@
+2026-06-16 13:42:11,302 - unified - INFO - ================================================================================
+2026-06-16 13:42:11,303 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 13:42:11,303 - unified - INFO - ================================================================================
+2026-06-16 13:42:11,304 - unified - INFO - Spots Database: 0 records loaded
+2026-06-16 13:42:11,305 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 13:42:11,305 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 13:42:11,306 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 13:42:11,309 - unified - INFO - STACK COMPONENTS:
+2026-06-16 13:42:11,310 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 13:42:11,310 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 13:42:11,311 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 13:42:11,311 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 13:42:11,312 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 13:42:11,312 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 13:42:11,313 - unified - INFO - API ENDPOINTS:
+2026-06-16 13:42:11,313 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 13:42:11,314 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 13:42:11,314 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 13:42:11,315 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 13:42:11,315 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 13:42:11,316 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 13:42:11,317 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 13:42:11,317 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 13:42:11,318 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 13:42:11,318 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 13:42:11,319 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 13:42:11,319 - unified - INFO - ================================================================================
+2026-06-16 13:42:11,484 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 13:42:11,485 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-16 13:42:11,488 - werkzeug - INFO -  * Restarting with stat
+2026-06-16 13:42:53,672 - unified - INFO - ================================================================================
+2026-06-16 13:42:53,672 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 13:42:53,673 - unified - INFO - ================================================================================
+2026-06-16 13:42:53,673 - unified - INFO - Spots Database: 0 records loaded
+2026-06-16 13:42:53,673 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 13:42:53,674 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 13:42:53,674 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 13:42:53,675 - unified - INFO - STACK COMPONENTS:
+2026-06-16 13:42:53,675 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 13:42:53,676 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 13:42:53,676 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 13:42:53,676 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 13:42:53,677 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 13:42:53,677 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 13:42:53,678 - unified - INFO - API ENDPOINTS:
+2026-06-16 13:42:53,678 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 13:42:53,679 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 13:42:53,679 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 13:42:53,679 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 13:42:53,680 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 13:42:53,680 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 13:42:53,681 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 13:42:53,682 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 13:42:53,682 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 13:42:53,683 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 13:42:53,683 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 13:42:53,684 - unified - INFO - ================================================================================
+2026-06-16 13:42:53,713 - werkzeug - WARNING -  * Debugger is active!
+2026-06-16 13:42:53,756 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-16 13:45:33,700 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:45:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-06-16 13:45:34,382 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:45:34] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-06-16 13:45:34,526 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:45:34] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-06-16 13:45:35,084 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:45:35] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=Xy0dvCJT40PD9WXShSVJ HTTP/1.1" 200 -
+2026-06-16 13:45:35,312 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:45:35] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-06-16 13:48:30,805 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:48:30] "GET / HTTP/1.1" 200 -
+2026-06-16 13:48:30,867 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:48:30] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-16 13:48:30,939 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:48:30] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+2026-06-16 13:48:31,171 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:48:31] "GET /static/jquery.min.js HTTP/1.1" 200 -
+2026-06-16 13:48:31,737 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:48:31] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 13:48:31,740 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:48:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-16 13:48:31,996 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:48:31] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 13:48:36,469 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:48:36] "GET / HTTP/1.1" 200 -
+2026-06-16 13:48:36,785 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:48:36] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 13:48:37,108 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:48:37] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 13:51:03,797 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:51:03] "GET / HTTP/1.1" 200 -
+2026-06-16 13:51:04,002 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:51:04] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 13:51:04,062 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:51:04] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 13:51:06,797 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:51:06] "GET / HTTP/1.1" 200 -
+2026-06-16 13:51:06,917 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:51:06] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 13:51:07,060 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 13:51:07] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 13:56:53,976 - werkzeug - INFO -  * Detected change in 'c:\\Users\\31746\\Desktop\\2604\\Finalproject\\unified.py', reloading
+2026-06-16 13:57:01,562 - werkzeug - INFO -  * Restarting with stat
+2026-06-16 13:57:51,225 - unified - INFO - ================================================================================
+2026-06-16 13:57:51,225 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 13:57:51,226 - unified - INFO - ================================================================================
+2026-06-16 13:57:51,227 - unified - INFO - Spots Database: 0 records loaded
+2026-06-16 13:57:51,228 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 13:57:51,228 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 13:57:51,229 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 13:57:51,230 - unified - INFO - STACK COMPONENTS:
+2026-06-16 13:57:51,230 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 13:57:51,231 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 13:57:51,231 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 13:57:51,232 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 13:57:51,232 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 13:57:51,232 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 13:57:51,233 - unified - INFO - API ENDPOINTS:
+2026-06-16 13:57:51,234 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 13:57:51,234 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 13:57:51,234 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 13:57:51,235 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 13:57:51,235 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 13:57:51,236 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 13:57:51,236 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 13:57:51,237 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 13:57:51,237 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 13:57:51,238 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 13:57:51,238 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 13:57:51,239 - unified - INFO - ================================================================================
+2026-06-16 13:57:51,275 - werkzeug - WARNING -  * Debugger is active!
+2026-06-16 13:57:51,327 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-16 14:02:37,509 - werkzeug - INFO -  * Detected change in 'c:\\Users\\31746\\Desktop\\2604\\Finalproject\\unified.py', reloading
+2026-06-16 14:02:40,613 - werkzeug - INFO -  * Restarting with stat
+2026-06-16 14:03:24,712 - unified - INFO - ================================================================================
+2026-06-16 14:03:24,712 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 14:03:24,713 - unified - INFO - ================================================================================
+2026-06-16 14:03:24,714 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 14:03:24,714 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 14:03:24,715 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 14:03:24,715 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 14:03:24,716 - unified - INFO - STACK COMPONENTS:
+2026-06-16 14:03:24,716 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 14:03:24,716 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 14:03:24,717 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 14:03:24,717 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 14:03:24,718 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 14:03:24,718 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 14:03:24,718 - unified - INFO - API ENDPOINTS:
+2026-06-16 14:03:24,719 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 14:03:24,720 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 14:03:24,720 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 14:03:24,720 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 14:03:24,721 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 14:03:24,721 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 14:03:24,722 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 14:03:24,722 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 14:03:24,723 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 14:03:24,723 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 14:03:24,723 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 14:03:24,724 - unified - INFO - ================================================================================
+2026-06-16 14:03:24,757 - werkzeug - WARNING -  * Debugger is active!
+2026-06-16 14:03:24,813 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-16 14:03:26,799 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:03:26] "GET /api/health HTTP/1.1" 200 -
+2026-06-16 14:03:44,540 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:03:44] "GET /api/health HTTP/1.1" 200 -
+2026-06-16 14:04:10,567 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:04:10] "GET /api/recommendations HTTP/1.1" 200 -
+2026-06-16 14:04:47,790 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:04:47] "GET /api/recommendations HTTP/1.1" 200 -
+2026-06-16 14:04:53,242 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:04:53] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 14:04:53,336 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:04:53] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 14:04:56,868 - unified - INFO - Added spot 2 to selection. Total: 1
+2026-06-16 14:04:56,869 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:04:56] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 14:04:58,889 - unified - INFO - Added spot 5 to selection. Total: 2
+2026-06-16 14:04:58,890 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:04:58] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 14:05:03,632 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:05:03] "GET /api/recommendations?page=2 HTTP/1.1" 200 -
+2026-06-16 14:05:04,431 - unified - INFO - Added spot 9 to selection. Total: 3
+2026-06-16 14:05:04,432 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:05:04] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 14:05:05,879 - unified - INFO - Added spot 10 to selection. Total: 4
+2026-06-16 14:05:05,880 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:05:05] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 14:05:11,038 - unified - INFO - Route optimized: [2, 28, 492, 5, 10, 9, 450]
+2026-06-16 14:05:11,039 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:05:11] "POST /api/complete HTTP/1.1" 200 -
+2026-06-16 14:05:11,514 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:05:11] "GET /schedule HTTP/1.1" 200 -
+2026-06-16 14:05:11,583 - unified - ERROR - Folium library not installed
+2026-06-16 14:05:11,584 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:05:11] "[35m[1mGET /api/map-html HTTP/1.1[0m" 500 -
+2026-06-16 14:05:18,467 - unified - ERROR - Folium library not installed
+2026-06-16 14:05:18,468 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:05:18] "[35m[1mGET /api/map-html HTTP/1.1[0m" 500 -
+2026-06-16 14:12:47,523 - unified - INFO - ================================================================================
+2026-06-16 14:12:47,524 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 14:12:47,525 - unified - INFO - ================================================================================
+2026-06-16 14:12:47,525 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 14:12:47,525 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 14:12:47,526 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 14:12:47,526 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 14:12:47,526 - unified - INFO - STACK COMPONENTS:
+2026-06-16 14:12:47,527 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 14:12:47,527 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 14:12:47,527 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 14:12:47,528 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 14:12:47,528 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 14:12:47,528 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 14:12:47,529 - unified - INFO - API ENDPOINTS:
+2026-06-16 14:12:47,529 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 14:12:47,529 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 14:12:47,530 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 14:12:47,530 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 14:12:47,531 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 14:12:47,531 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 14:12:47,531 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 14:12:47,532 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 14:12:47,532 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 14:12:47,533 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 14:12:47,533 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 14:12:47,533 - unified - INFO - ================================================================================
+2026-06-16 14:12:47,617 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 14:12:47,618 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-16 14:12:47,621 - werkzeug - INFO -  * Restarting with stat
+2026-06-16 14:13:26,256 - unified - INFO - ================================================================================
+2026-06-16 14:13:26,257 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 14:13:26,258 - unified - INFO - ================================================================================
+2026-06-16 14:13:26,258 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 14:13:26,258 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 14:13:26,259 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 14:13:26,260 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 14:13:26,260 - unified - INFO - STACK COMPONENTS:
+2026-06-16 14:13:26,261 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 14:13:26,261 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 14:13:26,261 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 14:13:26,262 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 14:13:26,262 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 14:13:26,262 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 14:13:26,263 - unified - INFO - API ENDPOINTS:
+2026-06-16 14:13:26,263 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 14:13:26,264 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 14:13:26,264 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 14:13:26,264 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 14:13:26,265 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 14:13:26,265 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 14:13:26,266 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 14:13:26,266 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 14:13:26,267 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 14:13:26,267 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 14:13:26,267 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 14:13:26,268 - unified - INFO - ================================================================================
+2026-06-16 14:13:26,304 - werkzeug - WARNING -  * Debugger is active!
+2026-06-16 14:13:26,348 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-16 14:13:28,501 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:13:28] "GET /schedule HTTP/1.1" 200 -
+2026-06-16 14:13:28,714 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:13:28] "[31m[1mGET /api/map-html HTTP/1.1[0m" 400 -
+2026-06-16 14:29:55,865 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:29:55] "GET / HTTP/1.1" 200 -
+2026-06-16 14:29:56,174 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:29:56] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 14:29:56,239 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:29:56] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 14:29:57,597 - unified - INFO - Added spot 1 to selection. Total: 1
+2026-06-16 14:29:57,598 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:29:57] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 14:29:58,064 - unified - INFO - Added spot 2 to selection. Total: 2
+2026-06-16 14:29:58,066 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:29:58] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 14:29:59,385 - unified - INFO - Added spot 3 to selection. Total: 3
+2026-06-16 14:29:59,387 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:29:59] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 14:30:04,298 - unified - INFO - Route optimized: [1, 2, 487, 458, 3, 476, 479]
+2026-06-16 14:30:04,299 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:30:04] "POST /api/complete HTTP/1.1" 200 -
+2026-06-16 14:30:04,643 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:30:04] "GET /schedule HTTP/1.1" 200 -
+2026-06-16 14:30:12,170 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:30:12] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-16 14:42:33,582 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:33] "GET / HTTP/1.1" 200 -
+2026-06-16 14:42:33,839 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:33] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 14:42:33,867 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:33] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 14:42:41,093 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:41] "GET /api/search?q=d HTTP/1.1" 200 -
+2026-06-16 14:42:41,245 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:41] "GET /api/search?q=di HTTP/1.1" 200 -
+2026-06-16 14:42:41,352 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:41] "GET /api/search?q=din HTTP/1.1" 200 -
+2026-06-16 14:42:41,539 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:41] "GET /api/search?q=dinn HTTP/1.1" 200 -
+2026-06-16 14:42:41,695 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:41] "GET /api/search?q=dinne HTTP/1.1" 200 -
+2026-06-16 14:42:41,804 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:41] "GET /api/search?q=dinner HTTP/1.1" 200 -
+2026-06-16 14:42:42,005 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:42] "GET /api/search?q=dinner HTTP/1.1" 200 -
+2026-06-16 14:42:44,491 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:44] "GET /api/search?q=dinne HTTP/1.1" 200 -
+2026-06-16 14:42:44,735 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:44] "GET /api/search?q=dinn HTTP/1.1" 200 -
+2026-06-16 14:42:44,737 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:44] "GET /api/search?q=din HTTP/1.1" 200 -
+2026-06-16 14:42:44,935 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:44] "GET /api/search?q=di HTTP/1.1" 200 -
+2026-06-16 14:42:45,149 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 14:42:45] "GET /api/search?q=d HTTP/1.1" 200 -
+2026-06-16 15:01:08,809 - unified - INFO - Route optimized: [1, 2, 487, 458, 3, 476, 479]
+2026-06-16 15:01:08,810 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:01:08] "POST /api/complete HTTP/1.1" 200 -
+2026-06-16 15:01:08,850 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:01:08] "GET /schedule HTTP/1.1" 200 -
+2026-06-16 15:01:09,622 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:01:09] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-16 15:01:09,836 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:01:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 15:01:09,908 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:01:09] "[36mGET /static/jquery.min.js HTTP/1.1[0m" 304 -
+2026-06-16 15:01:17,913 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:01:17] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-16 15:02:12,668 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:12] "GET / HTTP/1.1" 200 -
+2026-06-16 15:02:12,852 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:12] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 15:02:12,950 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:12] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 15:02:21,875 - unified - INFO - Route optimized: [1, 2, 487, 458, 3, 476, 479]
+2026-06-16 15:02:21,876 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:21] "POST /api/complete HTTP/1.1" 200 -
+2026-06-16 15:02:21,901 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:21] "GET /schedule HTTP/1.1" 200 -
+2026-06-16 15:02:30,484 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:30] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-16 15:02:31,925 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:31] "GET / HTTP/1.1" 200 -
+2026-06-16 15:02:32,026 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:32] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 15:02:32,184 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:32] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 15:02:36,731 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:36] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 15:02:41,320 - unified - INFO - Added spot 4 to selection. Total: 4
+2026-06-16 15:02:41,322 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:41] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 15:02:42,891 - unified - INFO - Added spot 5 to selection. Total: 5
+2026-06-16 15:02:42,892 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:42] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 15:02:45,167 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:45] "GET /api/recommendations?page=2 HTTP/1.1" 200 -
+2026-06-16 15:02:46,741 - unified - INFO - Added spot 6 to selection. Total: 6
+2026-06-16 15:02:46,743 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:46] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 15:02:52,053 - unified - INFO - Route optimized: [1, 479, 3, 6, 5, 4, 2]
+2026-06-16 15:02:52,054 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:52] "POST /api/complete HTTP/1.1" 200 -
+2026-06-16 15:02:52,386 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:52] "GET /schedule HTTP/1.1" 200 -
+2026-06-16 15:02:59,228 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:59] "GET / HTTP/1.1" 200 -
+2026-06-16 15:02:59,963 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:02:59] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 15:03:00,086 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:03:00] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 15:03:04,008 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:03:04] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-16 15:03:33,269 - unified - INFO - Route optimized: [1, 479, 3, 6, 5, 4, 2]
+2026-06-16 15:03:33,270 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:03:33] "POST /api/complete HTTP/1.1" 200 -
+2026-06-16 15:03:33,609 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:03:33] "GET /schedule HTTP/1.1" 200 -
+2026-06-16 15:03:41,798 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:03:41] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-16 15:05:38,611 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:05:38] "GET /api/segment-route/479/3 HTTP/1.1" 200 -
+2026-06-16 15:05:44,051 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:05:44] "GET /api/segment-route/3/6 HTTP/1.1" 200 -
+2026-06-16 15:05:45,870 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:05:45] "GET /api/segment-map/479/3 HTTP/1.1" 200 -
+2026-06-16 15:05:52,545 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:05:52] "GET /api/segment-map/3/6 HTTP/1.1" 200 -
+2026-06-16 15:05:57,861 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:05:57] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-16 15:05:59,513 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:05:59] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-16 15:21:16,568 - werkzeug - INFO -  * Detected change in 'c:\\Users\\31746\\Desktop\\2604\\Finalproject\\unified.py', reloading
+2026-06-16 15:44:12,494 - unified - INFO - ================================================================================
+2026-06-16 15:44:12,497 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 15:44:12,497 - unified - INFO - ================================================================================
+2026-06-16 15:44:12,498 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 15:44:12,498 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 15:44:12,499 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 15:44:12,500 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:44:12,501 - unified - INFO - STACK COMPONENTS:
+2026-06-16 15:44:12,504 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 15:44:12,505 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 15:44:12,507 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 15:44:12,510 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 15:44:12,512 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 15:44:12,514 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:44:12,515 - unified - INFO - API ENDPOINTS:
+2026-06-16 15:44:12,516 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 15:44:12,517 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 15:44:12,517 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 15:44:12,522 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 15:44:12,523 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 15:44:12,525 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 15:44:12,528 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 15:44:12,530 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 15:44:12,531 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 15:44:12,532 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:44:12,533 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 15:44:12,535 - unified - INFO - ================================================================================
+2026-06-16 15:44:12,681 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 15:44:12,683 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-16 15:44:12,700 - werkzeug - INFO -  * Restarting with stat
+2026-06-16 15:45:20,657 - unified - INFO - ================================================================================
+2026-06-16 15:45:20,659 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 15:45:20,659 - unified - INFO - ================================================================================
+2026-06-16 15:45:20,660 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 15:45:20,660 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 15:45:20,661 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 15:45:20,662 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:45:20,662 - unified - INFO - STACK COMPONENTS:
+2026-06-16 15:45:20,663 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 15:45:20,664 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 15:45:20,664 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 15:45:20,665 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 15:45:20,665 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 15:45:20,666 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:45:20,667 - unified - INFO - API ENDPOINTS:
+2026-06-16 15:45:20,667 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 15:45:20,668 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 15:45:20,669 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 15:45:20,670 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 15:45:20,670 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 15:45:20,671 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 15:45:20,672 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 15:45:20,672 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 15:45:20,673 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 15:45:20,673 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:45:20,673 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 15:45:20,674 - unified - INFO - ================================================================================
+2026-06-16 15:45:20,719 - werkzeug - WARNING -  * Debugger is active!
+2026-06-16 15:45:20,771 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-16 15:45:24,441 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:45:24] "GET /api/recommendations HTTP/1.1" 200 -
+2026-06-16 15:48:44,588 - werkzeug - INFO -  * Detected change in 'C:\\Users\\31746\\AppData\\Roaming\\Python\\Python313\\site-packages\\flask\\globals.py', reloading
+2026-06-16 15:48:48,270 - werkzeug - INFO -  * Restarting with stat
+2026-06-16 15:49:55,829 - unified - INFO - ================================================================================
+2026-06-16 15:49:55,831 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 15:49:55,831 - unified - INFO - ================================================================================
+2026-06-16 15:49:55,832 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 15:49:55,833 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 15:49:55,833 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 15:49:55,834 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:49:55,834 - unified - INFO - STACK COMPONENTS:
+2026-06-16 15:49:55,835 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 15:49:55,835 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 15:49:55,836 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 15:49:55,836 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 15:49:55,837 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 15:49:55,838 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:49:55,838 - unified - INFO - API ENDPOINTS:
+2026-06-16 15:49:55,839 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 15:49:55,841 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 15:49:55,841 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 15:49:55,842 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 15:49:55,843 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 15:49:55,843 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 15:49:55,843 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 15:49:55,844 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 15:49:55,845 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 15:49:55,846 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:49:55,847 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 15:49:55,848 - unified - INFO - ================================================================================
+2026-06-16 15:49:55,890 - werkzeug - WARNING -  * Debugger is active!
+2026-06-16 15:49:55,940 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-16 15:56:11,416 - unified - INFO - ================================================================================
+2026-06-16 15:56:11,417 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 15:56:11,417 - unified - INFO - ================================================================================
+2026-06-16 15:56:11,418 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 15:56:11,418 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 15:56:11,419 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 15:56:11,420 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:56:11,420 - unified - INFO - STACK COMPONENTS:
+2026-06-16 15:56:11,420 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 15:56:11,421 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 15:56:11,421 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 15:56:11,422 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 15:56:11,422 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 15:56:11,423 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:56:11,423 - unified - INFO - API ENDPOINTS:
+2026-06-16 15:56:11,424 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 15:56:11,424 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 15:56:11,425 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 15:56:11,425 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 15:56:11,426 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 15:56:11,426 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 15:56:11,427 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 15:56:11,427 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 15:56:11,428 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 15:56:11,428 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:56:11,429 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 15:56:11,429 - unified - INFO - ================================================================================
+2026-06-16 15:56:11,503 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 15:56:11,503 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-16 15:56:11,507 - werkzeug - INFO -  * Restarting with stat
+2026-06-16 15:57:07,249 - unified - INFO - ================================================================================
+2026-06-16 15:57:07,250 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 15:57:07,250 - unified - INFO - ================================================================================
+2026-06-16 15:57:07,250 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 15:57:07,251 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 15:57:07,252 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 15:57:07,252 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:57:07,253 - unified - INFO - STACK COMPONENTS:
+2026-06-16 15:57:07,253 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 15:57:07,254 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 15:57:07,254 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 15:57:07,254 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 15:57:07,255 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 15:57:07,255 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:57:07,256 - unified - INFO - API ENDPOINTS:
+2026-06-16 15:57:07,256 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 15:57:07,257 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 15:57:07,257 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 15:57:07,257 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 15:57:07,258 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 15:57:07,258 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 15:57:07,259 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 15:57:07,259 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 15:57:07,260 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 15:57:07,260 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 15:57:07,260 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 15:57:07,261 - unified - INFO - ================================================================================
+2026-06-16 15:57:07,297 - werkzeug - WARNING -  * Debugger is active!
+2026-06-16 15:57:07,341 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-16 15:57:09,456 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:57:09] "GET / HTTP/1.1" 200 -
+2026-06-16 15:57:10,150 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:57:10] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-16 15:57:10,205 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:57:10] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+2026-06-16 15:57:10,354 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:57:10] "GET /static/jquery.min.js HTTP/1.1" 200 -
+2026-06-16 15:57:10,716 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:57:10] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 15:57:10,722 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:57:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-16 15:57:10,770 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:57:10] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 15:57:14,674 - unified - INFO - Added spot 2 to selection. Total: 1
+2026-06-16 15:57:14,682 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:57:14] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 15:57:15,685 - unified - INFO - Added spot 1 to selection. Total: 2
+2026-06-16 15:57:15,686 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:57:15] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 15:57:16,816 - unified - INFO - Added spot 3 to selection. Total: 3
+2026-06-16 15:57:16,819 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:57:16] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 15:57:18,325 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:57:18] "GET /api/recommendations?page=2 HTTP/1.1" 200 -
+2026-06-16 15:57:23,213 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:57:23] "GET /api/recommendations?page=3 HTTP/1.1" 200 -
+2026-06-16 15:59:49,540 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:59:49] "GET / HTTP/1.1" 200 -
+2026-06-16 15:59:49,762 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:59:49] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 15:59:49,897 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 15:59:49] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:01:06,899 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:06] "GET / HTTP/1.1" 200 -
+2026-06-16 16:01:07,039 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:07] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:01:07,100 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:07] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:01:10,490 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:10] "GET / HTTP/1.1" 200 -
+2026-06-16 16:01:10,560 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:10] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+2026-06-16 16:01:10,564 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:10] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-16 16:01:10,566 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:10] "GET /static/jquery.min.js HTTP/1.1" 200 -
+2026-06-16 16:01:10,648 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:10] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:01:10,705 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:10] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:01:10,706 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-16 16:01:11,426 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:11] "GET / HTTP/1.1" 200 -
+2026-06-16 16:01:11,490 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:11] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+2026-06-16 16:01:11,496 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:11] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-16 16:01:11,500 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:11] "GET /static/jquery.min.js HTTP/1.1" 200 -
+2026-06-16 16:01:11,618 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:11] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:01:11,626 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-16 16:01:11,630 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:01:11] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:06:46,617 - unified - INFO - ================================================================================
+2026-06-16 16:06:46,619 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 16:06:46,619 - unified - INFO - ================================================================================
+2026-06-16 16:06:46,619 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 16:06:46,620 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 16:06:46,620 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 16:06:46,620 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:06:46,621 - unified - INFO - STACK COMPONENTS:
+2026-06-16 16:06:46,621 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 16:06:46,622 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 16:06:46,622 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 16:06:46,622 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 16:06:46,623 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 16:06:46,623 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:06:46,623 - unified - INFO - API ENDPOINTS:
+2026-06-16 16:06:46,624 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 16:06:46,624 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 16:06:46,624 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 16:06:46,625 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 16:06:46,625 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 16:06:46,626 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 16:06:46,626 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 16:06:46,626 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 16:06:46,627 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 16:06:46,627 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:06:46,627 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 16:06:46,628 - unified - INFO - ================================================================================
+2026-06-16 16:06:46,682 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 16:06:46,682 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-16 16:06:46,685 - werkzeug - INFO -  * Restarting with stat
+2026-06-16 16:07:27,520 - unified - INFO - ================================================================================
+2026-06-16 16:07:27,521 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 16:07:27,522 - unified - INFO - ================================================================================
+2026-06-16 16:07:27,522 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 16:07:27,523 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 16:07:27,523 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 16:07:27,523 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:07:27,524 - unified - INFO - STACK COMPONENTS:
+2026-06-16 16:07:27,524 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 16:07:27,524 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 16:07:27,525 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 16:07:27,525 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 16:07:27,525 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 16:07:27,526 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:07:27,526 - unified - INFO - API ENDPOINTS:
+2026-06-16 16:07:27,527 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 16:07:27,527 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 16:07:27,527 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 16:07:27,528 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 16:07:27,528 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 16:07:27,528 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 16:07:27,529 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 16:07:27,529 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 16:07:27,529 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 16:07:27,530 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:07:27,530 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 16:07:27,531 - unified - INFO - ================================================================================
+2026-06-16 16:07:27,561 - werkzeug - WARNING -  * Debugger is active!
+2026-06-16 16:07:27,599 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-16 16:08:17,265 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:17] "GET / HTTP/1.1" 200 -
+2026-06-16 16:08:17,802 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:17] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:08:17,831 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:17] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:08:19,769 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:19] "GET / HTTP/1.1" 200 -
+2026-06-16 16:08:19,863 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:19] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:08:19,873 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:19] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:08:21,195 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:21] "GET / HTTP/1.1" 200 -
+2026-06-16 16:08:21,259 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:21] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:08:21,279 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:21] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:08:22,059 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:22] "GET / HTTP/1.1" 200 -
+2026-06-16 16:08:22,146 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:22] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:08:22,219 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:22] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:08:23,284 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:23] "GET / HTTP/1.1" 200 -
+2026-06-16 16:08:23,353 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:23] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:08:23,374 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:08:23] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:08:38,257 - werkzeug - INFO -  * Detected change in 'c:\\Users\\31746\\Desktop\\2604\\Finalproject\\unified.py', reloading
+2026-06-16 16:08:40,928 - werkzeug - INFO -  * Restarting with stat
+2026-06-16 16:09:28,802 - unified - INFO - ================================================================================
+2026-06-16 16:09:28,804 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 16:09:28,804 - unified - INFO - ================================================================================
+2026-06-16 16:09:28,805 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 16:09:28,805 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 16:09:28,806 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 16:09:28,806 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:09:28,807 - unified - INFO - STACK COMPONENTS:
+2026-06-16 16:09:28,807 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 16:09:28,808 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 16:09:28,809 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 16:09:28,810 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 16:09:28,810 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 16:09:28,811 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:09:28,811 - unified - INFO - API ENDPOINTS:
+2026-06-16 16:09:28,812 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 16:09:28,812 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 16:09:28,813 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 16:09:28,813 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 16:09:28,813 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 16:09:28,814 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 16:09:28,814 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 16:09:28,815 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 16:09:28,816 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 16:09:28,816 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:09:28,817 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 16:09:28,817 - unified - INFO - ================================================================================
+2026-06-16 16:09:28,851 - werkzeug - WARNING -  * Debugger is active!
+2026-06-16 16:09:28,893 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-16 16:09:40,936 - unified - INFO - Added spot 2 to selection. Total: 1
+2026-06-16 16:09:40,939 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:09:40] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 16:09:42,472 - unified - INFO - Added spot 3 to selection. Total: 2
+2026-06-16 16:09:42,474 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:09:42] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 16:11:37,050 - unified - INFO - ================================================================================
+2026-06-16 16:11:37,051 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 16:11:37,052 - unified - INFO - ================================================================================
+2026-06-16 16:11:37,052 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 16:11:37,053 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 16:11:37,053 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 16:11:37,054 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:11:37,054 - unified - INFO - STACK COMPONENTS:
+2026-06-16 16:11:37,055 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 16:11:37,055 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 16:11:37,056 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 16:11:37,056 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 16:11:37,057 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 16:11:37,057 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:11:37,058 - unified - INFO - API ENDPOINTS:
+2026-06-16 16:11:37,058 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 16:11:37,058 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 16:11:37,059 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 16:11:37,059 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 16:11:37,060 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 16:11:37,060 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 16:11:37,061 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 16:11:37,061 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 16:11:37,062 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 16:11:37,062 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:11:37,062 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 16:11:37,063 - unified - INFO - ================================================================================
+2026-06-16 16:11:37,125 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 16:11:37,125 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-16 16:11:37,129 - werkzeug - INFO -  * Restarting with stat
+2026-06-16 16:12:36,954 - unified - INFO - ================================================================================
+2026-06-16 16:12:36,956 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 16:12:36,957 - unified - INFO - ================================================================================
+2026-06-16 16:12:36,957 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 16:12:36,958 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 16:12:36,958 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 16:12:36,959 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:12:36,960 - unified - INFO - STACK COMPONENTS:
+2026-06-16 16:12:36,960 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 16:12:36,961 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 16:12:36,961 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 16:12:36,962 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 16:12:36,963 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 16:12:36,964 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:12:36,965 - unified - INFO - API ENDPOINTS:
+2026-06-16 16:12:36,965 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 16:12:36,966 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 16:12:36,966 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 16:12:36,967 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 16:12:36,967 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 16:12:36,968 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 16:12:36,968 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 16:12:36,969 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 16:12:36,970 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 16:12:36,970 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:12:36,971 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 16:12:36,971 - unified - INFO - ================================================================================
+2026-06-16 16:12:37,020 - werkzeug - WARNING -  * Debugger is active!
+2026-06-16 16:12:37,078 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-16 16:12:39,781 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:12:39] "GET / HTTP/1.1" 200 -
+2026-06-16 16:12:40,346 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:12:40] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:12:40,359 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:12:40] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:13:20,579 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:13:20] "GET / HTTP/1.1" 200 -
+2026-06-16 16:13:20,667 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:13:20] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:13:20,694 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:13:20] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:13:22,788 - unified - INFO - Added spot 1 to selection. Total: 1
+2026-06-16 16:13:22,790 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:13:22] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 16:13:25,253 - unified - INFO - Removed spot 1 from selection. Total: 0
+2026-06-16 16:13:25,255 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:13:25] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-16 16:16:23,995 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:23] "GET / HTTP/1.1" 200 -
+2026-06-16 16:16:24,750 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:24] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-16 16:16:24,783 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:24] "GET /static/jquery.min.js HTTP/1.1" 200 -
+2026-06-16 16:16:24,840 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:24] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+2026-06-16 16:16:24,906 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:24] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:16:24,912 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-16 16:16:24,916 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:24] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:16:27,649 - unified - INFO - Added spot 1 to selection. Total: 1
+2026-06-16 16:16:27,651 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:27] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 16:16:28,805 - unified - INFO - Added spot 2 to selection. Total: 2
+2026-06-16 16:16:28,806 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:28] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 16:16:30,048 - unified - INFO - Added spot 4 to selection. Total: 3
+2026-06-16 16:16:30,049 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:30] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 16:16:35,826 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-16 16:16:35,827 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:35] "POST /api/complete HTTP/1.1" 200 -
+2026-06-16 16:16:35,873 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:35] "GET /schedule HTTP/1.1" 200 -
+2026-06-16 16:16:44,185 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:44] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-16 16:16:52,406 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:52] "GET / HTTP/1.1" 200 -
+2026-06-16 16:16:52,511 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:52] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:16:52,538 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:16:52] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:17:08,353 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-16 16:17:08,355 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:17:08] "POST /api/complete HTTP/1.1" 200 -
+2026-06-16 16:17:08,392 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:17:08] "GET /schedule HTTP/1.1" 200 -
+2026-06-16 16:17:12,514 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:17:12] "GET / HTTP/1.1" 200 -
+2026-06-16 16:17:12,760 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:17:12] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:17:12,791 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:17:12] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:17:14,498 - unified - INFO - Removed spot 4 from selection. Total: 2
+2026-06-16 16:17:14,561 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:17:14] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-16 16:17:16,704 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:17:16] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-16 16:17:21,085 - unified - INFO - Added spot 3 to selection. Total: 3
+2026-06-16 16:17:21,086 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:17:21] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 16:17:26,182 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-16 16:17:26,183 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:17:26] "POST /api/complete HTTP/1.1" 200 -
+2026-06-16 16:17:26,208 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:17:26] "GET /schedule HTTP/1.1" 200 -
+2026-06-16 16:17:33,730 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:17:33] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-16 16:35:34,061 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:35:34] "GET / HTTP/1.1" 200 -
+2026-06-16 16:35:34,319 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:35:34] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:35:34,418 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:35:34] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:37:55,171 - unified - INFO - Removed spot 1 from selection. Total: 2
+2026-06-16 16:37:55,173 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:37:55] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-16 16:37:55,849 - unified - INFO - Removed spot 2 from selection. Total: 1
+2026-06-16 16:37:55,850 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:37:55] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-16 16:37:56,317 - unified - INFO - Removed spot 3 from selection. Total: 0
+2026-06-16 16:37:56,318 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:37:56] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-16 16:37:57,560 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:37:57] "GET /api/recommendations?page=2 HTTP/1.1" 200 -
+2026-06-16 16:37:59,428 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:37:59] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:38:00,470 - unified - INFO - Added spot 1 to selection. Total: 1
+2026-06-16 16:38:00,472 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:38:00] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 16:38:01,413 - unified - INFO - Added spot 2 to selection. Total: 2
+2026-06-16 16:38:01,424 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:38:01] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 16:38:02,406 - unified - INFO - Added spot 3 to selection. Total: 3
+2026-06-16 16:38:02,408 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:38:02] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 16:38:06,662 - unified - INFO - Removed spot 2 from selection. Total: 2
+2026-06-16 16:38:06,663 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:38:06] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-16 16:38:07,194 - unified - INFO - Removed spot 3 from selection. Total: 1
+2026-06-16 16:38:07,196 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:38:07] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-16 16:40:29,217 - werkzeug - INFO -  * Detected change in 'c:\\Users\\31746\\Desktop\\2604\\Finalproject\\unified.py', reloading
+2026-06-16 16:40:42,794 - werkzeug - INFO -  * Restarting with stat
+2026-06-16 16:41:48,490 - unified - INFO - ================================================================================
+2026-06-16 16:41:48,492 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 16:41:48,492 - unified - INFO - ================================================================================
+2026-06-16 16:41:48,493 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 16:41:48,493 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 16:41:48,494 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 16:41:48,495 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:41:48,495 - unified - INFO - STACK COMPONENTS:
+2026-06-16 16:41:48,496 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 16:41:48,497 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 16:41:48,497 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 16:41:48,498 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 16:41:48,498 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 16:41:48,499 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:41:48,500 - unified - INFO - API ENDPOINTS:
+2026-06-16 16:41:48,500 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 16:41:48,501 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 16:41:48,501 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 16:41:48,502 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 16:41:48,502 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 16:41:48,503 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 16:41:48,503 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 16:41:48,504 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 16:41:48,504 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 16:41:48,505 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:41:48,505 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 16:41:48,506 - unified - INFO - ================================================================================
+2026-06-16 16:41:48,556 - werkzeug - WARNING -  * Debugger is active!
+2026-06-16 16:41:48,629 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-16 16:41:53,503 - unified - INFO - Added spot 3 to selection. Total: 1
+2026-06-16 16:41:53,505 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:41:53] "POST /api/spots HTTP/1.1" 200 -
+2026-06-16 16:41:53,519 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:41:53] "GET / HTTP/1.1" 200 -
+2026-06-16 16:41:53,779 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:41:53] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-16 16:41:53,802 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:41:53] "GET /api/spots HTTP/1.1" 200 -
+2026-06-16 16:41:59,628 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-16 16:41:59,630 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:41:59] "POST /api/complete HTTP/1.1" 200 -
+2026-06-16 16:41:59,834 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:41:59] "GET /schedule HTTP/1.1" 200 -
+2026-06-16 16:42:05,205 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-16 16:42:05,208 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:42:05] "POST /api/complete HTTP/1.1" 200 -
+2026-06-16 16:42:14,354 - werkzeug - INFO - 127.0.0.1 - - [16/Jun/2026 16:42:14] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-16 16:44:43,868 - werkzeug - INFO -  * Detected change in 'c:\\Users\\31746\\Desktop\\2604\\Finalproject\\unified - 副本.py', reloading
+2026-06-16 16:44:46,586 - werkzeug - INFO -  * Restarting with stat
+2026-06-16 16:45:35,468 - unified - INFO - ================================================================================
+2026-06-16 16:45:35,469 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 16:45:35,469 - unified - INFO - ================================================================================
+2026-06-16 16:45:35,470 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 16:45:35,470 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 16:45:35,471 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 16:45:35,471 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:45:35,471 - unified - INFO - STACK COMPONENTS:
+2026-06-16 16:45:35,472 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 16:45:35,472 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 16:45:35,472 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 16:45:35,473 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 16:45:35,473 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 16:45:35,474 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:45:35,474 - unified - INFO - API ENDPOINTS:
+2026-06-16 16:45:35,474 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 16:45:35,475 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 16:45:35,475 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 16:45:35,476 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 16:45:35,476 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 16:45:35,476 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 16:45:35,477 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 16:45:35,477 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 16:45:35,477 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 16:45:35,478 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:45:35,478 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 16:45:35,479 - unified - INFO - ================================================================================
+2026-06-16 16:45:35,509 - werkzeug - WARNING -  * Debugger is active!
+2026-06-16 16:45:35,551 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-16 16:48:14,919 - werkzeug - INFO -  * Detected change in 'c:\\Users\\31746\\Desktop\\2604\\Finalproject\\unified copy.py', reloading
+2026-06-16 16:48:17,867 - werkzeug - INFO -  * Restarting with stat
+2026-06-16 16:49:09,266 - unified - INFO - ================================================================================
+2026-06-16 16:49:09,267 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-16 16:49:09,268 - unified - INFO - ================================================================================
+2026-06-16 16:49:09,268 - unified - INFO - Spots Database: 895 records loaded
+2026-06-16 16:49:09,269 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-16 16:49:09,269 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-16 16:49:09,270 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:49:09,270 - unified - INFO - STACK COMPONENTS:
+2026-06-16 16:49:09,271 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-16 16:49:09,271 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-16 16:49:09,272 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-16 16:49:09,272 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-16 16:49:09,273 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-16 16:49:09,273 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:49:09,274 - unified - INFO - API ENDPOINTS:
+2026-06-16 16:49:09,274 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-16 16:49:09,275 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-16 16:49:09,275 - unified - INFO -   GET  /api/health          - Health check
+2026-06-16 16:49:09,276 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-16 16:49:09,277 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-16 16:49:09,277 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-16 16:49:09,278 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-16 16:49:09,278 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-16 16:49:09,278 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-16 16:49:09,279 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-16 16:49:09,280 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-16 16:49:09,280 - unified - INFO - ================================================================================
+2026-06-16 16:49:09,312 - werkzeug - WARNING -  * Debugger is active!
+2026-06-16 16:49:09,360 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-18 12:22:59,448 - unified - INFO - ================================================================================
+2026-06-18 12:22:59,453 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-18 12:22:59,453 - unified - INFO - ================================================================================
+2026-06-18 12:22:59,454 - unified - INFO - Spots Database: 895 records loaded
+2026-06-18 12:22:59,454 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-18 12:22:59,454 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-18 12:22:59,455 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-18 12:22:59,455 - unified - INFO - STACK COMPONENTS:
+2026-06-18 12:22:59,456 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-18 12:22:59,456 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-18 12:22:59,457 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-18 12:22:59,457 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-18 12:22:59,458 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-18 12:22:59,458 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-18 12:22:59,459 - unified - INFO - API ENDPOINTS:
+2026-06-18 12:22:59,459 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-18 12:22:59,460 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-18 12:22:59,460 - unified - INFO -   GET  /api/health          - Health check
+2026-06-18 12:22:59,461 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-18 12:22:59,461 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-18 12:22:59,461 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-18 12:22:59,462 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-18 12:22:59,463 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-18 12:22:59,463 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-18 12:22:59,464 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-18 12:22:59,464 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-18 12:22:59,465 - unified - INFO - ================================================================================
+2026-06-18 12:22:59,621 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-18 12:22:59,622 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-18 12:22:59,626 - werkzeug - INFO -  * Restarting with stat
+2026-06-18 12:23:50,139 - unified - INFO - ================================================================================
+2026-06-18 12:23:50,141 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-18 12:23:50,142 - unified - INFO - ================================================================================
+2026-06-18 12:23:50,142 - unified - INFO - Spots Database: 895 records loaded
+2026-06-18 12:23:50,143 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-18 12:23:50,143 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-18 12:23:50,144 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-18 12:23:50,144 - unified - INFO - STACK COMPONENTS:
+2026-06-18 12:23:50,145 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-18 12:23:50,145 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-18 12:23:50,145 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-18 12:23:50,146 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-18 12:23:50,146 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-18 12:23:50,147 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-18 12:23:50,147 - unified - INFO - API ENDPOINTS:
+2026-06-18 12:23:50,148 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-18 12:23:50,148 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-18 12:23:50,149 - unified - INFO -   GET  /api/health          - Health check
+2026-06-18 12:23:50,149 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-18 12:23:50,150 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-18 12:23:50,150 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-18 12:23:50,151 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-18 12:23:50,151 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-18 12:23:50,152 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-18 12:23:50,152 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-18 12:23:50,153 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-18 12:23:50,153 - unified - INFO - ================================================================================
+2026-06-18 12:23:50,199 - werkzeug - WARNING -  * Debugger is active!
+2026-06-18 12:23:50,251 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-18 12:27:55,379 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:27:55] "GET / HTTP/1.1" 200 -
+2026-06-18 12:27:56,157 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:27:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-18 12:27:56,161 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:27:56] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-18 12:27:56,432 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:27:56] "[36mGET /static/jquery.min.js HTTP/1.1[0m" 304 -
+2026-06-18 12:27:56,807 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:27:56] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-18 12:27:56,864 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:27:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-18 12:27:56,877 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:27:56] "GET /api/spots HTTP/1.1" 200 -
+2026-06-18 12:28:00,483 - unified - INFO - Added spot 1 to selection. Total: 1
+2026-06-18 12:28:00,485 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:28:00] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 12:28:01,874 - unified - INFO - Added spot 2 to selection. Total: 2
+2026-06-18 12:28:01,875 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:28:01] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 12:28:03,796 - unified - INFO - Removed spot 2 from selection. Total: 1
+2026-06-18 12:28:03,798 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:28:03] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 12:28:16,791 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 12:28:16,850 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:28:16] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 12:28:17,201 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:28:17] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 12:28:22,387 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 12:28:22,427 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:28:22] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 12:28:24,575 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 12:28:24,593 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:28:24] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 12:28:31,914 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:28:31] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 12:30:22,000 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:22] "GET /api/segment-route/11/673 HTTP/1.1" 200 -
+2026-06-18 12:30:26,524 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:26] "GET /api/segment-route/673/487 HTTP/1.1" 200 -
+2026-06-18 12:30:27,972 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:27] "GET /api/segment-map/11/673 HTTP/1.1" 200 -
+2026-06-18 12:30:29,115 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:29] "GET /api/segment-route/487/479 HTTP/1.1" 200 -
+2026-06-18 12:30:29,377 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:29] "GET /api/segment-route/479/472 HTTP/1.1" 200 -
+2026-06-18 12:30:30,256 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:30] "GET /api/segment-route/472/473 HTTP/1.1" 200 -
+2026-06-18 12:30:35,044 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:35] "GET /api/segment-map/673/487 HTTP/1.1" 200 -
+2026-06-18 12:30:35,621 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:35] "GET /api/segment-map/472/473 HTTP/1.1" 200 -
+2026-06-18 12:30:35,702 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:35] "GET /api/segment-map/479/472 HTTP/1.1" 200 -
+2026-06-18 12:30:35,924 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:35] "GET /api/segment-map/487/479 HTTP/1.1" 200 -
+2026-06-18 12:30:50,524 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:50] "GET /api/segment-route/11/673 HTTP/1.1" 200 -
+2026-06-18 12:30:52,012 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:52] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 12:30:53,714 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:53] "GET /api/segment-map/11/673 HTTP/1.1" 200 -
+2026-06-18 12:30:59,379 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:30:59] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 12:33:10,817 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:33:10] "GET /api/segment-route/11/673 HTTP/1.1" 200 -
+2026-06-18 12:33:12,183 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:33:12] "GET /api/segment-map/11/673 HTTP/1.1" 200 -
+2026-06-18 12:39:47,499 - werkzeug - INFO -  * Detected change in 'c:\\Users\\31746\\Desktop\\2604\\Finalproject\\validation\\validation.py', reloading
+2026-06-18 12:39:58,876 - werkzeug - INFO -  * Restarting with stat
+2026-06-18 12:40:50,365 - unified - INFO - ================================================================================
+2026-06-18 12:40:50,366 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-18 12:40:50,367 - unified - INFO - ================================================================================
+2026-06-18 12:40:50,368 - unified - INFO - Spots Database: 895 records loaded
+2026-06-18 12:40:50,368 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-18 12:40:50,369 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-18 12:40:50,369 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-18 12:40:50,370 - unified - INFO - STACK COMPONENTS:
+2026-06-18 12:40:50,370 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-18 12:40:50,371 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-18 12:40:50,371 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-18 12:40:50,372 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-18 12:40:50,372 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-18 12:40:50,373 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-18 12:40:50,373 - unified - INFO - API ENDPOINTS:
+2026-06-18 12:40:50,373 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-18 12:40:50,374 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-18 12:40:50,374 - unified - INFO -   GET  /api/health          - Health check
+2026-06-18 12:40:50,375 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-18 12:40:50,375 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-18 12:40:50,376 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-18 12:40:50,376 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-18 12:40:50,377 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-18 12:40:50,377 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-18 12:40:50,377 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-18 12:40:50,378 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-18 12:40:50,378 - unified - INFO - ================================================================================
+2026-06-18 12:40:50,425 - werkzeug - WARNING -  * Debugger is active!
+2026-06-18 12:40:50,481 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-18 12:41:23,844 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:41:23] "[31m[1mGET /api/map-html HTTP/1.1[0m" 400 -
+2026-06-18 12:41:31,338 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:41:31] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 12:41:31,497 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:41:31] "[31m[1mGET /api/map-html HTTP/1.1[0m" 400 -
+2026-06-18 12:41:43,249 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:41:43] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 12:41:43,353 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:41:43] "[31m[1mGET /api/map-html HTTP/1.1[0m" 400 -
+2026-06-18 12:41:45,341 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:41:45] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 12:41:45,437 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:41:45] "[31m[1mGET /api/map-html HTTP/1.1[0m" 400 -
+2026-06-18 12:43:49,478 - werkzeug - INFO -  * Detected change in 'c:\\Users\\31746\\Desktop\\2604\\Finalproject\\unified.py', reloading
+2026-06-18 12:43:58,222 - werkzeug - INFO -  * Restarting with stat
+2026-06-18 12:45:02,098 - unified - INFO - ================================================================================
+2026-06-18 12:45:02,101 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-18 12:45:02,102 - unified - INFO - ================================================================================
+2026-06-18 12:45:02,103 - unified - INFO - Spots Database: 895 records loaded
+2026-06-18 12:45:02,103 - unified - INFO - Template Folder: c:\Users\31746\Desktop\2604\Finalproject\templates
+2026-06-18 12:45:02,104 - unified - INFO - Static Folder: c:\Users\31746\Desktop\2604\Finalproject\static
+2026-06-18 12:45:02,104 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-18 12:45:02,105 - unified - INFO - STACK COMPONENTS:
+2026-06-18 12:45:02,105 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-18 12:45:02,106 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-18 12:45:02,106 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-18 12:45:02,109 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-18 12:45:02,111 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-18 12:45:02,111 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-18 12:45:02,112 - unified - INFO - API ENDPOINTS:
+2026-06-18 12:45:02,113 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-18 12:45:02,115 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-18 12:45:02,117 - unified - INFO -   GET  /api/health          - Health check
+2026-06-18 12:45:02,118 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-18 12:45:02,120 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-18 12:45:02,121 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-18 12:45:02,121 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-18 12:45:02,122 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-18 12:45:02,122 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-18 12:45:02,123 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-18 12:45:02,123 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-18 12:45:02,124 - unified - INFO - ================================================================================
+2026-06-18 12:45:02,184 - werkzeug - WARNING -  * Debugger is active!
+2026-06-18 12:45:02,249 - werkzeug - INFO -  * Debugger PIN: 475-060-821
+2026-06-18 12:45:05,335 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:45:05] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 12:45:05,346 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:45:05] "GET / HTTP/1.1" 200 -
+2026-06-18 12:45:05,348 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:45:05] "GET / HTTP/1.1" 200 -
+2026-06-18 12:45:05,359 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:45:05] "GET / HTTP/1.1" 200 -
+2026-06-18 12:45:06,221 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:45:06] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-18 12:45:06,301 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:45:06] "GET /api/spots HTTP/1.1" 200 -
+2026-06-18 12:45:07,551 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:45:07] "GET /api/segment-map/11/673 HTTP/1.1" 200 -
+2026-06-18 12:46:40,640 - unified - INFO - Added spot 1 to selection. Total: 1
+2026-06-18 12:46:40,652 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:46:40] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 12:46:49,102 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 12:46:49,103 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:46:49] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 12:46:49,188 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:46:49] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 12:47:00,330 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:47:00] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 12:54:29,878 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:54:29] "GET / HTTP/1.1" 200 -
+2026-06-18 12:54:30,331 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:54:30] "GET / HTTP/1.1" 200 -
+2026-06-18 12:54:31,172 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:54:31] "GET /static/jquery.min.js HTTP/1.1" 200 -
+2026-06-18 12:54:31,467 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:54:31] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-18 12:54:31,476 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:54:31] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+2026-06-18 12:54:32,896 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:54:32] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-18 12:54:32,964 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:54:32] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+2026-06-18 12:54:33,273 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:54:33] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-18 12:54:33,349 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:54:33] "GET /api/spots HTTP/1.1" 200 -
+2026-06-18 12:54:42,012 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 12:54:42,014 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:54:42] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 12:54:42,033 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:54:42] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 12:54:52,656 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:54:52] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 12:56:20,299 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:56:20] "GET /api/route-data HTTP/1.1" 200 -
+2026-06-18 12:57:35,301 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:57:35] "GET / HTTP/1.1" 200 -
+2026-06-18 12:57:35,491 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:57:35] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-18 12:57:35,501 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:57:35] "GET /api/spots HTTP/1.1" 200 -
+2026-06-18 12:57:36,696 - unified - INFO - Added spot 2 to selection. Total: 2
+2026-06-18 12:57:36,699 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:57:36] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 12:57:37,406 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:57:37] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 12:57:38,342 - unified - INFO - Added spot 3 to selection. Total: 3
+2026-06-18 12:57:38,344 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:57:38] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 12:57:39,109 - unified - INFO - Added spot 4 to selection. Total: 4
+2026-06-18 12:57:39,111 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:57:39] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 12:57:39,715 - unified - INFO - Added spot 5 to selection. Total: 5
+2026-06-18 12:57:39,717 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:57:39] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 12:57:40,506 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:57:40] "GET /api/recommendations?page=2 HTTP/1.1" 200 -
+2026-06-18 12:57:41,529 - unified - INFO - Added spot 7 to selection. Total: 6
+2026-06-18 12:57:41,532 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:57:41] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 12:57:42,360 - unified - INFO - Added spot 8 to selection. Total: 7
+2026-06-18 12:57:42,361 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:57:42] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 12:57:43,880 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:57:43] "[31m[1mPOST /api/spots HTTP/1.1[0m" 400 -
+2026-06-18 12:58:33,381 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 12:58:33,382 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:58:33] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 12:58:33,417 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:58:33] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 12:58:42,148 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:58:42] "GET /api/segment-route/4/5 HTTP/1.1" 200 -
+2026-06-18 12:58:45,379 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:58:45] "GET /api/segment-map/4/5 HTTP/1.1" 200 -
+2026-06-18 12:58:47,429 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 12:58:47] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 13:00:03,696 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 13:00:03] "GET /api/segment-route/5/8 HTTP/1.1" 200 -
+2026-06-18 13:00:14,948 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 13:00:14] "GET /api/segment-route/8/7 HTTP/1.1" 200 -
+2026-06-18 13:00:17,241 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 13:00:17] "GET /api/segment-route/7/2 HTTP/1.1" 200 -
+2026-06-18 13:00:18,171 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 13:00:18] "GET /api/segment-map/5/8 HTTP/1.1" 200 -
+2026-06-18 13:00:19,334 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 13:00:19] "GET /api/segment-map/8/7 HTTP/1.1" 200 -
+2026-06-18 13:00:20,275 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 13:00:20] "GET /api/segment-map/7/2 HTTP/1.1" 200 -
+2026-06-18 13:02:58,954 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 13:02:58] "GET /api/route-data HTTP/1.1" 200 -
+2026-06-18 13:07:10,616 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 13:07:10] "GET /api/route-data HTTP/1.1" 200 -
+2026-06-18 14:08:21,018 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:08:21] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 14:09:15,947 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:09:15] "GET / HTTP/1.1" 200 -
+2026-06-18 14:09:16,039 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:09:16] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-18 14:09:16,041 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:09:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-18 14:09:16,042 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:09:16] "[36mGET /static/jquery.min.js HTTP/1.1[0m" 304 -
+2026-06-18 14:09:16,328 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:09:16] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-18 14:09:16,357 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:09:16] "GET /api/spots HTTP/1.1" 200 -
+2026-06-18 14:09:26,436 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 14:09:26,438 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:09:26] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 14:09:26,468 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:09:26] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 14:09:34,397 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:09:34] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 14:11:45,993 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:11:45] "GET /api/segment-route/5/4 HTTP/1.1" 200 -
+2026-06-18 14:11:47,585 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:11:47] "GET /api/segment-map/5/4 HTTP/1.1" 200 -
+2026-06-18 14:11:57,486 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:11:57] "GET /api/segment-route/4/3 HTTP/1.1" 200 -
+2026-06-18 14:12:02,647 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:12:02] "GET /api/segment-map/4/3 HTTP/1.1" 200 -
+2026-06-18 14:12:08,207 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:12:08] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 14:15:43,691 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:15:43] "GET / HTTP/1.1" 200 -
+2026-06-18 14:15:43,885 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:15:43] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-18 14:15:43,989 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:15:43] "GET /api/spots HTTP/1.1" 200 -
+2026-06-18 14:15:49,628 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 14:15:49,629 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:15:49] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 14:15:49,653 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:15:49] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 14:16:01,863 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 14:16:01,886 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:16:01] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 14:16:02,000 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:16:02] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 14:16:55,603 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:16:55] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 14:17:03,772 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:17:03] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 14:19:57,396 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:19:57] "GET / HTTP/1.1" 200 -
+2026-06-18 14:19:57,676 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:19:57] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-18 14:19:57,712 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:19:57] "GET /api/spots HTTP/1.1" 200 -
+2026-06-18 14:20:01,342 - unified - INFO - Removed spot 7 from selection. Total: 6
+2026-06-18 14:20:01,344 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:20:01] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 14:20:02,149 - unified - INFO - Removed spot 5 from selection. Total: 5
+2026-06-18 14:20:02,150 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:20:02] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 14:20:02,899 - unified - INFO - Removed spot 8 from selection. Total: 4
+2026-06-18 14:20:02,900 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:20:02] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 14:20:03,551 - unified - INFO - Removed spot 4 from selection. Total: 3
+2026-06-18 14:20:03,553 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:20:03] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 14:20:04,210 - unified - INFO - Removed spot 3 from selection. Total: 2
+2026-06-18 14:20:04,211 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:20:04] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 14:20:04,886 - unified - INFO - Removed spot 2 from selection. Total: 1
+2026-06-18 14:20:04,888 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:20:04] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 14:20:36,275 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 14:20:36,277 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:20:36] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 14:20:36,308 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:20:36] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 14:20:44,324 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:20:44] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 14:43:55,426 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:43:55] "GET / HTTP/1.1" 200 -
+2026-06-18 14:43:55,740 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:43:55] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-18 14:43:55,776 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:43:55] "GET /api/spots HTTP/1.1" 200 -
+2026-06-18 14:43:58,510 - unified - INFO - Removed spot 1 from selection. Total: 0
+2026-06-18 14:43:58,513 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:43:58] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 14:44:38,524 - unified - INFO - Added spot 1 to selection. Total: 1
+2026-06-18 14:44:38,525 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:44:38] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 14:44:39,164 - unified - INFO - Added spot 2 to selection. Total: 2
+2026-06-18 14:44:39,166 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:44:39] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 14:44:39,869 - unified - INFO - Added spot 3 to selection. Total: 3
+2026-06-18 14:44:39,870 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:44:39] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 14:44:40,532 - unified - INFO - Added spot 4 to selection. Total: 4
+2026-06-18 14:44:40,534 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:44:40] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 14:44:41,058 - unified - INFO - Added spot 5 to selection. Total: 5
+2026-06-18 14:44:41,060 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:44:41] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 14:44:41,845 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:44:41] "GET /api/recommendations?page=2 HTTP/1.1" 200 -
+2026-06-18 14:44:42,729 - unified - INFO - Added spot 10 to selection. Total: 6
+2026-06-18 14:44:42,730 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:44:42] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 14:44:44,056 - unified - INFO - Added spot 9 to selection. Total: 7
+2026-06-18 14:44:44,058 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:44:44] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 14:44:44,761 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:44:44] "[31m[1mPOST /api/spots HTTP/1.1[0m" 400 -
+2026-06-18 14:45:13,243 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:45:13] "[31m[1mPOST /api/spots HTTP/1.1[0m" 400 -
+2026-06-18 14:45:21,585 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:45:21] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-18 14:45:22,503 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:45:22] "[31m[1mPOST /api/spots HTTP/1.1[0m" 400 -
+2026-06-18 14:45:24,466 - unified - INFO - Removed spot 2 from selection. Total: 6
+2026-06-18 14:45:24,468 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:45:24] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 14:45:25,800 - unified - INFO - Removed spot 3 from selection. Total: 5
+2026-06-18 14:45:25,801 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:45:25] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 14:45:27,192 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:45:27] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 14:45:27,846 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:45:27] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 14:45:28,910 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:45:28] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 14:45:42,657 - unified - INFO - Removed spot 10 from selection. Total: 4
+2026-06-18 14:45:42,659 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:45:42] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 14:45:43,232 - unified - INFO - Removed spot 9 from selection. Total: 3
+2026-06-18 14:45:43,233 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:45:43] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 14:45:43,767 - unified - INFO - Removed spot 5 from selection. Total: 2
+2026-06-18 14:45:43,769 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:45:43] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 14:45:44,422 - unified - INFO - Removed spot 4 from selection. Total: 1
+2026-06-18 14:45:44,423 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:45:44] "DELETE /api/spots HTTP/1.1" 200 -
+2026-06-18 14:45:45,588 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 14:45:45] "POST /api/spots HTTP/1.1" 200 -
+2026-06-18 16:25:59,144 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 16:25:59,188 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 16:25:59] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 16:25:59,305 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 16:25:59] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 16:25:59,512 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 16:25:59] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-18 16:25:59,513 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 16:25:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-18 16:25:59,531 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 16:25:59] "[36mGET /static/jquery.min.js HTTP/1.1[0m" 304 -
+2026-06-18 16:26:07,794 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 16:26:07,805 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 16:26:07] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 16:26:11,194 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 16:26:11] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 16:26:43,347 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 16:26:43] "GET /api/segment-route/11/673 HTTP/1.1" 200 -
+2026-06-18 16:26:44,849 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 16:26:44] "GET /api/segment-map/11/673 HTTP/1.1" 200 -
+2026-06-18 16:26:52,211 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 16:26:52] "GET /api/segment-route/673/487 HTTP/1.1" 200 -
+2026-06-18 16:26:54,134 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 16:26:54] "GET /api/segment-map/673/487 HTTP/1.1" 200 -
+2026-06-18 18:40:10,272 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:40:10] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 18:40:24,433 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:40:24] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 18:40:29,378 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:40:29] "GET /api/segment-route/11/673 HTTP/1.1" 200 -
+2026-06-18 18:40:31,211 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:40:31] "GET /api/segment-map/11/673 HTTP/1.1" 200 -
+2026-06-18 18:40:47,218 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:40:47] "GET /api/segment-route/673/487 HTTP/1.1" 200 -
+2026-06-18 18:40:49,332 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:40:49] "GET /api/segment-map/673/487 HTTP/1.1" 200 -
+2026-06-18 18:41:00,089 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:00] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 18:41:00,104 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:00] "GET /api/segment-route/673/487 HTTP/1.1" 200 -
+2026-06-18 18:41:10,727 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:10] "GET /api/segment-map/673/487 HTTP/1.1" 200 -
+2026-06-18 18:41:18,959 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:18] "GET /api/segment-route/11/673 HTTP/1.1" 200 -
+2026-06-18 18:41:24,047 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:24] "GET /api/segment-route/673/487 HTTP/1.1" 200 -
+2026-06-18 18:41:25,648 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:25] "GET /api/segment-map/11/673 HTTP/1.1" 200 -
+2026-06-18 18:41:33,931 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:33] "GET /api/segment-route/487/479 HTTP/1.1" 200 -
+2026-06-18 18:41:34,680 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:34] "GET /api/segment-map/673/487 HTTP/1.1" 200 -
+2026-06-18 18:41:43,188 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:43] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 18:41:46,453 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:46] "GET /api/segment-route/479/472 HTTP/1.1" 200 -
+2026-06-18 18:41:46,457 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:46] "GET /api/segment-map/487/479 HTTP/1.1" 200 -
+2026-06-18 18:41:53,478 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:53] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 18:41:57,157 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:57] "GET /api/segment-map/479/472 HTTP/1.1" 200 -
+2026-06-18 18:41:57,195 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:57] "GET /api/segment-route/479/472 HTTP/1.1" 200 -
+2026-06-18 18:41:58,727 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:41:58] "GET /api/segment-route/472/473 HTTP/1.1" 200 -
+2026-06-18 18:42:11,432 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:11] "GET /api/segment-map/479/472 HTTP/1.1" 200 -
+2026-06-18 18:42:12,010 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:12] "GET /api/segment-route/472/473 HTTP/1.1" 200 -
+2026-06-18 18:42:12,974 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:12] "GET /api/segment-map/472/473 HTTP/1.1" 200 -
+2026-06-18 18:42:23,964 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:23] "GET /api/segment-route/472/473 HTTP/1.1" 200 -
+2026-06-18 18:42:24,993 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:24] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 18:42:26,005 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:26] "GET /api/segment-map/472/473 HTTP/1.1" 200 -
+2026-06-18 18:42:35,395 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:35] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 18:42:36,079 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:36] "GET /api/segment-map/472/473 HTTP/1.1" 200 -
+2026-06-18 18:42:48,951 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:48] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 18:42:50,079 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:50] "GET / HTTP/1.1" 200 -
+2026-06-18 18:42:50,598 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:50] "GET /api/segment-route/11/673 HTTP/1.1" 200 -
+2026-06-18 18:42:50,774 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:50] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-18 18:42:51,190 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-18 18:42:51,386 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:51] "[36mGET /static/jquery.min.js HTTP/1.1[0m" 304 -
+2026-06-18 18:42:51,397 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:51] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 18:42:51,710 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:51] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-18 18:42:52,169 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:52] "GET /api/spots HTTP/1.1" 200 -
+2026-06-18 18:42:54,114 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:42:54] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 18:43:00,133 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:43:00] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 18:43:04,579 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 18:43:04,608 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:43:04] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 18:43:04,712 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:43:04] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 18:43:11,814 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 18:43:11,832 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:43:11] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 18:43:16,225 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:43:16] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-18 18:43:29,161 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:43:29] "GET / HTTP/1.1" 200 -
+2026-06-18 18:43:29,290 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:43:29] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-18 18:43:29,309 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:43:29] "GET /api/spots HTTP/1.1" 200 -
+2026-06-18 18:43:35,543 - unified - INFO - Route optimized with start point plus destination stops
+2026-06-18 18:43:35,545 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:43:35] "POST /api/complete HTTP/1.1" 200 -
+2026-06-18 18:43:35,590 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:43:35] "GET /schedule HTTP/1.1" 200 -
+2026-06-18 18:43:44,689 - werkzeug - INFO - 127.0.0.1 - - [18/Jun/2026 18:43:44] "GET /api/map-html HTTP/1.1" 200 -
+2026-06-19 09:54:34,305 - unified - INFO - ================================================================================
+2026-06-19 09:54:34,306 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-19 09:54:34,306 - unified - INFO - ================================================================================
+2026-06-19 09:54:34,306 - unified - INFO - Spots Database: 895 records loaded
+2026-06-19 09:54:34,306 - unified - INFO - Template Folder: C:\Users\QiYiming\Desktop\Finalproject(1)\Finalproject\templates
+2026-06-19 09:54:34,306 - unified - INFO - Static Folder: C:\Users\QiYiming\Desktop\Finalproject(1)\Finalproject\static
+2026-06-19 09:54:34,306 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-19 09:54:34,306 - unified - INFO - STACK COMPONENTS:
+2026-06-19 09:54:34,307 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-19 09:54:34,307 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-19 09:54:34,307 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-19 09:54:34,307 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-19 09:54:34,307 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-19 09:54:34,307 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-19 09:54:34,307 - unified - INFO - API ENDPOINTS:
+2026-06-19 09:54:34,307 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-19 09:54:34,307 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-19 09:54:34,307 - unified - INFO -   GET  /api/health          - Health check
+2026-06-19 09:54:34,307 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-19 09:54:34,308 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-19 09:54:34,308 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-19 09:54:34,308 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-19 09:54:34,308 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-19 09:54:34,308 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-19 09:54:34,308 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-19 09:54:34,308 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-19 09:54:34,308 - unified - INFO - ================================================================================
+2026-06-19 09:54:34,328 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-19 09:54:34,329 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-19 09:54:34,330 - werkzeug - INFO -  * Restarting with stat
+2026-06-19 09:54:49,767 - unified - INFO - ================================================================================
+2026-06-19 09:54:49,768 - unified - INFO - ITINERARY PLANNER APPLICATION STARTING
+2026-06-19 09:54:49,768 - unified - INFO - ================================================================================
+2026-06-19 09:54:49,768 - unified - INFO - Spots Database: 895 records loaded
+2026-06-19 09:54:49,769 - unified - INFO - Template Folder: C:\Users\QiYiming\Desktop\Finalproject(1)\Finalproject\templates
+2026-06-19 09:54:49,769 - unified - INFO - Static Folder: C:\Users\QiYiming\Desktop\Finalproject(1)\Finalproject\static
+2026-06-19 09:54:49,769 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-19 09:54:49,769 - unified - INFO - STACK COMPONENTS:
+2026-06-19 09:54:49,770 - unified - INFO -   Frontend UI1: /templates/UI1.html (Spot Selection)
+2026-06-19 09:54:49,770 - unified - INFO -   Frontend UI2: /templates/UI2.html (Itinerary Map)
+2026-06-19 09:54:49,770 - unified - INFO -   Styling: /static/bootstrap.min.css + /static/style.css
+2026-06-19 09:54:49,770 - unified - INFO -   JavaScript: /static/jquery.min.js
+2026-06-19 09:54:49,771 - unified - INFO -   Database: CSV (spots.csv)
+2026-06-19 09:54:49,772 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-19 09:54:49,772 - unified - INFO - API ENDPOINTS:
+2026-06-19 09:54:49,772 - unified - INFO -   GET  /                    - Home page (UI1)
+2026-06-19 09:54:49,772 - unified - INFO -   GET  /schedule            - Itinerary page (UI2)
+2026-06-19 09:54:49,772 - unified - INFO -   GET  /api/health          - Health check
+2026-06-19 09:54:49,772 - unified - INFO -   GET  /api/recommendations - Paginated spots
+2026-06-19 09:54:49,773 - unified - INFO -   GET  /api/search          - Search spots
+2026-06-19 09:54:49,773 - unified - INFO -   GET  /api/spots           - Get selected spots
+2026-06-19 09:54:49,773 - unified - INFO -   POST /api/spots           - Add spot to selection
+2026-06-19 09:54:49,773 - unified - INFO -   DELETE /api/spots         - Remove spot from selection
+2026-06-19 09:54:49,773 - unified - INFO -   POST /api/complete        - Complete selection & redirect
+2026-06-19 09:54:49,773 - unified - INFO - --------------------------------------------------------------------------------
+2026-06-19 09:54:49,774 - unified - INFO - Starting Flask server at http://localhost:5000
+2026-06-19 09:54:49,774 - unified - INFO - ================================================================================
+2026-06-19 09:54:49,781 - werkzeug - WARNING -  * Debugger is active!
+2026-06-19 09:54:49,791 - werkzeug - INFO -  * Debugger PIN: 107-574-511
+2026-06-19 09:58:50,691 - werkzeug - INFO - 127.0.0.1 - - [19/Jun/2026 09:58:50] "GET / HTTP/1.1" 200 -
+2026-06-19 09:58:51,545 - werkzeug - INFO - 127.0.0.1 - - [19/Jun/2026 09:58:51] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-19 09:58:51,548 - werkzeug - INFO - 127.0.0.1 - - [19/Jun/2026 09:58:51] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+2026-06-19 09:58:51,548 - werkzeug - INFO - 127.0.0.1 - - [19/Jun/2026 09:58:51] "GET /static/jquery.min.js HTTP/1.1" 200 -
+2026-06-19 09:58:51,677 - werkzeug - INFO - 127.0.0.1 - - [19/Jun/2026 09:58:51] "GET /api/recommendations?page=1 HTTP/1.1" 200 -
+2026-06-19 09:58:51,679 - werkzeug - INFO - 127.0.0.1 - - [19/Jun/2026 09:58:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-19 09:58:51,682 - werkzeug - INFO - 127.0.0.1 - - [19/Jun/2026 09:58:51] "GET /api/spots HTTP/1.1" 200 -

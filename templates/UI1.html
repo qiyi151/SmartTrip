@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI 1 - Place Selector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+    <!-- Navigation Bar -->
+    <nav class="header-zone" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">Destinations Selection</a>
+        </li>
+        </ol>
+    </nav>
+    <!-- Title Header -->
+    <h1 class="header-title">Do you have any place in your mind?</h1>
+
+    <!-- New Split Wrapper for Horizontal Layout -->
+    <div class="layout-split">
+        <!-- LEFT SIDE: Recommendations -->
+        <div class="section-box left-panel">
+        <div class="section-header">
+            <span class="section-title">Recommendations</span>
+        </div>
+
+        <div class="cards-grid-container" aria-live="polite">
+            <div class="place-card">
+            <div class="popover-wrapper">
+                <div class="place-name">Loading recommendations...</div>
+                <div class="place-description">Please wait while destinations are loaded.</div>
+            </div>
+            </div>
+        </div>
+        <div
+            class="button-group"
+            role="group"
+            style="display: flex; gap: 8px; margin-top: 10px"
+        >
+            <button
+            type="button"
+            id="btn-prev"
+            class="btn btn-secondary btn-sm"
+            onclick="changePage('prev')"
+            >
+            Previous
+            </button>
+            <button
+            type="button"
+            id="btn-next"
+            class="btn btn-secondary btn-sm"
+            onclick="changePage('next')"
+            >
+            Next
+            </button>
+        </div>
+        </div>
+
+        <!-- RIGHT SIDE: Selection Workspace & Search Container -->
+        <div class="section-box right-panel selected-panel workspace-panel selection-card">
+        <!-- Unified Search Form Wrapper Component -->
+        <div class="search-container-wrapper">
+            <input
+            type="text"
+            id="destination-search"
+            class="form-control search-input-field"
+            placeholder="🔍 Search Destinations"
+            oninput="executeSearch()"
+            />
+            <p class="text-muted small mt-1 mb-2">
+                Note: The first selected place will be used as the start point. The remaining places will be used as itinerary destinations.
+            </p>
+
+            <!-- FLOATING DROPDOWN PANEL: Renders top 3 matches -->
+            <div id="search-results-dropdown" class="search-dropdown-overlay">
+            <!-- Generated dynamically via JavaScript -->
+            </div>
+        </div>
+
+        <!-- List of added items -->
+        <div class="added-list selected-list" id="added-list">
+            <!-- Managed dynamically by backend array loop -->
+        </div>
+
+        <!-- Bottom metadata indicators -->
+        <div class="selection-footer footer-row">
+            <div class="selected-count-text total-count">
+                Selected: <span id="selected-count">0</span> / Maximum: 7
+            </div>
+            <button id="complete-btn" class="btn btn-success complete-btn btn-submit" type="button">
+                Complete
+            </button>
+        </div>
+        </div>
+    </div>
+    <!-- End of layout-split -->
+    </div>
+
+    <script>
+    // Track the pagination offset state globally
+    let currentPage = 1;
+    let hasMoreRecords = true;
+
+    // 1. Initial page loader hooks
+    async function initWorkspace() {
+        await fetchRecommendations(currentPage);
+        await refreshSavedWorkspace();
+    }
+
+    // 2. Fetch paginated recommendations from data layer
+    async function fetchRecommendations(page) {
+        try {
+        const response = await fetch(`/api/recommendations?page=${page}`);
+        const data = await response.json();
+        hasMoreRecords = data.has_next;
+        renderRecommendations(data.spots);
+        } catch (error) {
+        console.error("Error handling recommendations payload:", error);
+        }
+    }
+
+    // 3. Render 5 compact recommendations
+    function renderRecommendations(spots) {
+        const container = document.querySelector(".cards-grid-container");
+        if (!container) return;
+        container.innerHTML = "";
+
+        spots.forEach((spot) => {
+        const card = document.createElement("div");
+        card.className = "place-card";
+        card.innerHTML = `
+                    <div class="popover-wrapper">
+                        <div class="place-name">${spot.spot_name}</div>
+                        <div class="place-description">${spot.spot_description}</div>
+                    </div>
+                    <div class="place-rating">★ ${spot.spot_rating.toFixed(1)}</div>
+                    <button class="btn-add" onclick="addSpotById(${spot.spot_id})">Add</button>
+                `;
+        container.appendChild(card);
+        });
+
+        // Handle disabling/enabling page control footprints
+        document.getElementById("btn-prev").disabled = currentPage === 1;
+        document.getElementById("btn-next").disabled = !hasMoreRecords;
+    }
+
+    // Pagination buttons click handlers
+    function changePage(direction) {
+        if (direction === "next" && hasMoreRecords) {
+        currentPage++;
+        } else if (direction === "prev" && currentPage > 1) {
+        currentPage--;
+        }
+        fetchRecommendations(currentPage);
+    }
+
+    // 4. Selections Modification Routines via Spot ID
+    async function addSpotById(id) {
+        try {
+        const response = await fetch("/api/spots", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ spot_id: id }),
+        });
+        const updatedList = await response.json();
+        if (updatedList.error) {
+            alert(updatedList.error);
+            return;
+        }
+        renderSavedWorkspace(updatedList);
+        } catch (error) {
+        console.error("Submission pipeline error:", error);
+        }
+    }
+
+    async function removeSpotById(id) {
+        try {
+        const response = await fetch("/api/spots", {
+            method: "DELETE",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ spot_id: id }),
+        });
+        const updatedList = await response.json();
+        renderSavedWorkspace(updatedList);
+        } catch (error) {
+        console.error("Removal pipeline error:", error);
+        }
+    }
+
+    async function refreshSavedWorkspace() {
+        const response = await fetch("/api/spots");
+        const data = await response.json();
+        renderSavedWorkspace(data);
+    }
+
+    // 5. Populate right selection dashboard panel
+    function renderSavedWorkspace(spots) {
+        const container = document.getElementById("added-list");
+        const countLabel = document.getElementById("selected-count");
+        if (!container) return;
+        container.innerHTML = "";
+
+        spots.forEach((spot) => {
+        const item = document.createElement("div");
+        item.className = "added-item";
+        item.innerHTML = `
+                    <span class="added-item-name">📍 ${spot.spot_name}</span>
+                    <button class="btn-delete" onclick="removeSpotById(${spot.spot_id})">Delete</button>
+                `;
+        container.appendChild(item);
+        });
+
+        if (countLabel) {
+        countLabel.textContent = spots.length;
+        }
+    }
+
+    async function submitFinalSelection(event) {
+        // 1. Instantly kill default browser form actions to halt reload loops
+        if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        try {
+            const container = document.getElementById('added-list');
+            
+            // 2. Fallback empty validation safeguard check
+            if (!container || container.children.length === 0) {
+                alert("Please select at least one place.");
+                return;
+            }
+
+            console.log("Submitting final selections to backend...");
+
+            // 3. Fire the request directly to the Flask route endpoint path
+            const completeResponse = await fetch('/api/complete', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            });
+            
+            const result = await completeResponse.json();
+            console.log("Server response received:", result);
+            
+            // 4. Use the backend-provided redirect target after successful completion
+            if (completeResponse.ok && result.redirect_url) {
+                console.log(`Redirecting browser window to ${result.redirect_url}...`);
+                window.location.assign(result.redirect_url);
+            } else {
+                alert(result.error || "Server submission processing error. Please try again.");
+            }
+        } catch (error) {
+            console.error('Error handling redirect routing transition operation:', error);
+        }
+    }
+
+    async function executeSearch() {
+        const inputField = document.getElementById("destination-search");
+        const dropdown = document.getElementById("search-results-dropdown");
+
+        if (!inputField || !dropdown) return;
+
+        const queryText = inputField.value.trim();
+
+        // Clear and conceal the dropdown wrapper instantly if search text field length is empty
+        if (queryText.length === 0) {
+        dropdown.innerHTML = "";
+        dropdown.style.display = "none";
+        return;
+        }
+
+        try {
+        const response = await fetch(
+            `/api/search?q=${encodeURIComponent(queryText)}`,
+        );
+        const matchingSpots = await response.json();
+
+        // Handle empty match results state safely
+        if (matchingSpots.length === 0) {
+            dropdown.innerHTML =
+            '<div class="search-no-match">No matches found</div>';
+            dropdown.style.display = "block";
+            return;
+        }
+
+        dropdown.innerHTML = "";
+        dropdown.style.display = "block";
+
+        // Loop through and append the top 3 highest-rated rows cleanly using modular CSS classes
+        matchingSpots.forEach((spot) => {
+            const rowItem = document.createElement("div");
+            rowItem.className = "search-result-row";
+
+            // Action Handler: Clicking a row saves the item via Spot ID, clears search, and hides list
+            rowItem.onclick = async () => {
+            await addSpotById(spot.spot_id);
+            inputField.value = "";
+            dropdown.style.display = "none";
+            dropdown.innerHTML = "";
+            };
+
+            rowItem.innerHTML = `
+                        <div class="search-meta-text">
+                            <span class="search-match-name">📍 ${spot.spot_name}</span>
+                            <span class="search-match-desc">${spot.spot_description}</span>
+                        </div>
+                        <span class="search-match-rating">★ ${spot.spot_rating.toFixed(1)}</span>
+                    `;
+            dropdown.appendChild(rowItem);
+        });
+        } catch (error) {
+        console.error(
+            "Error processing live dataset filter operation:",
+            error,
+        );
+        }
+    }
+
+    // Global window event click listener to conceal dropdown search sheets if clicking outside
+    document.addEventListener("click", function (event) {
+        const dropdown = document.getElementById("search-results-dropdown");
+        const searchInput = document.getElementById("destination-search");
+        if (
+        dropdown &&
+        event.target !== dropdown &&
+        event.target !== searchInput
+        ) {
+        dropdown.style.display = "none";
+        }
+    });
+
+    // Bind function directly to global client browser frame scope
+    window.executeSearch = executeSearch;
+    // Bind events safely to DOM scope
+    window.onload = initWorkspace;
+    window.addSpotById = addSpotById;
+    window.removeSpotById = removeSpotById;
+    window.changePage = changePage;
+    window.submitFinalSelection = submitFinalSelection;
+
+    const completeButton = document.getElementById("complete-btn");
+    if (completeButton) {
+        completeButton.addEventListener("click", submitFinalSelection);
+    }
+    </script>
+</body>
+</html>

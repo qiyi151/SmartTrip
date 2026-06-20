@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI 2 - Schedule Planned</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+</head>
+<body class="ui2-body">
+    <div class="container ui2-page-container">
+        <nav aria-label="breadcrumb" class="top-breadcrumb-nav">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Destinations Selection</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Schedule Planned</li>
+            </ol>
+        </nav>
+
+        {% if error %}
+            <div class="alert alert-danger">{{ error }}</div>
+        {% endif %}
+
+        <div id="ui2-view-state" class="layout-split ui2-route-layout">
+            <div class="section-box ui2-list-panel">
+                <div class="section-header">
+                    <span class="section-title">Planned Workspace</span>
+                    <button class="btn btn-warning" onclick="window.location.href='/'">Return</button>
+                </div>
+
+                {% if current_location %}
+                    <div class="route-start-card">
+                        <span class="route-start-label">Start</span>
+                        <span class="route-start-name">{{ current_location.spot_name }}</span>
+                    </div>
+                {% endif %}
+
+                <ul class="destination-list" id="ui2-itinerary-root">
+                    {% for spot in spots %}
+                        <li id="itinerary-row-{{ loop.index }}">
+                            <div class="destination-item" onclick="toggleDetailedLegView('{{ loop.index }}')">
+                                <div class="destination-name">
+                                    {{ loop.index }}. {{ spot.spot_name }}
+                                </div>
+                            </div>
+                            <div id="subpaths-expansion-{{ loop.index }}"></div>
+                        </li>
+                    {% endfor %}
+
+                    {% for i in range((spots | length) + 1, 7) %}
+                        <li class="destination-item empty-slot">Empty Slot {{ i }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="section-box ui2-map-panel">
+                <div class="section-header">
+                    <span class="section-title" id="map-panel-title">Interactive Route Track</span>
+                    <button class="btn btn-secondary btn-sm" onclick="resetGlobalOverviewState()">Overview</button>
+                </div>
+                <div class="map-wrapper folium-map-wrapper">
+                    <iframe
+                        id="foliumRouteFrame"
+                        class="folium-route-frame"
+                        title="Interactive route map"
+                        src="/api/map-html"
+                        loading="lazy">
+                    </iframe>
+                    <div class="map-title" id="mapStatusText">Optimized route overview</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script id="current-location-json" type="application/json">{{ current_location | tojson }}</script>
+    <script id="route-spots-json" type="application/json">{{ spots | tojson }}</script>
+
+    <script>
+        const currentLocation = JSON.parse(document.getElementById("current-location-json").textContent || "null");
+        const destinationSpots = JSON.parse(document.getElementById("route-spots-json").textContent || "[]");
+        let currentActiveZoomedIndex = null;
+
+        function getSpotLabel(spot) {
+            return spot ? spot.spot_name : "Unknown spot";
+        }
+
+        function clearExpandedRows() {
+            for (let i = 1; i <= destinationSpots.length; i++) {
+                const rowElement = document.getElementById(`itinerary-row-${i}`);
+                const expansionBox = document.getElementById(`subpaths-expansion-${i}`);
+
+                if (rowElement) {
+                    rowElement.style.opacity = "1";
+                    rowElement.style.display = "";
+                    rowElement.classList.remove("route-row-active", "route-row-next");
+                    rowElement.style.transition = "opacity 0.25s ease";
+                }
+                if (expansionBox) {
+                    expansionBox.innerHTML = "";
+                }
+            }
+        }
+
+        function renderInstructions(index, routePayload) {
+            const expansionBox = document.getElementById(`subpaths-expansion-${index}`);
+            if (!expansionBox) return;
+
+            const distance = Number(routePayload.total_distance || 0).toFixed(2);
+            const instructionItems = (routePayload.instructions || []).map((instruction, stepIndex) => `
+                <li class="ui3-inline-path-item">
+                    <span>${stepIndex + 1}</span>
+                    ${instruction}
+                </li>
+            `).join("");
+
+            expansionBox.innerHTML = `
+                <div class="route-leg-details">
+                    <div class="route-leg-summary">A* route distance: ${distance} m</div>
+                    <ul class="ui3-inline-path-list">${instructionItems}</ul>
+                </div>
+            `;
+        }
+
+        async function toggleDetailedLegView(nodeId) {
+            const index = parseInt(nodeId, 10);
+            const fromSpot = destinationSpots[index - 1];
+            const toSpot = destinationSpots[index];
+            const mapFrame = document.getElementById("foliumRouteFrame");
+            const mapStatusText = document.getElementById("mapStatusText");
+            const mapPanelTitle = document.getElementById("map-panel-title");
+
+            if (!fromSpot || !toSpot) {
+                alert("This is the final destination. Select an earlier destination to view the next route leg.");
+                return;
+            }
+
+            if (currentActiveZoomedIndex === index) {
+                resetGlobalOverviewState();
+                return;
+            }
+
+            clearExpandedRows();
+            currentActiveZoomedIndex = index;
+
+            for (let i = 1; i <= destinationSpots.length; i++) {
+                const rowElement = document.getElementById(`itinerary-row-${i}`);
+                if (rowElement) {
+                    const shouldShow = i === index || i === index + 1;
+                    rowElement.style.display = shouldShow ? "" : "none";
+                    rowElement.classList.toggle("route-row-active", i === index);
+                    rowElement.classList.toggle("route-row-next", i === index + 1);
+                }
+            }
+
+            const expansionBox = document.getElementById(`subpaths-expansion-${index}`);
+            if (expansionBox) {
+                expansionBox.innerHTML = '<div class="route-leg-details"><div class="route-leg-summary">Loading A* route...</div></div>';
+            }
+
+            try {
+                const response = await fetch(`/api/segment-route/${fromSpot.spot_id}/${toSpot.spot_id}`);
+                const payload = await response.json();
+
+                if (!response.ok || payload.error) {
+                    throw new Error(payload.error || "Unable to load route segment.");
+                }
+
+                renderInstructions(index, payload.route);
+
+                if (mapFrame) {
+                    mapFrame.src = `/api/segment-map/${fromSpot.spot_id}/${toSpot.spot_id}`;
+                }
+                if (mapStatusText) {
+                    mapStatusText.textContent = `${getSpotLabel(fromSpot)} to ${getSpotLabel(toSpot)}`;
+                }
+                if (mapPanelTitle) {
+                    mapPanelTitle.textContent = "Detailed A* Route";
+                }
+            } catch (error) {
+                console.error("A* segment loading error:", error);
+                if (expansionBox) {
+                    expansionBox.innerHTML = `<div class="route-leg-summary route-error">${error.message}</div>`;
+                }
+            }
+        }
+
+        function resetGlobalOverviewState() {
+            clearExpandedRows();
+            currentActiveZoomedIndex = null;
+
+            const mapFrame = document.getElementById("foliumRouteFrame");
+            const mapStatusText = document.getElementById("mapStatusText");
+            const mapPanelTitle = document.getElementById("map-panel-title");
+
+            if (mapFrame) {
+                mapFrame.src = "/api/map-html";
+            }
+            if (mapStatusText) {
+                mapStatusText.textContent = "Optimized route overview";
+            }
+            if (mapPanelTitle) {
+                mapPanelTitle.textContent = "Interactive Route Track";
+            }
+        }
+
+        window.toggleDetailedLegView = toggleDetailedLegView;
+        window.resetGlobalOverviewState = resetGlobalOverviewState;
+    </script>
+</body>
+</html>
