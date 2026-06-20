@@ -5,7 +5,7 @@ psycopg2-binary==2.9.6
 openpyxl==3.1.2
 folium==0.14.0
 networkx==3.1
-osmnx==1.7.2
+osmnx==1.9.4
 geopy==2.3.0
 Werkzeug==2.3.7
 Jinja2==3.1.2
