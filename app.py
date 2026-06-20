@@ -312,19 +312,21 @@ import osmnx as ox
 # Define your local cache filename
 CACHE_FILENAME = "selangor_network.graphml"
 
-if os.path.exists(CACHE_FILENAME):
-    print("🚀 Cache found! Instantly loading Selangor road network from disk...")
-    # This reads the complete graph array in under 2 seconds
-    GLOBAL_MAP_GRAPH = ox.load_graphml(CACHE_FILENAME)
-else:
-    print("⏳ No cache found. Downloading the Selangor road network (this takes a while)...")
+try:
+    if os.path.exists(CACHE_FILENAME):
+        print("Loading cached graph...")
+        GLOBAL_MAP_GRAPH = ox.load_graphml(CACHE_FILENAME)
+    else:
+        raise FileNotFoundError
+except Exception:
+    print("Cache invalid. Rebuilding graph...")
     
-    # 1. Download the full state network
     GLOBAL_MAP_GRAPH = ox.graph_from_place(
-        "Selangor, Malaysia", 
-        network_type="drive",
-        retain_all=True
+        "Selangor, Malaysia",
+        network_type="drive"
     )
+    
+    ox.save_graphml(GLOBAL_MAP_GRAPH, CACHE_FILENAME)
     
     # 2. Impute driving attributes
     print("⚙️ Processing edge speeds and travel times...")
